@@ -1,0 +1,52 @@
+[3R06_InsertMenu.Sql]
+STATUS=09/02/2011 15:15:18
+Erro : 
+UPDATE GPESQUISA SET 
+TIPOPESQUISA=''
+, PESQDEFAULT=0
+, IDCONEXAO= Null
+, ESCOPO=2
+, NOMEPESQUISA = 'Lista de Aniversariantes'
+, DSCPESQUISA='Lista de Aniversariantes'
+, PESQSQL= 'Select Distinct C.IDCLIENTE [Id.], C.NOME [Cliente]
+, Right('+ Char(39)+'00'+ Char(39)+'+RTrim(Day(C.DTNASC)),2) + '/' + Right('+ Char(39)+'00'+ Char(39)+'+RTrim(Month(C.DTNASC)),2) [Data Nasc.]
+, TEL1 [Telefone]
+, EMAIL [e-Mail] From OCLIENTE C 
+Where C.ATIVO=1 
+Order By 3'
+, TAGCAMPOS = '|CAMPO=ID.|GRUPO=0|VISIBLE=N:|CAMPO=CLIENTE|GRUPO=0|VISIBLE=S:|CAMPO=DATA NESC.|GRUPO=0|VISIBLE=S:|CAMPO=TELEFONE|GRUPO=0|VISIBLE=S:|CAMPO=E-MAIL|GRUPO=0|VISIBLE=S:|'
+WHERE IDPESQUISA=3;
+
+Erro : 
+UPDATE GPESQUISA SET 
+TIPOPESQUISA=''
+, PESQDEFAULT=0
+, IDCONEXAO= Null
+, ESCOPO=2
+, NOMEPESQUISA = 'Lista de Aniversariantes'
+, DSCPESQUISA='Lista de Aniversariantes'
+, PESQSQL= 'Select Distinct C.IDCLIENTE [Id.], C.NOME [Cliente]
+, Right('+ Char(39)+'00'+ Char(39)+'+RTrim(Day(C.DTNASC)),2) + '/' + Right('+ Char(39)+'00'+ Char(39)+'+RTrim(Month(C.DTNASC)),2) [Data Nasc.]
+, TEL1 [Telefone]
+, EMAIL [e-Mail] From OCLIENTE C 
+Where C.ATIVO=1 
+Order By 3'
+, TAGCAMPOS = '|CAMPO=ID.|GRUPO=0|VISIBLE=N:|CAMPO=CLIENTE|GRUPO=0|VISIBLE=S:|CAMPO=DATA NESC.|GRUPO=0|VISIBLE=S:|CAMPO=TELEFONE|GRUPO=0|VISIBLE=S:|CAMPO=E-MAIL|GRUPO=0|VISIBLE=S:|'
+WHERE IDPESQUISA=3;
+ 
+UPDATE GPESQUISA SET 
+TIPOPESQUISA=''
+, PESQDEFAULT=0
+, IDCONEXAO= Null
+, ESCOPO=2
+, NOMEPESQUISA = 'Lista de Aniversariantes'
+, DSCPESQUISA='Lista de Aniversariantes'
+, PESQSQL= 'Select Distinct C.IDCLIENTE [Id.], C.NOME [Cliente]
+, Right('00'+RTrim(Day(C.DTNASC)),2) + '/' + Right('00'+RTrim(Month(C.DTNASC)),2) [Data Nasc.]
+, TEL1 [Telefone]
+, EMAIL [e-Mail] From OCLIENTE C 
+Where C.ATIVO=1 
+Order By 3'
+, TAGCAMPOS = '|CAMPO=ID.|GRUPO=0|VISIBLE=N:|CAMPO=CLIENTE|GRUPO=0|VISIBLE=S:|CAMPO=DATA NESC.|GRUPO=0|VISIBLE=S:|CAMPO=TELEFONE|GRUPO=0|VISIBLE=S:|CAMPO=E-MAIL|GRUPO=0|VISIBLE=S:|'
+WHERE IDPESQUISA=3;
+

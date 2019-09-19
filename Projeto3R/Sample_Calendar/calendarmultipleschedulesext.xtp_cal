@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calendar CompactMode="1" Version="1">
+	<EventsSchedules>
+		<Schedule ID="1" Name="John"/>
+		<Schedule ID="2" Name="Peter"/>
+		<Schedule ID="3" Name="Room N1"/>
+		<Schedule ID="4" Name="Room N2"/>
+	</EventsSchedules>
+</Calendar>

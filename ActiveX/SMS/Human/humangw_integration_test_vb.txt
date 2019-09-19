@@ -1,0 +1,58 @@
+
+' Função para Envio de SMS
+Function SendSMS(ByVal msg As String, ByVal mobile As String, account As String, code As String) As String
+    Dim urlBase As String
+    Dim msgUrlEncoded As String
+    Dim WinHttpReq
+    Dim status As String
+    
+    Set WinHttpReq = CreateObject("WinHttp.WinHttpRequest.5.1")
+    If WinHttpReq Is Nothing Then Set web = CreateObject("WinHttp.WinHttpRequest")
+    If WinHttpReq Is Nothing Then Set web = CreateObject("MSXML2.ServerXMLHTTP")
+    If WinHttpReq Is Nothing Then Set web = CreateObject("Microsoft.XMLHTTP")
+    
+    ' Aplica UrlEncoding na mensagem
+    msgUrlEncoded = UrlEncode(msg)
+    ' Efetua o envio
+    urlBase = "http://system.human.com.br:8080/GatewayIntegration/msgSms.do?dispatch=send"
+    WinHttpReq.Open "GET", urlBase + "&account=" + account + "&code=" + code + "&msg=" + msgUrlEncoded + "&to=" + mobile
+    WinHttpReq.Send
+    status = WinHttpReq.ResponseText
+    SendSMS = status
+End Function
+
+' Função auxiliar para codificar a mensagem para formato URL
+Function UrlEncode(ByVal urlText As String) As String
+    Dim i As Long
+    Dim ansi() As Byte
+    Dim ascii As Integer
+    Dim encText As String
+
+    ansi = StrConv(urlText, vbFromUnicode)
+
+    encText = ""
+        For i = 0 To UBound(ansi)
+        ascii = ansi(i)
+
+        Select Case ascii
+        Case 48 To 57, 65 To 90, 97 To 122
+            encText = encText & Chr(ascii)
+        Case 32
+            encText = encText & "+"
+        Case Else
+            If ascii < 16 Then
+                encText = encText & "%0" & Hex(ascii)
+            Else
+                encText = encText & "%" & Hex(ascii)
+            End If
+        End Select
+    Next i
+    
+    UrlEncode = encText
+End Function
+
+Private Sub CommandButton1_Click()
+
+MsgBox SendSMS("Teste de Mensagem", "555184220483", "nome_da_conta", "codig_da_conta")
+
+End Sub

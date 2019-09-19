@@ -1,0 +1,10 @@
+--USE G3R;
+if NOt Exists(Select * From VERSAOBD Where IDBD=1) INSERT INTO VERSAOBD(IDBD, DSCBD, VSBD, ATUBD, DTATU, ARQATU) VALUES (1, 'Banco Dpil', '1.0', '0', GetDate(), '');
+UPDATE VERSAOBD SET VSBD='1.0', DTATU=GetDate(), ATUBD='69', ARQATU='Rev69.sql';
+/****************************************************************************
+****************************************************************************/
+IF NOT EXISTS (SELECT * FROM OAREA Where IDAREA=0 And IDLOJA=(Select Top 1 IDLOJA From OLOJA order by IDLOJA)) Insert into OAREA (IDLOJA, IDAREA, ATIVO, DSCAREA) Select Top 1 IDLOJA, 0, 0,'--' From OLOJA Order By IDLOJA;
+
+IF NOT EXISTS (SELECT * FROM OTPTRATAMENTO Where IDTPTRATAMENTO=0 And IDLOJA=(Select Top 1 IDLOJA From OLOJA order by IDLOJA)) Insert into OTPTRATAMENTO (IDLOJA, IDTPTRATAMENTO, FREQUENCIA, ATIVO, FLGAREA, FLGAVALIACAO, PESOCOMISSAO, FLGSESSAO, DSCTRATAMENTO) Select Top 1 IDLOJA, 0,  0, 0, 0, 0, 0, 0,'Avaliação' From OLOJA Order By IDLOJA;
+
+IF NOT EXISTS (SELECT * FROM sys.COLUMNS C JOIN  sys.OBJECTS O ON C.OBJECT_ID=O.OBJECT_ID WHERE O.NAME='OCLIENTE' AND C.NAME='IDFUNC')  ALTER TABLE OCLIENTE ADD IDFUNC int NULL;

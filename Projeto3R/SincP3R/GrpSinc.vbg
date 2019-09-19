@@ -1,0 +1,6 @@
+VBGROUP 5.0
+Project=..\Arquivos Comuns\Banco\Banco_3R.vbp
+StartupProject=SincP3R.vbp
+Project=SincBD.vbp
+Project=..\..\..\_PROJETO A\Arquivos Comuns\Setting\SysA.vbp
+Project=..\Utilitarios3R\UTILITARIO3R.vbp

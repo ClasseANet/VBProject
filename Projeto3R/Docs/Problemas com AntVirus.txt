@@ -1,0 +1,75 @@
+*************
+*** AVAST ***
+*************
+O que acontece é que alguns dos arquivos são criptografados (são protegidos para não serem abertos e ou modificados), e por esse motivo, o anti vírus AVAST, os consideram arquivos 
+"suspeitos" (porque não conseguem ler o seu código) e diz que possui um "vírus" e isso não é verdade.
+Sem o procedimento que irei explicar abaixo, o Jogo irá fechar durante a atualização ou nem abrirá.
+Portanto irei explicar como configurar os arquivos como arquivos confiáveis no anti vírus AVAST.
+Esse procedimento não traz problemas, já que os arquivos são confiáveis e também o seu anti vírus não será danificado.
+Quando o Avast acusar que o arquivo está infectado, faça os seguintes procedimentos:
+
+1 - Copie o endereço do arquivo e logo depois, clique para que não tenha ação (Para ajudar, irei postar abaixo o diretório 
+padrão de instalação dos arquivoS. Geralmente são 3 arquivos que costumam serem detectados errôneamente pelo avast, vc pode 
+até copiar diretamente daqui mesmo o endereço e colar em Proteção residente/Proteção padrão/Personalizar/Avançados/ACRESCENTAR
+
+C:\Arquivos de programas\MU-STYLE\jogar.exe
+C:\Arquivos de programas\MU-STYLE\atualiza.exe
+C:\Arquivos de programas\MU-STYLE\main.exe
+
+2 – No canto direito do monitor, ao lado do relógio, clique com o botão direito do mouse no ícone do avast (bolinha azul que fica girando com um "a"), e vá em:
+3 - Proteção residente, Proteção padrão, Personalizar. Em Avançados, clique no botão ACRESCENTAR e cole o endereços dos arquivos. Pronto! Agora o seu AVAST vai continuar rodando normalmente mas sem as falsas detecções de vírus, e vai reconhecer o MU-STYLE como arquivo confiável.
+
+***********
+*** AVG ***
+***********
+Como ja expliquei acima, alguns dos arquivos do MU-STYLE estão criptografados, e por esse motivo, o antivírus AVG, o considera um arquivo "suspeito" (porque não consegue ler o seu código) e diz que possui um "vírus genérico", que na verdade é um termo que tecnicamente não existe. Outros grandes antivírus do mercado como: NOD32, Norton, Symantec e Kaspersky, não apresentaram esse problema, pois diferenciam muito bem um arquivo protegido e cripitografado de um vírus.
+Sem o procedimento que irei explicar abaixo, o Jogo vai fechar durante a atualização. Portanto irei explicar como configurar os arquivos como arquivos confiáveis no antivírus AVG 7.5 e 8.0.
+Esse procedimento não traz problemas, já que os arquivos são confiáveis e também o seu antivírus não será danificado. No AVG 7.5, é necessário desabilitar o Resident Shield antes de jogar.
+Observação: Se aparecer uma janela com a mensagem dizendo Threat Detected! Clique em ignore.
+
+1 – De dois cliques no ícone do AVG 7.5 do lado do relógio.
+2 – De dois cliques no Resident Shild
+3 – Em Properties desmarque a primeira opção, Turn on AVG Free Resident Shild protection
+4 – clique em Aplicar, depois em OK.
+O Ícone do Resident Shield ficou meio escurecido, o que siginifica que está desabilitado, agora você pode jogar normalmente.
+
+Para Reabilitar o Resident Shild no AVG 7.5 (quando parar de jogar)
+
+1 – De dois cliques no ícone do AVG 7.5 do lado do relógio.
+2 – Clique com o botão direito do mouse no ícone do Resident Shild e depois clique em Activate. (Lembrando que ativando, você receberá falsos alertas de vírus sobre os arquivos.
+
+*****************
+*** AVAST 8.0 ***
+*****************
+1 – Execute com dois cliques o ícone do AVG do lado do relógio.
+2 – Execute com dois Cliques no ícone do Resident Shild
+3 – Clique no botão Manage exception
+4 – Marque a opção: Use excludes for the Resident Shild e depois clique no botão Add Patch.
+5 – Na caixa Procurar pasta, procure o diretório de instalação do MU-STYLE, o diretório padrão é: C:\Arquivos de programas\MU-STYLE
+6 – Agora que o diretório de indicação foi selecionado, clique no botão OK.
+7 – Clique no botão Save changes.
+
+Se você fez todos os procedimentos, conforme expliquei acima execute o atalho do MU-STYLE e o Launcher vai atualizar e abrir normalmente.
+Pronto! Agora o seu cliente MU-STYLE está liberado para rodar e o seu antivírus AVG, continua a funcionar sem problemas.
+
+*************
+*** AVIRA ***
+*************
+1 - Abra o Avira AntiVir
+2 - Va até a opção extra
+3 - Configurations: la vc localize uma opção "expert mode" selecione-a
+4 - Va na opção guard
+5 - Scan
+6 - Exception: então vai aparecer ao lado duas opçoes a que vc ira utilizar vai ser a de baixo tem um botão que tem "..." aperte nele então vai aparecer uma tela para escolher o arquivo quer vc deseja que o antivirus não detecte como virus, então vc localiza onde instalou o MU-STYLE, que se vc instalou normalmente fica neste endereço C:\Arquivos de programas\MU-STYLE, encontre o jogar.exe e selecione-o, e ao lado tem o botão add
+então vc clica nele da ok e é so jogar^^.
+
+*************
+*** NOD32 ***
+*************
+1 - Execute com dois cliques o ícone do NOD32 do lado do relógio que fica na sua barra de ferramentas.
+2 - Clique em Configuração no menu a esquerda na jenla do nod32
+3 - Em seguida clique em Alternar para o Modo Avançado (se aparecer um pergunta se quer alternar para modo avançado, clique em sim)
+4 - Agora clique em Antivírus e Antispyware que aparecerá logo abaixo do menu Configuração.
+5 - Então clique em Editar exclusões...
+6 - E em Exclusões, clique em Adicionar e indique a pasta do MU-STYLE que se fora instalado normalmente estará em C:\Arquivos de programas\MU-STYLE , após ter adicionado a pasta, fica dessa maneira C:\Arquivos de programas\MU-STYLE\*.* em seguida clique em OK.
+7 - Se por acaso o NOD32 já estiver enviado os arquivos para quarentena, basta ir em quarentena do NOD32 e restaurá-los (isso depois de ter seguido os passos do 1 ao 5). Para ter acesso à quarentena basta no modo avançado clicar em Ferramentas/Quarentena e procurar os arquivos que estiverem com C:\Arquivos de programas\MU-STYLE antes do nome, clicar com o lado direito do mouse e escolher restaurar e se aparecer uma pergunta, clique em sim.

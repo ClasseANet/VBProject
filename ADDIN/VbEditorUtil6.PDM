@@ -1,0 +1,174 @@
+[Root]
+Most Recent Package=EditorScrpt
+
+
+[Package|EditorScrpt|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Sistemas0\Addin\Package
+
+[Package|EditorScrpt|Configure DAO ISAMs]
+Applicable=Yes
+Excel=No
+Text=No
+Xbase=No
+Paradox=No
+Lotus=No
+Exchange=No
+Jet 2.x=No
+
+[Package|EditorScrpt|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|EditorScrpt|Files Found]
+
+[Package|EditorScrpt|Files Released]
+
+[Package|EditorScrpt|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\SplCtl.ocx=
+C:\WINDOWS\SYSTEM\VbEscritorUtil6.exe=
+C:\WINDOWS\SYSTEM\XBANCO01.dll=
+C:\WINDOWS\SYSTEM\DSR100.dll=
+C:\Arquivos de programas\DevStudio\VB\VB5EXT.OLB=
+C:\Program Files\Microsoft Office\Office\MSO9.DLL=
+
+[Package|EditorScrpt|Out-of-Date Dependency Information]
+
+[Package|EditorScrpt|Files Added]
+
+[Package|EditorScrpt|Files Removed]
+c:\windows\system\comctl32.ocx=
+c:\windows\system\comdlg32.ocx=
+c:\windows\system\expsrv.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\mfc40.dll=
+c:\windows\system\msflxgrd.ocx=
+c:\windows\system\msjet35.dll=
+c:\windows\system\msjint35.dll=
+c:\windows\system\msjter35.dll=
+c:\windows\system\msmask32.ocx=
+c:\windows\system\msrd2x35.dll=
+c:\windows\system\msrepl35.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\msvcrt40.dll=
+c:\arquivos de programas\microsoft visual studio\vb98\wizards\pdwizard\redist\riched32.dll=
+c:\windows\system\richtx32.ocx=
+c:\windows\system\tabctl32.ocx=
+c:\windows\system\threed32.ocx=
+c:\windows\system\vb5db.dll=
+c:\arquivos de programas\devstudio\vb\vb5ext.olb=
+c:\windows\system\vbajet32.dll=
+c:\windows\system\vbescritorutil6.exe=
+c:\winnt\system32\comctl32.ocx=
+c:\winnt\system32\comdlg32.ocx=
+c:\program files\common files\microsoft shared\dao\dao350.dll=
+c:\windows\system\dsactive.dll=
+c:\winnt\system32\expsrv.dll=
+c:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\mdac_typ.exe=
+c:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\mfc40.dll=
+c:\winnt\system32\msflxgrd.ocx=
+c:\winnt\system32\msjet35.dll=
+c:\winnt\system32\msjint35.dll=
+c:\winnt\system32\msjter35.dll=
+c:\winnt\system32\msmask32.ocx=
+c:\program files\microsoft office\office\mso9.dll=
+c:\winnt\system32\msrd2x35.dll=
+c:\winnt\system32\msrepl35.dll=
+c:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\msvcrt40.dll=
+c:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\riched32.dll=
+c:\winnt\system32\richtx32.ocx=
+c:\winnt\system32\tabctl32.ocx=
+c:\winnt\system32\threed32.ocx=
+c:\winnt\system32\vb5db.dll=
+c:\winnt\system32\vbajet32.dll=
+c:\windows\system\xbanco01.dll=
+
+[Package|EditorScrpt|Files In Project]
+C:\WINDOWS\SYSTEM\VbEditorUtil6.dll=Yes
+C:\WINDOWS\SYSTEM\XBANCO01.dll=No
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Office\Office\MSO9.DLL=No
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=No
+C:\WINNT\system32\msjet35.dll=No
+C:\WINNT\system32\MSJTER35.DLL=No
+C:\WINNT\system32\MSJINT35.DLL=No
+C:\WINNT\system32\vbajet32.dll=No
+C:\WINNT\system32\expsrv.dll=No
+C:\WINNT\system32\MSRD2X35.DLL=No
+C:\WINNT\system32\msrepl35.dll=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=No
+C:\WINNT\system32\VB5DB.DLL=No
+C:\Windows\System\DSACTIVE.DLL=No
+C:\WINNT\system32\MSMASK32.OCX=No
+C:\WINNT\system32\MSFLXGRD.OCX=No
+C:\WINNT\system32\THREED32.OCX=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MFC40.DLL=No
+C:\WINNT\system32\TABCTL32.OCX=No
+C:\WINNT\system32\RICHTX32.OCX=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=No
+C:\WINNT\system32\COMCTL32.OCX=No
+C:\WINNT\system32\comdlg32.ocx=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|EditorScrpt|Configure Registry Files]
+Applicable=No
+
+[Package|EditorScrpt|Configure Remote Servers]
+Applicable=No
+
+[Package|EditorScrpt|Install Locations]
+C:\WINDOWS\SYSTEM\VbEditorUtil6.dll=$(AppPath)
+C:\Arquivos de programas\Arquivos comuns\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\SYSTEM\DSR100.dll=$(AppPath)
+C:\WINDOWS\SYSTEM\XBANCO01.dll=$(AppPath)
+C:\WINDOWS\SYSTEM\VbEscritorUtil6.exe=$(WinPath)
+C:\WINDOWS\SYSTEM\SplCtl.ocx=$(WinSysPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.exe=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|EditorScrpt|Configure Shared Files]
+Applicable=Yes
+C:\WINDOWS\SYSTEM\VbEditorUtil6.dll=Yes
+C:\WINDOWS\SYSTEM\DSR100.dll=Yes
+C:\WINDOWS\SYSTEM\XBANCO01.dll=Yes
+
+[Package|EditorScrpt|Distribution]
+Type=single
+Size=
+Title=Vb EditorUtil
+
+[Package|EditorScrpt|Package]
+PackageFolder=C:\Sistemas0\Addin\Package
+ProjectFolder=C:\Sistemas\Dsr\ADDIN
+ServerSideCab=
+File1=C:\Sistemas0\Addin\Package\setup.exe
+File2=C:\Sistemas0\Addin\Package\Setup.Lst
+File3=C:\Sistemas0\Addin\Package\VbEditorUtil6.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

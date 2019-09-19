@@ -1,0 +1,10 @@
+FORMULARIO = 0, 0, 0, 0, C
+CONTROLE = 0, 0, 0, 0, C
+CLASSE = 0, 0, 0, 0, C
+MODULO = 0, 0, 0, 0, C
+FUNCAO = 0, 0, 0, 0, C
+frmODBCLog = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+PROJETO = 0, 0, 0, 0, C
+WizPrj = 0, 0, 0, 0, C
+FrmOpBanco = 110, 110, 717, 554, C, 88, 88, 695, 532, C
+FrmWizPrj = 44, 44, 926, 402, , 66, 66, 673, 510, C

@@ -1,0 +1,10 @@
+TL_Contato = 1, 227, 998, 666, C
+TL_NovoLov = 72, 124, 519, 665, C
+TL_CadContato = 2083, 148, 3072, 709, C
+ActiveLib = 2225, 130, 2672, 671, C
+Bl_Contato = 66, 87, 635, 356, C
+DSR = 61, 169, 906, 653, C
+FrmPaneContato = 0, 105, 633, 374, C, 44, 58, 696, 408, C
+frmNovoLov = 0, 0, 0, 0, C, 44, 58, 739, 326, C
+FrmContato = 146, 143, 972, 684, C, 22, 29, 674, 379, C
+frmCadContato = 2503, 188, 3072, 457, C, 83, 29, 778, 471, C

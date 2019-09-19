@@ -1,0 +1,9 @@
+[SCC]
+SCC=This is a source code control file
+[prjTest.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+
+[CAHtm.vbp]
+SCC_Aux_Path =C:\Ambiente,
+SCC_Project_Name ="$/Sistemas/Activex/HtmlEditor/Dll", YSBAAAAA

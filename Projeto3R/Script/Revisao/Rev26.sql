@@ -1,0 +1,63 @@
+/****************************************************************************
+****************************************************************************/
+--USE G3R;
+if NOt Exists(Select * From VERSAOBD Where IDBD=1) INSERT INTO VERSAOBD(IDBD, DSCBD, VSBD, ATUBD, DTATU, ARQATU) VALUES (1, 'Banco Dpil', '1.0', '0', GetDate(), '');
+UPDATE VERSAOBD SET VSBD='1.0', DTATU=GetDate(), ATUBD='26', ARQATU='Rev26.sql';
+/****************************************************************************
+****************************************************************************/
+
+EXEC sp_unbindefault 'OTPMAQ.NUMTRATAMENTO'
+GO
+Alter Table OTPMAQ ALTER COLUMN NUMTRATAMENTO varchar(150) NULL
+GO
+UPDATE OTPMAQ SET NUMTRATAMENTO= '|GR=1|GR1=1,2,3,4' WHERE IDTPMAQ=1
+go
+UPDATE OTPMAQ SET NUMTRATAMENTO= '|GR=2|GR1=1|GR2=2,3,4' WHERE IDTPMAQ=2
+go
+UPDATE OTPMAQ SET NUMTRATAMENTO= '|GR=1|GR1=1,2,3,4' WHERE IDTPMAQ=3
+go
+Alter Table OLOJA ADD RAZAO varchar(50) NULL
+GO
+Alter Table OLOJA ADD NMFANTASIA varchar(50) NULL
+GO
+Alter Table OLOJA ADD RZABREV varchar(50) NULL
+GO
+Alter Table OLOJA ADD FLGFILIAL int NULL
+GO
+Alter Table OLOJA ADD CODSERVMUNIC varchar(20) NULL
+GO
+Alter Table OLOJA ADD CODSERVFEDERAL varchar(20) NULL
+GO
+Alter Table OLOJA ADD REGESPECIALTRIB INT NULL
+GO
+Alter Table OLOJA ADD SIMPLES INT NULL
+GO
+Alter Table OLOJA ADD TRIBUTACAO INT NULL
+GO
+Alter Table OLOJA ADD INCENTIVOCULT INT NULL
+GO
+EXEC sp_bindefault DF_0,'OLOJA.FLGFILIAL'
+GO
+EXEC sp_bindefault DF_0,'OLOJA.REGESPECIALTRIB'
+GO
+EXEC sp_bindefault DF_1,'OLOJA.SIMPLES'
+GO
+EXEC sp_bindefault DF_1,'OLOJA.TRIBUTACAO'
+GO
+EXEC sp_bindefault DF_0,'OLOJA.INCENTIVOCULT'
+GO
+
+UPDATE OLOJA SET FLGFILIAL=0 
+GO
+UPDATE OLOJA SET CODSERVMUNIC='060201'
+GO
+UPDATE OLOJA SET CODSERVFEDERAL='0602'
+GO
+UPDATE OLOJA SET REGESPECIALTRIB=0 
+GO
+UPDATE OLOJA SET SIMPLES=1
+GO
+UPDATE OLOJA SET TRIBUTACAO=1 
+GO
+UPDATE OLOJA SET INCENTIVOCULT=0 
+GO

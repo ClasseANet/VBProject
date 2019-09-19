@@ -1,0 +1,118 @@
+/****************************************************************************
+****************************************************************************/
+USE G3R;
+if NOt Exists(Select * From VERSAOBD Where IDBD=1) INSERT INTO VERSAOBD(IDBD, DSCBD, VSBD, ATUBD, DTATU, ARQATU) VALUES (1, 'Banco Dpil', '1.0', '0', GetDate(), '');
+UPDATE VERSAOBD SET VSBD='1.0', DTATU=GetDate(), ATUBD='12', ARQATU='Rev12.sql';
+/****************************************************************************
+****************************************************************************/
+
+UPDATE FLAN SET IDDESP=1 WHERE IDFAVORECIDO=1
+GO 
+
+UPDATE USUARIO set DTVALIDAUSU=NULL WHERE IDUSU='DIO'
+GO
+UPDATE COLIGADA SET NMCOLIGADA='GRUPO 3R'
+, RAZAO='3 RIOS DEPILAÇÃO COMERCIO E SERVIÇOS LTDA'
+, TAG='0D44497A61757A7C7A7B0802487C60747D76760907081A06061706090D01'
+WHERE IDCOLIGADA = 1
+GO
+/************************************************
+************************************************/
+ALTER TABLE CVENDA DROP FK_CVENDA_OATEND
+GO
+ALTER TABLE CVENDA DROP COLUMN IDATENDIMENTO
+GO
+UPDATE CVENDA SET DTVENDA=(SELECT MIN(A.DTATEND )
+			FROM OATENDIMENTO A 
+				JOIN OATENDIMENTO_VENDA V ON A.IDATENDIMENTO=V.IDATENDIMENTO
+			WHERE V.IDVENDA=CVENDA.IDVENDA)
+GO			
+
+exec sp_bindefault DF_Now, 'FLAN.DTCADASTRO'
+go
+/************************************************
+************************************************/
+DELETE FROM OCONTATO
+GO
+SET IDENTITY_INSERT OCONTATO on;
+INSERT INTO OCONTATO (IDLOJA, IDCONTATO, DTCADASTRO, PJ, NOME, EMPRESA) VALUES (1, 1, GetDate(), 0, 'Cliente', '');
+INSERT INTO OCONTATO (IDLOJA, IDCONTATO, DTCADASTRO, PJ, NOME, EMPRESA) VALUES (1, 2, GetDate(), 1, 'Dpil', 'Dpil Brasil');
+SET IDENTITY_INSERT OCONTATO off;
+
+exec sp_bindefault DF_1, 'OCONTATO.ATIVO'
+go
+exec sp_bindefault DF_Now, 'OCONTATO.DTCADASTRO'
+go
+/************************************************
+************************************************/
+UPDATE MODULO SET VBSCRIPT='SUB DB_BACKUP()
+   SET NG = CREATEOBJECT("UTILITARIO3R.NG_UTILITARIO")
+   WITH NG
+      SET .SYS=SYS
+      .BACKUP
+   END WITH
+END SUB'
+WHERE IDMODU='BAK';
+
+ALTER TABLE FLAN DROP COLUMN SALDO;
+
+CREATE TABLE [dbo].[GBARCMD](
+	[IDMODU] [varchar](20) NOT NULL,
+	[CODSIS] [varchar](20) NOT NULL,
+	[DSCMODU] [varchar](50) NULL,
+	[GRUPO] [varchar](30) NULL,
+	[ORDEM] [int] NULL,
+	[IMAGEM] [image] NULL,
+ CONSTRAINT [PK_GBARCMD] PRIMARY KEY CLUSTERED 
+([IDMODU] ASC,	[CODSIS] ASC) WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+/************************************************
+************************************************/
+SP_RENAME 'FDESPESA.GRUPO', 'IDGRPDESP';
+go
+ALTER TABLE FDESPESA ADD  TPDESP int NULL
+go
+ALTER TABLE FDESPESA ADD  ALTERSTAMP int NULL
+go
+ALTER TABLE FDESPESA ADD  TIMESTAMP datetime NULL
+go
+sp_unbindefault 'FDESPESA.IDGRPDESP'
+go 
+exec sp_bindefault DF_1, 'FDESPESA.ATIVO'
+go
+exec sp_bindefault DF_0, 'FDESPESA.OCULTO'
+go
+exec sp_bindefault DF_2, 'FDESPESA.TPDESP'
+go
+exec sp_bindefault DF_1, 'FDESPESA.ALTERSTAMP'
+go
+exec sp_bindefault DF_Now, 'FDESPESA.TIMESTAMP'
+go
+CREATE TABLE FGRUPODESP
+(	IDGRPDESP  int  IDENTITY (1,1),
+	DSCGRUPO  varchar(50)  NULL,
+	IDPAI  int  NULL,
+	ALTERSTAMP  integer  NULL ,
+	TIMESTAMP  datetime  NULL)
+go
+ALTER TABLE FGRUPODESP ADD CONSTRAINT PK_GRPDESP PRIMARY KEY   NONCLUSTERED (IDGRPDESP  ASC)
+go
+exec sp_bindefault DF_1, 'FGRUPODESP.ALTERSTAMP'
+go
+exec sp_bindefault DF_Now, 'FGRUPODESP.TIMESTAMP'
+go
+
+SET IDENTITY_INSERT FGRUPODESP on;
+INSERT INTO FGRUPODESP (IDGRPDESP, DSCGRUPO, IDPAI) VALUES (0, 'Sem Classificação', 0);
+SET IDENTITY_INSERT FGRUPODESP off;
+
+ALTER TABLE FDESPESA DROP CONSTRAINT  R_GRP_DESP 
+GO
+ALTER TABLE FDESPESA
+	ADD CONSTRAINT  R_GRP_DESP 
+	FOREIGN KEY (IDGRPDESP) REFERENCES FGRUPODESP(IDGRPDESP)
+	ON UPDATE NO ACTION
+
+go

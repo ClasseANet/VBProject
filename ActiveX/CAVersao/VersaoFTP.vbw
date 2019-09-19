@@ -1,0 +1,5 @@
+ActiveLib = 0, 0, 692, 360, 
+LibVsFTP = 66, 87, 644, 436, C
+FrmVerifVersao = 76, 20, 768, 380, C, -26, -12, 666, 348, C
+FrmCAFTP = 19, 29, 602, 385, C, 73, -8, 714, 552, C
+TL_VerifVersao = 110, 145, 802, 505, 

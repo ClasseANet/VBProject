@@ -1,0 +1,12 @@
+sMenu = 33, 49, 523, 621, , 123, 248, 804, 600, C
+MenuItem = 198, 198, 1020, 642, C
+basFileDialogs = 44, 58, 910, 514, C
+ppgMenu = 0, 0, 0, 0, C, 22, 22, 372, 374, C
+ppgMNGeneral = 0, 0, 0, 0, C, 0, 0, 866, 456, C
+basGDI = 22, 29, 554, 477, Z
+wMenu = 132, 174, 998, 630, C, 22, 22, 351, 374, C
+clsIFceComp = 74, 73, 940, 529, C
+basComp = 154, 203, 1020, 659, I
+ascPaintEffects = 22, 29, 888, 485, C
+DummyForm = 88, 116, 954, 572, C, 44, 44, 373, 396, C
+basChooseColor = 0, 0, 0, 0, C

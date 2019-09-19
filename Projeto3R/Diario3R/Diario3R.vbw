@@ -1,0 +1,9 @@
+ActiveLib = 0, 0, 0, 0, C
+Bl_Diario = 0, 0, 0, 0, C
+DSR = 0, 0, 0, 0, C
+FrmDiario = 0, 0, 0, 0, C, 100, 100, 1002, 486, C
+TL_Diario = 0, 0, 0, 0, C
+NG_Diario = 0, 0, 0, 0, C
+FrmPaneDiario = 0, 0, 0, 0, C, 125, 125, 1027, 511, C
+TL_PaneDiario = 0, 0, 0, 0, C
+BL_P3R = 0, 0, 0, 0, C

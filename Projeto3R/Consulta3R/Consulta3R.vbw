@@ -1,0 +1,10 @@
+ActiveLib = 0, 0, 0, 0, C
+BL_P3R = 0, 0, 0, 0, C
+DSR = 0, 0, 0, 0, C
+TL_FIN001 = 0, 0, 0, 0, C
+FrmFIN001 = 0, 0, 0, 0, C, 50, 50, 952, 436, C
+FrmConsulta3R = 0, 0, 0, 0, C, 75, 75, 977, 461, C
+TL_ShortBar = 0, 0, 0, 0, C
+FrmShortBar = 0, 0, 0, 0, C, 100, 100, 1002, 486, C
+BL_GER3R = 0, 0, 0, 0, C
+TL_Consulta3R = 0, 0, 0, 0, C

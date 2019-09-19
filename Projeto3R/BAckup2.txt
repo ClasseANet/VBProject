@@ -1,0 +1,77 @@
+Public Sub Backup()
+   Dim Sql As String
+   Dim sDBName As String
+   Dim sPathBk As String
+   Dim sFile   As String
+   Dim bResult As Boolean
+
+   Screen.MousePointer = vbHourglass
+      
+   sDBName = mvarSys.XDb.DbName
+   'sPathBk = GetSpecialFolder(38) & "\ClasseA\Admin\Backups\"
+   'Call CriarDiretorio(sPathBk)
+   sPathBk = ""
+   
+   Sql = "DBCC SHRINKDATABASE(N'" & sDBName & "' )"
+   bResult = mvarSys.XDb.Executa(Sql)
+   
+   Sql = "BACKUP DATABASE [" & sDBName & "]"
+   Sql = Sql & " TO  DISK = N'" & sPathBk & sDBName & ".bak'"
+   Sql = Sql & " With NOFORMAT"
+   Sql = Sql & " , INIT"
+   Sql = Sql & " , NAME = N'" & sDBName & "-Full Database Backup'"
+   Sql = Sql & " , SKIP"
+   Sql = Sql & " , NOREWIND"
+   Sql = Sql & " , NOUNLOAD"
+   Sql = Sql & " , STATS = 10;"
+   
+   bResult = mvarSys.XDb.Executa(Sql)
+   
+   
+   Dim sZipFile As String
+   Dim sZipPath As String
+   Dim sZipDest As String
+   Dim sRun As String
+   Dim nResult As Double
+   Dim sRemotePath As String
+   
+   sFile = sDBName & ".bak"
+   sPathBk = ProcuraArquivo(GetSpecialFolder(38) & "Microsoft SQL Server\MSSQL.1\", sFile)
+   If sPathBk <> "" Then
+      sZipFile = sDBName
+      sFile = sPathBk & sFile
+      sZipDest = "C:\"
+      sRemotePath = "/private/Cliente/Banco/"
+      
+      sZipPath = ProcuraArquivo(GetSpecialFolder(38) & "WinZip\", "WINZIP32.EXE")
+      If sZipPath = "" Then
+         sZipPath = ProcuraArquivo(GetSpecialFolder(38) & "WinRar\", "WinRAR.exe")
+         If sZipPath <> "" Then
+            sZipFile = sZipFile & ".rar"
+            sRun = """" & sZipPath & "WinRAR.EXE"" a -s """ & sZipDest & sZipFile & """ """ & sFile & """"
+         End If
+      Else
+         sZipFile = sZipFile & ".zip"
+         sRun = """" & sZipPath & "WINZIP32.EXE"" -min -a -ex -h -o""" & sZipDest & sZipFile & """ """ & sFile & """"
+   
+      End If
+      If sZipPath <> "" Then
+         Call ExcluirArquivo(sZipDest & sZipFile)
+         nResult = Shell(sRun, vbHide)
+         
+         Dim oFtp As Object
+         Set oFtp = CriarObjeto("VersaoFTP.TL_VerifVersao")
+         With oFtp
+            If .ConectarFTP("ftp.classeanet.com.br", "classeanet", "dolphin") Then
+               Call .ExcluirArquivo("/private/Cliente/Banco/" & sZipFile, False)
+                .EnviarArquivo sZipDest, sZipFile, sRemotePath, sZipFile
+               
+               Call ExcluirArquivo(sZipDest & sZipFile)
+               .DesconectarFTP
+            End If
+         End With
+         Set oFtp = Nothing
+      End If
+   End If
+   Screen.MousePointer = vbDefault
+End Sub

@@ -1,0 +1,183 @@
+VERSION 5.00
+Begin VB.PropertyPage ppgMNGeneral 
+   BackColor       =   &H00E0E0E0&
+   Caption         =   "General"
+   ClientHeight    =   4500
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6075
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   4500
+   ScaleWidth      =   6075
+   Begin VB.Frame Frame3 
+      BackColor       =   &H00E0E0E0&
+      Height          =   1575
+      Left            =   60
+      TabIndex        =   0
+      Top             =   60
+      Width           =   5835
+      Begin VB.TextBox Text3 
+         Alignment       =   1  'Right Justify
+         Appearance      =   0  'Flat
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   285
+         Left            =   1980
+         TabIndex        =   3
+         Text            =   "12"
+         Top             =   180
+         Width           =   735
+      End
+      Begin VB.ComboBox Combo1 
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         ItemData        =   "ppgMNGeneral.pgx":0000
+         Left            =   1920
+         List            =   "ppgMNGeneral.pgx":0010
+         Style           =   2  'Dropdown List
+         TabIndex        =   2
+         Top             =   660
+         Width           =   2655
+      End
+      Begin VB.ComboBox Combo2 
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         ItemData        =   "ppgMNGeneral.pgx":0052
+         Left            =   1920
+         List            =   "ppgMNGeneral.pgx":0068
+         Style           =   2  'Dropdown List
+         TabIndex        =   1
+         Top             =   1020
+         Width           =   2655
+      End
+      Begin VB.Label Label3 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Spacing Width"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   120
+         TabIndex        =   6
+         Top             =   240
+         Width           =   1455
+      End
+      Begin VB.Label Label4 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Appaerance:"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   120
+         TabIndex        =   5
+         Top             =   720
+         Width           =   1515
+      End
+      Begin VB.Label Label6 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Highlight Style:"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   120
+         TabIndex        =   4
+         Top             =   1140
+         Width           =   1695
+      End
+   End
+End
+Attribute VB_Name = "ppgMNGeneral"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+
+Private Sub Combo1_Click()
+  Changed = -1
+
+End Sub
+
+
+Private Sub Combo2_Click()
+  Changed = -1
+
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+  Dim i As Long
+  On Error Resume Next
+  For i = 0 To SelectedControls.Count - 1
+   With SelectedControls(i)
+    .Spacing = Val(Text3)
+    .Style = Combo1.ListIndex
+    .HighLightStyle = Combo2.ListIndex
+    .Refresh
+   End With
+  Next
+
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+ With SelectedControls(0)
+    Text3 = .Spacing
+    Combo2.ListIndex = .HighLightStyle
+    Combo1.ListIndex = .Style
+ End With
+ Changed = 0
+End Sub
+
+
+Private Sub Text1_Change()
+  Changed = -1
+End Sub
+
+
+Private Sub Text3_Change()
+ Changed = -1
+End Sub
+
+

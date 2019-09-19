@@ -1,0 +1,125 @@
+<html>
+
+<head>
+<title>Grupo 3R</title>
+<base TARGET="_top">
+<style type="text/css">
+
+  A:hover	{text-decoration:underline;
+ 			color:000000;
+			font-weight:normal}
+		
+  A			{text-decoration: none;
+ 			color: 000000;
+			font-size: 8pt;
+			font-style: normal;
+			font-family: Tahoma;
+			font-weight: normal;
+			line-height: 18px}
+			
+.toolname	{
+	font-family: Times New Roman;
+	font-size: 13.3pt;
+	font-weight: normal;
+	color: "#336666";
+	margin-left: 10px;
+	margin-top: 0px}
+	
+.period	{
+	font-family: Times New Roman;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-left: -20px;
+	color: "#808080";
+	letter-spacing: -2px;
+	line-height: 1px;
+	vertical-align: sub	}
+	
+.vertt	{
+	font-family: Times New Roman;
+	font-size: 13.5pt;
+	font-weight: normal;
+	color: "#808000";
+	margin-left: 10px;
+	margin-top: 0px }
+			
+</style>
+</head>
+<body scroll="yes" topmargin="0" leftmargin="0">
+	<div style="font-size: 12px">
+		<table BGCOLOR="#99BB99" border="0" width="100%">
+        	<tr>				
+		      
+      <td><font color="#FFFFFF"><b>&nbsp;RPS D'pil : @@NMLOJA</b></font></td>
+	        </tr>
+    	</table>
+   	</div>
+   	<br>
+	<div class="vertt">
+		<table width="95%" border="1" cellpadding="0" cellspacing="0" bordercolor="#006600" BGCOLOR="#88BB88">
+        	
+    <tr> 
+      <td><b><font color="#000000">&nbsp;Lote : </font></b><font color="#000000"><b>@@CODLOTE</b></font></td>
+	        </tr>
+    	</table>
+   	</div>
+	<br>
+	<div class="vertt"> 	
+	  <table bordercolor=#99CC99 border="1" cellpadding=0 cellspacing=0>
+		<tr> 
+		  <td width="100" bgcolor="#E8FADC"><strong><font size="2"><font color="#006633">&nbsp;Data 
+			Inicio........:</font> </font></strong></td>
+		  <td width="100"> <p align="center"><font size="2">@@DTINI</font></p></td>
+		</tr>
+		<tr> 
+		  <td bgcolor="#E8FADC"><strong><font size="2"><font color="#006633">&nbsp;Data 
+			Fim...........:</font></font></strong></td>
+		  <td><p align="center"><font size="2">@@DTFIM</font></p></td>
+		</tr>
+		<tr> 
+		  <td bgcolor="#E8FADC"><strong><font color="#006633" size="2">&nbsp;Quantidade......:</font></strong></td>
+		  <td> <p align="center"><font size="2">@@QTDRPS</font></p></td>
+		</tr>
+		<tr> 
+		  <td bgcolor="#E8FADC"><strong><font color="#006633" size="2">&nbsp;Valor Total...:</font></strong></td>
+		  <td> <p align="right"><font size="2">@@VLTOTAL</font></p></td>
+		</tr>
+	  </table>     
+      <font size="1">@@VLVENDA</font>
+  </div>
+            
+<!--<div style="margin-top: 0; margin-bottom: -5; font-size: 1px">
+  <span class="period">
+	 <p>..............................................................................................................................................................................................................................................</p>
+  </span>
+</div> 
+<div class="toolname">    
+  <p><b><font size="3">@@MES</font></b></p>
+</div>
+<div style="margin-top: 0; margin-bottom: -5; font-size: 1px">
+   <span class="period">
+         <p>..............................................................................................................................................................................................................................................</p>
+      </span>
+   </div> 
+-->   
+<div class="vertt">    
+	<table width="95%" border="1" cellpadding="0" cellspacing="0" bordercolor="#006600" BGCOLOR="#88BB88">
+		
+    <tr> 
+      <td><font color="#FFFFFF"><b>&nbsp;Detalhe</b></font></td>
+		</tr>
+	</table>
+	
+  <font color="#999933" size="2"><font color="#000000" face="Courier New, Courier, mono"><em>@@DETALHE</em></font></font>
+</div>
+<div style="margin-top: -20; margin-bottom: 40; font-size: 1px">
+      <span class="period">
+         ..............................................................................................................................................................................................................................................
+      </span>
+   </div>
+   <div style="margin-top: -30; font-size: 1px">
+   </div>
+   <div class="toolname">
+   </div>
+</body>
+</html>

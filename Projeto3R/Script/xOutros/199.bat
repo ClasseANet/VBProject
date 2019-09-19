@@ -1,0 +1,1 @@
+osql -E -S MASTER\SQLEXPRESS -i 3R99_Freguesia.sql 	-o Result99.txt

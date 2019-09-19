@@ -1,0 +1,479 @@
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:04:38
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:05:18
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:06:35
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:07:19
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:09:41
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:21:26
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:21:55
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:31:43
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 07-OCT-99 21:38:34
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=10.2.17.6)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=10.2.17.6)(Port=1526)))(CONNECT_DATA=(SID=I1SP)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 14-OCT-99 14:59:55
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 530
+    TNS-00530: Protocol adapter error
+    nt secondary err code: 71
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 14-OCT-99 14:59:55
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=10.2.17.6)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=10.2.17.6)(Port=1526)))(CONNECT_DATA=(SID=I1SP)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 14-OCT-99 16:12:09
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 530
+    TNS-00530: Protocol adapter error
+    nt secondary err code: 71
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 14-OCT-99 16:12:10
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 19-OCT-99 18:03:18
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 19-OCT-99 18:03:18
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 19-OCT-99 18:04:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 19-OCT-99 18:04:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 19-OCT-99 18:04:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 26-OCT-99 11:58:03
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 26-OCT-99 11:58:22
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=10.2.17.6)(Port=1521))(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=10.2.17.6)(Port=1526)))(CONNECT_DATA=(SID=I1SP)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 26-OCT-99 12:15:42
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12535
+    TNS-12535: TNS:operation timed out
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Operation timed out
+    nt secondary err code: 60
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal OSN connect error 12203, connecting to:
+ (DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=BEQ)(PROGRAM=oracle80)(ARGV0=oracle80ORCL)(ARGS='(DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))')))(CONNECT_DATA=(SID=ORCL)(CID=(PROGRAM=VB5.EXE)(HOST=TECAPLUS03)(USER=tecaplus_rj))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Oracle Bequeath NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 2.3.4.0.0 - Production
+  Time: 26-OCT-99 12:15:42
+  Tracing not turned on.
+  Tns error struct:
+    nr err code: 12203
+    TNS-12203: TNS:unable to connect to destination
+    ns main err code: 12560
+    TNS-12560: TNS:protocol adapter error
+    ns secondary err code: 0
+    nt main err code: 102
+    TNS-00102: Keyword-Value binding operation error
+    nt secondary err code: 0
+    nt OS err code: 0

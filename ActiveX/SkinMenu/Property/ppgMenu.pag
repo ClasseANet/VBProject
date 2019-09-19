@@ -1,0 +1,901 @@
+VERSION 5.00
+Begin VB.PropertyPage ppgMenu 
+   BackColor       =   &H00E0E0E0&
+   Caption         =   "Menu"
+   ClientHeight    =   4755
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5880
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   317
+   ScaleMode       =   3  'Pixel
+   ScaleWidth      =   392
+   Begin VB.CommandButton Command8 
+      Caption         =   "Import"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   4740
+      TabIndex        =   26
+      ToolTipText     =   "Import structure  from VB *.FRM file"
+      Top             =   2280
+      Width           =   975
+   End
+   Begin VB.ComboBox Combo1 
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   315
+      ItemData        =   "ppgMenu.pgx":0000
+      Left            =   3600
+      List            =   "ppgMenu.pgx":0002
+      Style           =   2  'Dropdown List
+      TabIndex        =   25
+      Top             =   480
+      Width           =   2175
+   End
+   Begin VB.CheckBox chkUseMask 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "&UseMaskColor"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000008&
+      Height          =   285
+      Left            =   2400
+      TabIndex        =   22
+      Tag             =   "E"
+      Top             =   1620
+      Width           =   1365
+   End
+   Begin VB.PictureBox picImg 
+      AutoRedraw      =   -1  'True
+      BackColor       =   &H00E0E0E0&
+      BorderStyle     =   0  'None
+      Height          =   480
+      Index           =   0
+      Left            =   900
+      ScaleHeight     =   32
+      ScaleMode       =   3  'Pixel
+      ScaleWidth      =   32
+      TabIndex        =   21
+      TabStop         =   0   'False
+      Top             =   1560
+      Width           =   480
+   End
+   Begin VB.CommandButton btnBrowse 
+      Height          =   375
+      Index           =   0
+      Left            =   1440
+      Picture         =   "ppgMenu.pgx":0004
+      Style           =   1  'Graphical
+      TabIndex        =   20
+      Tag             =   "E"
+      ToolTipText     =   "Browse Picture"
+      Top             =   1620
+      Width           =   375
+   End
+   Begin VB.CommandButton btnClear 
+      Height          =   375
+      Index           =   0
+      Left            =   1800
+      Picture         =   "ppgMenu.pgx":014E
+      Style           =   1  'Graphical
+      TabIndex        =   19
+      Tag             =   "E"
+      ToolTipText     =   "Clear Picture"
+      Top             =   1620
+      Width           =   375
+   End
+   Begin VB.CommandButton cmdBrowse 
+      Caption         =   "..."
+      Height          =   285
+      Left            =   4800
+      Style           =   1  'Graphical
+      TabIndex        =   17
+      Tag             =   "E"
+      Top             =   1620
+      Width           =   285
+   End
+   Begin VB.TextBox Text4 
+      Appearance      =   0  'Flat
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   285
+      Left            =   1080
+      TabIndex        =   16
+      Text            =   "Text4"
+      Top             =   840
+      Width           =   3495
+   End
+   Begin VB.CommandButton Command7 
+      Caption         =   "^"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   315
+      Left            =   1200
+      TabIndex        =   14
+      Top             =   2340
+      Width           =   315
+   End
+   Begin VB.CommandButton Command6 
+      Caption         =   "v"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   315
+      Left            =   840
+      TabIndex        =   13
+      Top             =   2340
+      Width           =   315
+   End
+   Begin VB.CommandButton Command5 
+      Caption         =   ">"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   315
+      Left            =   480
+      TabIndex        =   12
+      Top             =   2340
+      Width           =   315
+   End
+   Begin VB.CommandButton Command4 
+      Caption         =   "<"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   315
+      Left            =   120
+      TabIndex        =   11
+      Top             =   2340
+      Width           =   315
+   End
+   Begin VB.CommandButton Command3 
+      Caption         =   "&Delete"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   3720
+      TabIndex        =   10
+      Top             =   2280
+      Width           =   915
+   End
+   Begin VB.CommandButton Command2 
+      Caption         =   "&Insert"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   2700
+      TabIndex        =   9
+      ToolTipText     =   "Insert an item under selection"
+      Top             =   2280
+      Width           =   975
+   End
+   Begin VB.CommandButton Command1 
+      Caption         =   "&Next"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   1800
+      TabIndex        =   8
+      Top             =   2280
+      Width           =   855
+   End
+   Begin VB.ListBox List1 
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   1815
+      Left            =   120
+      TabIndex        =   7
+      Top             =   2760
+      Width           =   5655
+   End
+   Begin VB.CheckBox Check3 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Visible"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000008&
+      Height          =   195
+      Left            =   2400
+      TabIndex        =   6
+      Top             =   1200
+      Width           =   1095
+   End
+   Begin VB.CheckBox Check2 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Enabled"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000008&
+      Height          =   195
+      Left            =   1260
+      TabIndex        =   5
+      Top             =   1200
+      Width           =   1155
+   End
+   Begin VB.CheckBox Check1 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Checked"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H80000008&
+      Height          =   195
+      Left            =   60
+      TabIndex        =   4
+      Top             =   1200
+      Width           =   1035
+   End
+   Begin VB.TextBox Text2 
+      Appearance      =   0  'Flat
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   285
+      Left            =   1080
+      TabIndex        =   3
+      Text            =   "Text2"
+      Top             =   480
+      Width           =   2415
+   End
+   Begin VB.TextBox Text1 
+      Appearance      =   0  'Flat
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   285
+      Left            =   1080
+      TabIndex        =   1
+      Text            =   "Text1"
+      Top             =   120
+      Width           =   2415
+   End
+   Begin VB.Label Label4 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "ShortCut:"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   195
+      Left            =   3600
+      TabIndex        =   24
+      Top             =   240
+      Width           =   1395
+   End
+   Begin VB.Shape Shape2 
+      BorderColor     =   &H80000005&
+      Height          =   675
+      Left            =   60
+      Top             =   1500
+      Width           =   2235
+   End
+   Begin VB.Label Label3 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "&Picture"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   195
+      Left            =   120
+      TabIndex        =   23
+      Top             =   1740
+      Width           =   735
+   End
+   Begin VB.Shape Shape1 
+      BorderColor     =   &H80000005&
+      Height          =   675
+      Left            =   2280
+      Top             =   1500
+      Width           =   2895
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "C&olour:"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   195
+      Index           =   5
+      Left            =   3960
+      TabIndex        =   18
+      Tag             =   "E"
+      Top             =   1680
+      Width           =   525
+   End
+   Begin VB.Shape shpCol 
+      FillColor       =   &H00FFFFFF&
+      FillStyle       =   0  'Solid
+      Height          =   285
+      Left            =   4485
+      Top             =   1620
+      Width           =   315
+   End
+   Begin VB.Label Label5 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Description"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   255
+      Left            =   60
+      TabIndex        =   15
+      Top             =   840
+      Width           =   915
+   End
+   Begin VB.Label Label2 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Name/Key"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   195
+      Left            =   60
+      TabIndex        =   2
+      Top             =   540
+      Width           =   915
+   End
+   Begin VB.Label Label1 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Caption"
+      BeginProperty Font 
+         Name            =   "Tahoma"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   195
+      Left            =   60
+      TabIndex        =   0
+      Top             =   180
+      Width           =   915
+   End
+End
+Attribute VB_Name = "ppgMenu"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+
+Dim SelItem As New MenuItem
+Dim SelIDX As Long
+Dim MenuTree As New Collection
+Dim MN As sMenu
+Dim Flag As Integer
+Private Sub ImportFromFrm(File As String)
+ Dim n As Long, st As String, idn, Ar() As String, i As Long
+ Dim o As New MenuItem, op As Boolean
+ 
+ idn = -1
+ n = FreeFile
+ Open File For Input As n
+ Do Until EOF(n)
+    Line Input #n, st
+    st = Trim$(st)
+    If Mid(st, 1, 9) = "Attribute" Then Exit Do
+    If InStr(st, "VB.Menu") > 0 Then
+       If op Then MenuTree.Add o
+       op = True
+       idn = idn + 1
+       Set o = New MenuItem
+       o.Ident = idn
+    End If
+'    If st = "End" Then
+'       If op = True Then
+'          MenuTree.Add o
+'          idn = idn - 1
+'          If idn = 0 Then op = False
+'       End If
+'    End If
+    If op Then
+       Ar = Split(st, " ")
+       i = UBound(Ar)
+       If Ar(0) = "End" Then
+         ' MenuTree.Add o
+          idn = idn - 1
+          If idn < 0 Then
+             MenuTree.Add o
+             op = False
+          End If
+       ElseIf Ar(0) = "Caption" Then
+          i = InStr(st, "=")
+          o.Caption = Trim$(Mid(st, i + 1, 1000))
+          o.Caption = Mid(o.Caption, 2, Len(o.Caption) - 2)
+       ElseIf Ar(0) = "Begin" Then
+           If Ar(1) = "VB.Menu" Then o.Name = Ar(2)
+       End If
+    End If
+ Loop
+ 
+ Close n
+ 
+ UpdateProp
+
+End Sub
+
+Sub InsertItem()
+  Dim o As New MenuItem
+  Dim i As Long
+  
+  o.Ident = SelItem.Ident
+  MenuTree.Add o, , , SelIDX + 1
+  UpdateProp
+ ' SelIDX
+  
+ ' List1.AddItem ""
+ ' List1.ListIndex = List1.ListCount - 1
+ ' Text1 = ""
+ ' Text2 = ""
+End Sub
+
+Sub RefreshItem(Index As Long)
+   Dim s As String, idn As String
+   s = SelItem.Caption
+   idn = String$(SelItem.Ident * 3, ".")
+   s = Replace(s, "&", "")
+   s = idn & s
+   List1.List(Index) = s
+End Sub
+
+Sub UpdateProp()
+   
+   Dim i As Long, s As String, idn As String
+   Dim L As Long, o As New MenuItem
+   
+   List1.Visible = False
+   L = List1.ListIndex
+   List1.Clear
+   
+   If MenuTree.Count = 0 Then MenuTree.Add o
+   
+   For i = 1 To MenuTree.Count
+       s = MenuTree(i).Caption
+       idn = String$(MenuTree(i).Ident * 3, ".")
+       s = Replace(s, "&", "")
+       s = idn & s
+       List1.AddItem s
+   Next
+   
+   If L >= 0 Then
+      If L < List1.ListCount Then
+         List1.ListIndex = L
+      Else
+         List1.ListIndex = List1.ListCount - 1
+      End If
+   Else
+      List1.ListIndex = 0
+   End If
+   
+   List1.Visible = True
+End Sub
+
+Private Sub btnBrowse_Click(Index As Integer)
+ Dim F$
+ F$ = SelectFile$(hwnd, "Browse Picture", "Pictures (*.bmp;*.dib;*.gif;*.ico;*.jpg;*.rle)|*.bmp;*.dib;*.gif;*.ico;*.jpg;*.rle|All Files (*.*)|*.*", 0, "", "", "BMP", fdmOpenFile)
+ If F$ <> "" Then
+  On Error Resume Next
+   picImg(Index).BackColor = shpCol.FillColor
+   picImg(Index).Picture = LoadPicture(F$)
+   picImg(Index).Picture = picImg(Index).Image
+   Set SelItem.APicture(0) = picImg(Index).Image
+ 
+ '  If txtField(3) = "" Then txtField(3) = RemoveExtension$(GetFile$(F$))
+ '  If txtField(1) = "" Then txtField(1) = RemoveExtension$(GetFile$(F$))
+   Changed = -1
+   If Err Then MsgBox Error$, vbExclamation
+  On Error GoTo 0
+ End If
+
+End Sub
+
+Private Sub btnClear_Click(Index As Integer)
+ Set picImg(Index).Picture = Nothing
+ Changed = -1
+
+End Sub
+
+
+Private Sub Check1_Click()
+  If Flag Then Exit Sub
+  SelItem.Checked = Check1 = 1
+  Changed = -1
+
+End Sub
+
+Private Sub Check2_Click()
+  If Flag Then Exit Sub
+  SelItem.Enabled = Check2 = 1
+  Changed = -1
+
+End Sub
+
+
+Private Sub Check3_Click()
+  If Flag Then Exit Sub
+  SelItem.Visible = Check3 = 1
+  Changed = -1
+End Sub
+
+
+Private Sub chkUseMask_Click()
+  Changed = -1
+  SelItem.UseMaskColor = chkUseMask = 1
+End Sub
+
+Private Sub cmdBrowse_Click()
+ Dim c As Long
+ c = SelectColor(hwnd, shpCol.FillColor, 0)
+ If c <> -1 Then
+  shpCol.FillColor = c
+  picImg(0).BackColor = c
+  SelItem.MaskColor = c
+  Changed = -1
+ End If
+
+End Sub
+
+
+Private Sub Command1_Click()
+  If List1.ListIndex < List1.ListCount - 1 Then List1.ListIndex = List1.ListIndex + 1
+End Sub
+
+Private Sub Command2_Click()
+  InsertItem
+  List1.ListIndex = SelIDX + 1
+
+End Sub
+
+
+Private Sub Command3_Click()
+  Dim i As Long
+  
+  If SelIDX > 0 Then
+    MenuTree.Remove SelIDX + 1
+    UpdateProp
+  End If
+  
+  
+End Sub
+
+Private Sub Command4_Click()
+  If SelItem.Ident > 0 Then
+     SelItem.Ident = SelItem.Ident - 1
+     RefreshItem SelIDX
+  End If
+End Sub
+
+
+Private Sub Command5_Click()
+  SelItem.Ident = SelItem.Ident + 1
+  RefreshItem SelIDX
+End Sub
+
+Private Sub Command6_Click()
+  Dim i As Long
+  Dim o As MenuItem
+  
+  If List1.ListCount > 0 And SelIDX < List1.ListCount - 1 Then
+    Set o = MenuTree(SelIDX + 1)
+    MenuTree.Remove SelIDX + 1
+    If SelIDX + 2 < MenuTree.Count Then
+       MenuTree.Add o, , SelIDX + 2
+    Else
+       MenuTree.Add o
+    End If
+    List1.ListIndex = List1.ListIndex + 1
+    UpdateProp
+  End If
+  Set o = Nothing
+  
+End Sub
+
+Private Sub Command7_Click()
+  Dim i As Long
+  Dim o As MenuItem
+  
+  If SelIDX > 0 Then
+    Set o = MenuTree(SelIDX + 1)
+    MenuTree.Remove SelIDX + 1
+    MenuTree.Add o, , SelIDX
+    List1.ListIndex = List1.ListIndex - 1
+    UpdateProp
+  End If
+  Set o = Nothing
+End Sub
+
+
+Private Sub Command8_Click()
+ Dim F As String
+ F = SelectFile$(hwnd, "Browse Visual Basic Forms", "VB Form (*.frm)|*.frm|All Files (*.*)|*.*", 0, "", "", "FRM", fdmOpenFile)
+ If F <> "" Then
+    ImportFromFrm F
+ End If
+End Sub
+
+Private Sub List1_Click()
+Flag = True
+ SelIDX = List1.ListIndex
+ Set SelItem = MenuTree(SelIDX + 1)
+ Set picImg(0).Picture = SelItem.APicture(0)
+ Text1 = SelItem.Caption
+ Text2 = SelItem.Name
+ Text4 = SelItem.Description
+ Check1 = Abs(SelItem.Checked)
+ Check2 = Abs(SelItem.Enabled)
+ Check3 = Abs(SelItem.Visible)
+ chkUseMask = Abs(SelItem.UseMaskColor)
+ shpCol.FillColor = SelItem.MaskColor
+ picImg(0).BackColor = SelItem.MaskColor
+ 
+Flag = False
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+ Dim i As Long, j As Long
+ 
+ 
+ With MN
+    .Changed = True
+    For i = 1 To .MenuTree.Count
+        .MenuTree.Remove 1
+    Next
+    For i = 1 To MenuTree.Count
+        .MenuTree.Add MenuTree(i)
+    Next
+    .Refresh
+ End With
+
+End Sub
+
+Private Sub PropertyPage_Initialize()
+ Dim i As Long
+ Combo1.AddItem "<none>"
+ 
+ For i = 65 To 65 + 24
+  Combo1.AddItem "CTRL+" & Chr$(i)
+ Next
+ 
+ For i = 1 To 12
+  Combo1.AddItem "F" & CStr(i)
+ Next
+ For i = 1 To 12
+  Combo1.AddItem "CTRL+F" & CStr(i)
+ Next
+ For i = 1 To 12
+  Combo1.AddItem "MAIUSC+F" & CStr(i)
+ Next
+ For i = 1 To 12
+  Combo1.AddItem "CTRL+MAIUSC+F" & CStr(i)
+ Next
+ 
+ Combo1.ListIndex = 0
+End Sub
+
+
+Private Sub PropertyPage_SelectionChanged()
+ If TypeOf SelectedControls(0) Is sMenu Then
+  If MN Is Nothing Then
+   GoSub LoadProperties
+  ElseIf MN.hwnd <> SelectedControls(0).hwnd Then
+   GoSub LoadProperties
+  End If
+ End If
+Exit Sub
+
+LoadProperties:
+ CleanUP
+ Dim i As Long
+ Set MN = SelectedControls(0)
+ For i = 1 To MN.MenuTree.Count
+     MenuTree.Add MN.MenuTree(i)
+ Next
+ UpdateProp
+' If TB.ButtonCount Then
+'  hsbIDX.Max = TB.ButtonCount
+'  hsbIDX_Change
+' Else
+'  SetTagControls
+' End If
+' Changed = 0
+Return
+
+End Sub
+
+
+Private Sub CleanUP()
+  Dim i As Long
+  For i = 1 To MenuTree.Count
+      MenuTree.Remove 1
+  Next
+End Sub
+
+
+
+
+Private Sub Text1_Change()
+  
+  If Flag Then Exit Sub
+  
+  SelItem.Caption = Text1
+  RefreshItem SelIDX
+  Changed = -1
+
+End Sub
+
+
+
+
+Private Sub Text2_Change()
+  If Flag Then Exit Sub
+  
+  SelItem.Name = Text2
+  Changed = -1
+
+End Sub
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+  Changed = -1
+
+End Sub
+
+
+Private Sub Text4_Change()
+  If Flag Then Exit Sub
+  
+  SelItem.Description = Text4
+  Changed = -1
+
+End Sub
+
+

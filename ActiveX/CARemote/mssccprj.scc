@@ -1,0 +1,11 @@
+[SCC]
+SCC=This is a source code control file
+[Setup.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+[Setup3R.vbp]
+SCC_Project_Name=this project is not under source code control
+SCC_Aux_Path=<This is an empty string for the mssccprj.scc file>
+[CARemote.vbp]
+SCC_Project_Name ="$/Sistemas/Activex/CARemote", TRAAAAAA
+SCC_Aux_Path =C:\Ambiente,

@@ -1,0 +1,4 @@
+VBGROUP 5.0
+StartupProject=VbEditorUtil6.VBP
+Project=..\..\DLL\Dsr100.vbp
+Project=..\..\DLL\XBANCO01.vbp

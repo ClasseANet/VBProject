@@ -1,0 +1,92 @@
+;*** BEGIN **********************************************************
+;**                                                                **
+;** Automatically generated on: Tue Dec 26 16:10:06 2006           **
+;**                                                                **
+;** MakeCAB Version: (32) 1.00.603.4 (06/25/98)                     **
+;**                                                                **
+;*** BEGIN **********************************************************
+[disk list]
+1,Disk 1
+[cabinet list]
+1,1,CRX.CAB
+[file list]
+1,0,Setup.Lst,10360
+1,0,setup.exe,139776
+1,1,CRX.DLL,36864
+1,1,MSVBVM60.DLL,1385744
+1,1,OLEAUT32.DLL,598288
+1,1,OLEPRO32.DLL,164112
+1,1,ASYCFILT.DLL,147728
+1,1,STDOLE2.TLB,17920
+1,1,COMCAT.DLL,22288
+1,1,crviewer.dll,1190024
+1,1,craxdrt.dll,8205824
+1,1,gdiplus.dll,1645320
+1,1,usp10.dll,315664
+1,1,sviewhlp.dll,162952
+1,1,craxddrt.dll,13287424
+1,1,cslibu-2-0-0.dll,1654784
+1,1,msvcr71.dll,348160
+1,1,MFC71u.dll,1047552
+1,1,crtowords_en.dll,9728
+1,1,ufmanager.dll,81920
+1,1,u2l2000.dll,14848
+1,1,u2lcom.dll,46592
+1,1,u2ldts.dll,14336
+1,1,u2lexch.dll,19968
+1,1,u2lfinra.dll,106496
+1,1,u252000.dll,14336
+1,1,u25dts.dll,14336
+1,1,u25samp1.dll,13824
+1,1,Implode.dll,18944
+1,1,crqe.dll,1912832
+1,1,crdb_ado.dll,425984
+1,1,crdb_dao.dll,217088
+1,1,crdb_odbc.dll,396288
+1,1,cxlibw-2-6.dll,1261568
+1,1,libOCASecurityw-1-6.dll,770048
+1,1,ebus-3-3-2-4.dll,1728512
+1,1,libOCAHelperw-2-13.dll,1470464
+1,1,querybuilder.dll,204800
+1,1,sscsdk80.dll,1363968
+1,1,chartui.dll,2879488
+1,1,CRAnalyzer.dll,184320
+1,1,p2ixbse.dll,184320
+1,1,crdb_dictionary.dll,1478747
+1,1,filedialog.dll,516608
+1,1,sacommoncontrols.dll,808960
+1,1,crxf_pdf.dll,425984
+1,1,ExportModeller.dll,708608
+1,1,crtslv.dll,117248
+1,1,crxf_rtf.dll,487424
+1,1,crxf_wordw.dll,258048
+1,1,crxf_xls.dll,843776
+1,1,u2fcr.dll,86016
+1,1,u2fsepv.dll,36864
+1,1,u2ftext.dll,184320
+1,1,u2fxml.dll,176128
+1,1,u2ddisk.dll,39424
+1,1,u2dpost.dll,102400
+1,1,u2dapp.dll,61440
+1,1,keycode.dll,1458176
+1,1,crdeploy.reg,166
+1,1,saxserialize.dll,212992
+1,1,saxmlserialize.dll,138752
+1,1,sacommlayer.dll,287744
+1,1,prompt.dll,1253376
+1,1,ParameterDesigner.dll,576512
+1,1,crlov.dll,1413120
+1,1,xerces-c_2_1_0.dll,1466368
+1,1,atl71.dll,89088
+1,1,etc-1-0-12-3.dll,86016
+1,1,msvcp71.dll,499712
+1,1,fssl-1-2-1-1.dll,585728
+1,1,SETUP1.EXE,249856
+1,1,VB6STKIT.DLL,101888
+1,1,ST6UNST.EXE,73216
+1,1,0.REG,166
+;*** END ************************************************************
+;**                                                                **
+;** Automatically generated on: Tue Dec 26 16:10:06 2006           **
+;**                                                                **
+;*** END ************************************************************

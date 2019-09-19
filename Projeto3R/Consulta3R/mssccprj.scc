@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Consulta3R.vbp]
+SCC_Aux_Path =C:\Ambiente,
+SCC_Project_Name ="$/Sistemas/Dsr/Projeto3R/Consulta3R", GNBAAAAA
+
+[Gerencia3R.vbp]
+SCC_Aux_Path = "C:\Ambiente"
+SCC_Project_Name = "$/Sistemas/Dsr/Projeto3R/Gerencia3R", VNBAAAAA

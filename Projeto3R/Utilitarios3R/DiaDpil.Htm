@@ -1,0 +1,331 @@
+<html>
+
+<head>
+<title>Grupo 3R</title>
+<base TARGET="_top">
+<style type="text/css">
+
+  A:hover	{text-decoration:underline;
+ 			color:000000;
+			font-weight:normal}
+		
+  A			{text-decoration: none;
+ 			color: 000000;
+			font-size: 8pt;
+			font-style: normal;
+			font-family: Tahoma;
+			font-weight: normal;
+			line-height: 18px}
+			
+.toolname	{
+	font-family: Times New Roman;
+	font-size: 13.3pt;
+	font-weight: normal;
+	color: "#336666";
+	margin-left: 10px;
+	margin-top: 0px}
+	
+.period	{
+	font-family: Times New Roman;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-left: -20px;
+	color: "#808080";
+	letter-spacing: -2px;
+	line-height: 1px;
+	vertical-align: sub	}
+	
+.vertt	{
+	font-family: Times New Roman;
+	font-size: 13.5pt;
+	font-weight: normal;
+	color: "#808000";
+	margin-left: 10px;
+	margin-top: 0px }
+			
+</style>
+</head>
+<body scroll="yes" topmargin="0" leftmargin="0">
+	<div style="font-size: 12px">
+		<table BGCOLOR="#99BB99" border="0" width="100%">
+        	<tr>				
+		      <td><font color="#FFFFFF"><b>Diário D'pil : @@NMLOJA</b></font></td>
+	        </tr>
+    	</table>
+   	</div>
+   	<br>
+	<div class="vertt">
+		<table width="95%" border="1" cellpadding="0" cellspacing="0" bordercolor="#006600" BGCOLOR="#88BB88">
+        	<tr>				
+		      <td><font color="#000000"><b>@@DIA</b></font></td>
+	        </tr>
+    	</table>
+   	</div>
+	<br>
+	<div class="vertt"> 
+	<table bordercolor=#99CC99 border="1" cellpadding=0 cellspacing=0>
+		<tr bgcolor="#E8FADC"> 
+		  <td><strong><font size="2"><font color="#006633" size="2">&nbsp;</font></font></strong></td>
+		  <td><div align="center"><font size="2"><strong><font color="#006600">Qtd.</font></strong></font></div></td>
+		  <td><div align="center"><font size="2"><strong><font color="#006600">Valor</font></strong></font></div></td>
+		</tr>
+	    <tr> 
+	      <td width="90" bgcolor="#E8FADC"><strong><font size="2"><font color="#006633">Sess&otilde;es</font> </font></strong></td>
+	      <td width="80"> <p align="center"><font size="2">@@QTDSDIA</font></p></td>
+    	  <td width="80"> <p align="right"><font size="2">@@VLSDIA</font></p></td>
+	    </tr>
+    	<tr> 
+			<td bgcolor="#E8FADC"><strong><font size="2"><font color="#006633">Produtos</font></font></strong></td>
+	      	<td><p align="center"><font size="2">@@QTDPDIA</font></p></td>
+    	  	<td><p align="right"><font size="2">@@VLPDIA</font></p></td>
+	    </tr>
+    	<tr> 
+			<td bgcolor="#E8FADC"><strong><font color="#006633" size="2">Testes </font></strong></td>
+			<td> <p align="center"><font size="2">@@QTDTDIA</font></p></td>
+			<td> <p align="right"><font size="2">--</font></p></td>
+	    </tr>
+    	<tr bgcolor="#99CC99"> 
+			<td height="17"><div align="right"><font color="#000000"><strong><font size="2"><strong>Total:</strong></font></strong></font></div></td>
+			<td colspan="2"><p align="right"><font color="#000000" size="2"><b>@@VLTDIA</b></font></p></td>
+		</tr>
+	</table>
+  	<br>
+	<table bordercolor=#99CC99 border="1" cellpadding=0 cellspacing=0>
+    	<tr bgcolor="#C7F2AE"> 
+      		<td colspan="2" bgcolor="#E8FADC"><div align="center"><b><font color="#006600" size="2">FORMA DE PAGAMENTO</font></b></div></td>
+	    </tr>
+    	<tr> 
+     		<td Width="91" bgcolor="#E8FADC"><b><font color="#006600" size="2">Dinheiro</font></b></td>
+			<td Width="129"> <p align="right"><font size="2">@@VLDINDIA</font></p></td>
+    	</tr>
+		<tr> 			<td bgcolor="#E8FADC"><b><font color="#006600" size="2">Débito</font></b></td>
+
+			<td><div align="right"><font size="2">@@VLDEBDIA</font></div></td>
+		</tr>
+		<tr> 
+			<td bgcolor="#E8FADC"><b><font color="#006600" size="2">Crédito</font></b></td>
+			<td><div align="right"><font size="2">@@VLCREDIA</font></div></td>
+		</tr>
+		<tr> 
+			<td bgcolor="#E8FADC"><strong><font color="#006600" size="2">Cheque</font></strong></td>
+			<td> <div align="right"><font size="2">@@VLCHEDIA</font></div></td>
+		</tr>
+		<tr bgcolor="#99CC99"> 
+      		<td><div align="right"><b><font color="#000000" size="2">Total:</font></b></div></td>
+      		<td><div align="right"><b><font color="#000000" size="2">@@VLTDIA</font></b></div></td>
+    </tr>
+  </table>
+  <br>
+    <p><font color="#999933" size="2">
+		<b><em>Conta Caixa :</em></b> 
+		<font color="#000000"><em>@@VLCAIXADIA</em></font><br>
+		<b><em>Estoque : </em></b>
+		<font color="#000000" size="2"><em>@@QTDPROD</em></font>
+	</font></p>
+</div>
+            
+<!--<div style="margin-top: 0; margin-bottom: -5; font-size: 1px">
+  <span class="period">
+	 <p>..............................................................................................................................................................................................................................................</p>
+  </span>
+</div> 
+<div class="toolname">    
+  <p><b><font size="3">@@MES</font></b></p>
+</div>
+<div style="margin-top: 0; margin-bottom: -5; font-size: 1px">
+   <span class="period">
+         <p>..............................................................................................................................................................................................................................................</p>
+      </span>
+   </div> 
+-->   
+<div class="vertt">    
+	<table width="95%" border="1" cellpadding="0" cellspacing="0" bordercolor="#006600" BGCOLOR="#88BB88">
+		<tr>				
+		  <td><font color="#000000"><b>@@MES</b></font></td>
+		</tr>
+	</table>
+	<br>
+  <table bordercolor=#99CC99 border="1" cellpadding=0 cellspacing=0>
+    <tr bgcolor="#006868"> 
+      <td bgcolor="#E8FADC"><strong><font color="#006600" size="2">&nbsp;</font></strong></td>
+      <td bgcolor="#E8FADC"><div align="center"><font size="2"><strong><font color="#006600">Qtd.</font></strong></font></div></td>
+      <td bgcolor="#E8FADC"><div align="center"><font size="2"><strong><font color="#006600">Valor</font></strong></font></div></td>
+    </tr>
+    <tr> 
+      <td Width="90" bgcolor="#E8FADC"><strong><font color="#006600" size="2"> 
+        Sess&otilde;es</font> </strong></td>
+      <td Width="50"> <p align="center"><font size="2">@@QTDSMES</font></p></td>
+      <td Width="92"> <p align="right"><font size="2">@@VLSMES</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Produtos</font> 
+        </strong></td>
+      <td> <p align="center"><font size="2">@@QTDPMES</font></p></td>
+      <td> <p align="right"><font size="2">@@VLPMES</font></p></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#E8FADC"><strong><font color="#006600" size="2">Testes</font></strong></td>
+      <td><div align="center"><font size="2">@@QTDTMES</font></div></td>
+      <td><div align="right"><font size="2">--</font></div></td>
+    </tr>
+    <tr bgcolor="#99CC99"> 
+      <td height="18"><div align="right"><strong><font color="#000000"><font size="2">Total:</font> 
+          </font></strong></div></td>
+      <td colspan="2"><div align="right"><strong><font color="#000000" size="2">@@VLTMES</font></strong></div></td>
+    </tr>
+  </table>
+  <br>
+  <table bordercolor=#99CC99 border="1" cellpadding=0 cellspacing=0>
+    <tr bgcolor="#006868"> 
+      <td colspan="2" bgcolor="#E8FADC"><div align="center"><font size="2">&nbsp;</font> 
+          <font color="#006600" size="2"><strong>FORMA DE PAGAMENTO</strong></font></div></td>
+    </tr>
+    <tr> 
+      <td Width="90" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Dinheiro</font> 
+        </strong></td>
+      <td Width="130"> <p align="right"><font size="2">@@VLDINMES</font></p></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#E8FADC"><strong><font color="#006600" size="2">Débito</font> 
+        </strong></td>
+      <td><div align="right"><font size="2">@@VLDEBMES</font></div></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#E8FADC"><strong><font color="#006600" size="2">Crédito</font></strong></td>
+      <td><div align="right"><font size="2">@@VLCREMES</font></div></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#E8FADC"><strong><font color="#006600" size="2">Cheque</font> 
+        </strong></td>
+      <td> <p align="right"><font size="2">@@VLCHEMES</font></p></td>
+    </tr>
+    <tr bgcolor="#99CC99"> 
+      <td><div align="right"><strong><font color="#000000" size="2">Total:</font> 
+          </strong></div></td>
+      <td> <p align="right"><strong><font color="#000000" size="2">@@VLTMES</font></strong></p></td>
+    </tr>
+  </table>
+  
+</div>
+<div class="toolname">      
+	<br>
+	<br>
+	<table width="95%" border="1" cellpadding="0" cellspacing="0" bordercolor="#006600" BGCOLOR="#88BB88">
+		<tr>				
+		  <td><font color="#000000"><b>Valores Anuais</b></font></td>
+		</tr>
+	</table>
+</div>
+<br>
+<div class="vertt">  
+  <table bordercolor=#99CC99 border="1" cellpadding=0 cellspacing=0>
+    <tr bgcolor="#006868"> 
+      <td bgcolor="#E8FADC"><strong><font color="#006600" size="2">&nbsp;</font></strong></td>
+      <td bgcolor="#E8FADC"><div align="center"><font color="#006600" size="2"><strong>@@ANO2</strong></font></div></td>
+      <td bgcolor="#E8FADC"><div align="center"><font color="#006600" size="2"><strong>@@ANO1</strong></font></div></td>
+      <td bgcolor="#E8FADC"><div align="center"><font color="#006600" size="2"><strong>@@ANO0</strong></font></div></td>
+    </tr>
+    <tr> 
+      <td Width="90" bgcolor="#E8FADC"><strong><font color="#006600" size="2"> 
+        Janeiro</font> </strong></td>
+      <td Width="65"> <p align="center"><font size="2">@@QTDS0201</font></p></td>
+      <td Width="65"> <p align="center"><font size="2">@@QTDS0101</font></p></td>
+      <td Width="65"> <p align="center"><font size="2">@@QTDS0001</font></p></td>
+    </tr>
+    <tr> 
+      <td bgcolor="#E8FADC"><strong><font color="#006600" size="2">Fevereiro</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0202</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0102</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0002</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Mar&ccedil;o</font> 
+        </strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0203</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0103</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0003</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Abril</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0204</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0104</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0004</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Maio</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0205</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0105</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0005</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Junho</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0206</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0106</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0006</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Julho</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0207</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0107</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0007</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Agosto</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0208</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0108</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0008</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Setembro</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0209</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0109</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0009</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Outubro</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0210</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0110</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0010</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Novembro</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0211</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0111</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0011</font></p></td>
+    </tr>
+    <tr> 
+      <td height="18" bgcolor="#E8FADC"><strong><font color="#006600" size="2">Dezembro</font></strong></td>
+      <td> <p align="center"><font size="2">@@QTDS0212</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0112</font></p></td>
+      <td> <p align="center"><font size="2">@@QTDS0012</font></p></td>
+    </tr>
+    <tr bgcolor="#99CC99"> 
+      <td height="18"><div align="right"><strong><font color="#000000" size="2">Total:</font></strong></div></td>
+      <td> <p align="center"><font size="2"><b>@@QTDT02</b></font></p></td>
+      <td> <p align="center"><font size="2"><b>@@QTDT01</b></font></p></td>
+      <td> <p align="center"><font size="2"><b>@@QTDT00</b></font></p></td>
+    </tr>
+  </table>
+  
+</div>   
+   <div style="margin-top: -20; margin-bottom: 40; font-size: 1px">
+      <span class="period">
+         <p>..............................................................................................................................................................................................................................................</p>
+      </span>
+   </div>
+   <div style="margin-top: -30; font-size: 1px">
+      <table width="160" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td width="10"></td>            
+            
+      <td width="150" valign="TOP"> <a href="http://www.dpilbrasil.com.br"><font size="2">D'pil 
+        Brasil</font></a><br>
+            </td>
+         </tr>
+      </table>
+
+   </div>
+   <div class="toolname">
+   </div>
+</body>
+</html>

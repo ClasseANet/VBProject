@@ -1,0 +1,103 @@
+/****************************************************************************
+****************************************************************************/
+USE G3R;
+if NOt Exists(Select * From VERSAOBD Where IDBD=1) INSERT INTO VERSAOBD(IDBD, DSCBD, VSBD, ATUBD, DTATU, ARQATU) VALUES (1, 'Banco Dpil', '1.0', '0', GetDate(), '');
+UPDATE VERSAOBD SET VSBD='1.0', DTATU=GetDate(), ATUBD='09', ARQATU='Rev09.sql';
+/****************************************************************************
+****************************************************************************/
+ALTER TABLE FLAN ADD CODSIT CHAR(1);
+GO
+ALTER TABLE FLAN ADD TPTRANSA CHAR(1);
+GO
+ALTER TABLE FLAN ADD IDTRANSF INTEGER;
+GO
+ALTER TABLE FLAN ADD SALDO Decimal(9, 2);
+GO
+--*******************************************
+UPDATE FLAN SET DTVENCIMENTO = DTEMISSAO WHERE IDCONTA=1
+GO
+UPDATE FLAN SET DTBAIXA = DTEMISSAO WHERE IDCONTA=1
+GO
+UPDATE FLAN SET TPTRANSA='C' WHERE IDCONTA=1
+GO
+--*******************************************
+exec sp_bindefault DF_0, 'OCONTATO.PJ'
+go
+SET IDENTITY_INSERT OCONTATO on;
+INSERT INTO OCONTATO (IDLOJA, EMPRESA, IDCONTATO, DTCADASTRO, NOME) VALUES (1, 1, 1, GetDate(), 'Cliente');
+SET IDENTITY_INSERT OCONTATO off;
+go
+--*******************************************
+SP_RENAME 'DESPESA', 'FDESPESA';
+GO
+ALTER TABLE FLAN ADD IDDESP INTEGER;
+GO
+ALTER TABLE FLAN ADD IDSUBDESP INTEGER;
+GO
+ALTER TABLE [dbo].[FLAN]  WITH NOCHECK ADD  CONSTRAINT [FK_FLAN_FDESPESA] FOREIGN KEY([IDDESP])
+REFERENCES [dbo].[FDESPESA] ([IDDESP])
+ON UPDATE CASCADE
+--NOT FOR REPLICATION 
+GO
+ALTER TABLE [dbo].[FLAN] NOCHECK CONSTRAINT [FK_FLAN_FDESPESA]
+GO
+ALTER TABLE FDESPESA DROP COLUMN IDEMPR
+GO
+ALTER TABLE FDESPESA DROP COLUMN INFO
+GO
+Update MODULO Set MODUPAI='CAD' Where ID=13
+go
+
+--*******************************************
+ALTER TABLE SMOVEST ADD FLGDELETE INT
+GO
+exec sp_bindefault DF_0, 'SMOVEST.FLGDELETE'
+go
+ALTER TABLE OCLIENTE ADD ATIVO INT
+GO
+exec sp_bindefault DF_1, 'OCLIENTE.ATIVO'
+go
+UPDATE OCLIENTE SET ATIVO=1
+GO
+ALTER TABLE OCLIENTE ADD SEXO CHAR(1)
+GO
+exec sp_bindefault DF_F, 'OCLIENTE.SEXO'
+go
+UPDATE OCLIENTE SET SEXO = 'F'
+GO
+ALTER TABLE OCLIENTE ADD MOTIVOINAT nText
+GO
+ALTER TABLE OCONTATO ADD ATIVO INT
+GO
+exec sp_bindefault DF_1, 'OCONTATO.ATIVO'
+go
+ALTER TABLE FDESPESA ALTER COLUMN ATIVO INT NULL
+GO
+ALTER TABLE FDESPESA ALTER COLUMN OCULTO INT NULL
+GO
+ALTER TABLE FDESPESA ALTER COLUMN GRUPO INT NULL
+GO
+exec sp_bindefault DF_1, 'FDESPESA.ATIVO'
+go
+exec sp_bindefault DF_0, 'FDESPESA.OCULTO'
+go
+exec sp_bindefault DF_1, 'FDESPESA.GRUPO'
+go
+Update OCLIENTE SET ATIVO = 1
+GO
+Update OCONTATO SET ATIVO = 1
+GO
+EXEC sp_rename @objname = 'OCLASSE.DSCCONTATO', @newname = 'DSCCLASSE', @objtype = 'COLUMN'
+go
+--*******************************************
+CREATE TABLE GCAD(
+	IDMODU    varchar(20) NOT NULL,
+	CODSIS    varchar(20) NOT NULL,
+	ID        int NULL,
+	GRUPO     varchar(30) NULL,
+	TL_CAD    varchar(50) NULL,
+	CONSULTA  text  NULL,
+	TAGCAMPOS text  NULL,
+  CONSTRAINT  [PK_GCAD] PRIMARY KEY CLUSTERED (IDMODU ASC, CODSIS ASC)
+) ON [PRIMARY]
+go

@@ -1,0 +1,13 @@
+FrmMalaDireta = 0, 0, 0, 0, C, 44, 58, 657, 366, C
+frmNovoLov = 0, 0, 0, 0, C, 66, 87, 679, 395, C
+TL_Contato = 44, 58, 684, 436, 
+FrmPaneContato = 0, 0, 0, 0, C, 88, 116, 701, 424, C
+FrmContato = 0, 0, 0, 0, C, 88, 116, 728, 494, C
+Bl_Contato = 0, 0, 0, 0, C
+ActiveLib = 44, 58, 592, 429, 
+DSR = 0, 0, 0, 0, C
+BL_P3R = 0, 0, 0, 0, C
+TL_CadContato = 66, 87, 706, 465, 
+TL_MalaDireta = 88, 116, 731, 460, C
+TL_NovoLov = 0, 0, 0, 0, C
+frmCadContato = 88, 116, 751, 487, , 110, 145, 750, 523, C

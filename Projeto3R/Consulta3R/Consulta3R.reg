@@ -1,0 +1,16 @@
+[Setup]
+PATHSETUP=%programfiles%\ClasseA\Admin\DLL\
+[Config]
+Coligada=1
+[Conections]
+Last=0
+LastTry=12/03/2013 19:28:36
+[Conection 0]
+ALIAS=GUARA
+isODBC=False
+DBTIPO=1
+isADO=True
+SERVER=[Local]\SQLEXPRESS
+DBNAME=G3R_GUARATINGUETA
+UID=USU_VERIF
+PWD=7B75787D7A776274616A7A

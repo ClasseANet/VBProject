@@ -1,0 +1,3 @@
+VBGROUP 5.0
+Project=..\Projects\SkinMenu.vbp
+StartupProject=..\Projects\PrjTest.vbp

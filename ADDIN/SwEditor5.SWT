@@ -1,0 +1,127 @@
+[Setup Wizard Template]
+TemplateDate=06/02/2001 13:31:59
+
+[Select Project and Options]
+txtProjFile=C:\temp\Addin\VbEditorUtil5.VBP
+chkProjRebuild=0
+optBldSetup=True
+chkIncludeDEP=0
+optInternet=False
+optDEPOnly=False
+
+[Distribution Method]
+optFloppyTarg=False
+optSingleDirTarg=True
+optMultDirTarg=False
+
+[Single Directory]
+cboFloppyDrives=0
+cboFloppyDriveSize=0
+txtDirTarget=C:\TEMP\SETUP\
+
+[Internet Package]
+optRemoteSite=True
+optLocalSite=False
+txtLocalSite=
+
+[Data Access]
+chkUseJet=1
+chkUseODBC=0
+Isam0=Excel 5.0
+Isam1=Excel 4.0
+Isam2=Excel 3.0
+Isam3=Excel 8.0
+Isam4=Text
+Isam5=HTML Import
+Isam6=HTML Export
+Isam7=dBase III
+Isam8=dBase IV
+Isam9=dBase 5.0
+Isam10=FoxPro 2.0
+Isam11=FoxPro 2.5
+Isam12=FoxPro 2.6
+Isam13=FoxPro 3.0
+Isam14=FoxPro DBC
+Isam15=Paradox 3.X
+Isam16=Paradox 4.X
+Isam17=Paradox 5.X
+Isam18=Lotus WK1
+Isam19=Lotus WK3
+Isam20=Lotus WK4
+Isam21=Jet 2.x
+Isam22=
+Excel 5.0=False
+Excel 4.0=False
+Excel 3.0=False
+Excel 8.0=False
+Text=False
+HTML Import=False
+HTML Export=False
+dBase III=False
+dBase IV=False
+dBase 5.0=False
+FoxPro 2.0=False
+FoxPro 2.5=False
+FoxPro 2.6=False
+FoxPro 3.0=False
+FoxPro DBC=False
+Paradox 3.X=False
+Paradox 4.X=False
+Paradox 5.X=False
+Lotus WK1=False
+Lotus WK3=False
+Lotus WK4=False
+Jet 2.x=False
+
+[ActiveX Server Components]
+File1="C:\WINDOWS\SYSTEM\DSR100.DLL",True,32763,True,False,,,0,False,False
+File2="C:\WINDOWS\SYSTEM\XBANCO01.DLL",True,32763,True,False,,,0,False,False
+File3=
+
+[Confirm Dependencies]
+File1="C:\ARQUIVOS DE PROGRAMAS\MICROSOFT OFFICE\OFFICE\MSO97.DLL",True,32763
+File2="C:\ARQUIVOS DE PROGRAMAS\ARQUIVOS COMUNS\MICROSOFT SHARED\DAO\DAO350.DLL",True,32763
+File3="C:\WINDOWS\SYSTEM\MSMASK32.OCX",False,32764
+File4="C:\WINDOWS\SYSTEM\MSFLXGRD.OCX",False,32764
+File5="C:\WINDOWS\SYSTEM\THREED32.OCX",False,32764
+File6="C:\WINDOWS\SYSTEM\TABCTL32.OCX",False,32764
+File7="C:\WINDOWS\SYSTEM\COMCTL32.OCX",False,32764
+File8="C:\WINDOWS\SYSTEM\COMDLG32.OCX",False,32764
+File9="C:\WINDOWS\SYSTEM\SPLITTERCONTROL.OCX",True,32764
+File10="C:\WINDOWS\SYSTEM\RICHTX32.OCX",False,32764
+File11="C:\WINDOWS\SYSTEM\ODBC32.DLL",False,32762
+File12="C:\WINDOWS\SYSTEM\Shlwapi.dll",True,32762
+File13=
+
+[Shared ActiveX Application]
+optDeployApplication=False
+optDeployShared=True
+optRemoteServer1=True
+optRemoteServer0=False
+
+[File Summary]
+File1="C:\WINDOWS\SYSTEM\MSVBVM50.dll",True,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File2="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\StdOle2.tlb",False,"$(WinSysPathSysFile)",$(TLBRegister),False
+File3="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\OleAut32.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File4="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\OlePro32.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File5="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\AsycFilt.dll",False,"$(WinSysPathSysFile)",,False
+File6="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\Ctl3d32.dll",False,"$(WinSysPathSysFile)",,False
+File7="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\ComCat.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File8="C:\ARQUIVOS DE PROGRAMAS\MICROSOFT OFFICE\OFFICE\MSO97.DLL",True,"$(WinSysPath)",,True
+File9="C:\ARQUIVOS DE PROGRAMAS\ARQUIVOS COMUNS\MICROSOFT SHARED\DAO\DAO350.DLL",True,"$(MSDAOPath)",$(DLLSelfRegister),True
+File10="C:\WINDOWS\SYSTEM\MSJtEr35.dll",False,"$(WinSysPathSysFile)",,False
+File11="C:\WINDOWS\SYSTEM\MSJInt35.dll",True,"$(WinSysPathSysFile)",,False
+File12="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\MSVCRT40.dll",True,"$(WinSysPathSysFile)",,False
+File13="C:\WINDOWS\SYSTEM\SPLITTERCONTROL.OCX",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File14="C:\WINDOWS\SYSTEM\Shlwapi.dll",True,"$(WinSysPath)",,True
+File15="C:\WINDOWS\SYSTEM\MSJet35.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File16="C:\WINDOWS\SYSTEM\VBAJet32.dll",False,"$(WinSysPathSysFile)",,False
+File17="C:\WINDOWS\SYSTEM\VB5DB.dll",False,"$(WinSysPath)",,True
+File18="C:\WINDOWS\SYSTEM\MSRD2x35.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File19="C:\WINDOWS\SYSTEM\MsRepl35.dll",False,"$(WinSysPathSysFile)",,False
+File20="C:\WINDOWS\SYSTEM\ODBCJt32.dll",False,"$(WinSysPathSysFile)",,False
+File21="C:\WINDOWS\SYSTEM\ODBCJI32.dll",False,"$(WinSysPathSysFile)",,False
+File22="C:\WINDOWS\SYSTEM\ODBCTL32.dll",False,"$(WinSysPathSysFile)",,False
+File23="C:\WINDOWS\SYSTEM\DSR100.DLL",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File24="C:\WINDOWS\SYSTEM\XBANCO01.DLL",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File25="C:\WINDOWS\SYSTEM\VbEditorUtil5.dll",True,"$(WinSysPath)",$(DLLSelfRegister),True

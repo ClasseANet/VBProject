@@ -1,0 +1,5 @@
+VBGROUP 5.0
+StartupProject=TKTOOL.VBP
+Project=..\DLL\DSR100.VBP
+Project=..\DLL\XBANCO01.VBP
+Project=..\DLL\DSACTIVE.vbp

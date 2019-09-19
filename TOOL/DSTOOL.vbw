@@ -1,0 +1,15 @@
+MdiPrincipal = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+PADRAO = 0, 0, 0, 0, C
+FrmDescProj = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmOpBanco = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+PROJETO = 0, 0, 0, 0, C
+FORMULARIO = 0, 0, 0, 0, C
+CLASSE = 0, 0, 0, 0, C
+MODULO = 0, 0, 0, 0, C
+FUNCAO = 0, 0, 0, 0, C
+DESCPROJ = 0, 0, 0, 0, C
+VARIAVEL = 0, 0, 0, 0, C
+frmODBCLog = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmMontaCls = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmWizPrj = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+CONTROLE = 0, 0, 0, 0, C

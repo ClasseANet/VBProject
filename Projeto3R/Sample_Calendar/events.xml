@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calendar CompactMode="1" Version="1">
+	<Options WorkDayStartTime="08:00:00" WorkDayEndTime="17:00:00" UseOutlookFontGlyphs="1" DayView_CurrentTimeMarkVisible="6" DayView_TimeScaleShowMinutes="1" DayView_Scale2TimeZone="ELAAAAAAFEAAOCAAACAADFAAPGAAFHAAEHAAIGAAACAABEAANGAAFGAACHAAJGAADGAABGAAACAADFAAEHAABGAAOGAAEGAABGAACHAAEGAAACAAEFAAJGAANGAAFGAAAAAAAAAAAAAACAAAGAAADAAAHBAALDAALDAAHODAAAAAAAAAFEAAOCAAACAADFAAPGAAFHAAEHAAIGAAACAABEAANGAAFGAACHAAJGAADGAABGAAACAAEEAABGAAJHAAMGAAJGAAHGAAIGAAEHAAACAAEFAAJGAANGAAFGAAAAAAAAAAAAAAKAAAGAAADAAAHBAALDAALDAAHODAEMPPPPPP"/>
+	<Events>
+		<Event EventID="-14" StartTime="2014-18-02T11:00:00" EndTime="2014-18-02T13:30:00" Subject="New Event" Body="mjghjfgh" BusyStatus="2" CreationTime="2014-17-02T17:05:28" LastModificationTime="2014-17-02T17:06:06">
+			<CustomIcons>
+				<IconID Value="1"/>
+				<IconID Value="4"/>
+				<IconID Value="5"/>
+			</CustomIcons>
+		</Event>
+		<Event EventID="-11" StartTime="2010-05-05T14:30:00" EndTime="2010-05-05T15:00:00" Subject="New Event" BusyStatus="2" CreationTime="2010-04-05T22:07:02" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-10" StartTime="2010-04-05T12:00:00" EndTime="2010-04-05T12:30:00" Subject="New Event" BusyStatus="2" CreationTime="2010-04-05T22:06:54" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-8" StartTime="2010-19-04T08:00:00" EndTime="2010-19-04T08:30:00" Subject="New Event" LabelID="6" CreationTime="2010-20-04T16:25:35" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-7" StartTime="2010-17-03T04:00:00" EndTime="2010-17-03T04:30:00" Subject="New Event" BusyStatus="2" CreationTime="2010-20-04T11:17:06" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-3" StartTime="2010-02-03" EndTime="2010-03-03" Subject="New Event 01" AllDayEvent="1" CreationTime="2010-02-03T17:58:13" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-5" StartTime="2010-03-03" EndTime="2010-04-03" Subject="New Event 0009" AllDayEvent="1" CreationTime="2010-02-03T17:58:24" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-9" StartTime="2010-04-05T08:30:00" EndTime="2010-04-05T09:00:00" Subject="New Event" BusyStatus="2" CreationTime="2010-04-05T22:05:09" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-13" StartTime="2010-18-05T09:00:00" EndTime="2010-18-05T09:30:00" Subject="New Event" BusyStatus="2" CreationTime="2010-21-05T16:29:40" LastModificationTime="2014-17-02T17:02:09"/>
+		<Event EventID="-4" StartTime="2010-17-03T01:00:00" EndTime="2010-17-03T01:30:00" Subject="New Event 02" IsReminder="1" ReminderSoundFile="D:\\Backup_10_12\\Desktop\\mustbuild.wav" CreationTime="2010-02-03T17:58:19" LastModificationTime="2014-17-02T17:02:09"/>
+	</Events>
+</Calendar>

@@ -1,0 +1,62 @@
+Line 17: Class XtremeSuiteControls.FlatEdit of control TxtID was not a loaded control class.
+Line 31: Class XtremeSuiteControls.FlatEdit of control TxtCampo01 was not a loaded control class.
+Line 45: Class XtremeSuiteControls.PushButton of control CmdSair was not a loaded control class.
+Line 59: Class XtremeSuiteControls.PushButton of control CmdExcluir was not a loaded control class.
+Line 73: Class XtremeSuiteControls.PushButton of control CmdSalvar was not a loaded control class.
+Line 87: Class XtremeSuiteControls.PushButton of control CmdNovo was not a loaded control class.
+Line 101: Class XtremeSuiteControls.CheckBox of control ChkATIVO was not a loaded control class.
+Line 124: Class XtremeSuiteControls.Label of control Label1 was not a loaded control class.
+Line 136: Class XtremeSuiteControls.Label of control Label2 was not a loaded control class.
+Line 23: The property name _Version in TxtID is invalid.
+Line 24: The property name _ExtentX in TxtID is invalid.
+Line 25: The property name _ExtentY in TxtID is invalid.
+Line 26: The property name _StockProps in TxtID is invalid.
+Line 28: The property name MaxLength in TxtID is invalid.
+Line 29: The property name UseVisualStyle in TxtID is invalid.
+Line 37: The property name _Version in TxtCampo01 is invalid.
+Line 38: The property name _ExtentX in TxtCampo01 is invalid.
+Line 39: The property name _ExtentY in TxtCampo01 is invalid.
+Line 40: The property name _StockProps in TxtCampo01 is invalid.
+Line 42: The property name MaxLength in TxtCampo01 is invalid.
+Line 43: The property name UseVisualStyle in TxtCampo01 is invalid.
+Line 51: The property name _Version in CmdSair is invalid.
+Line 52: The property name _ExtentX in CmdSair is invalid.
+Line 53: The property name _ExtentY in CmdSair is invalid.
+Line 54: The property name _StockProps in CmdSair is invalid.
+Line 55: The property name Caption in CmdSair is invalid.
+Line 57: The property name UseVisualStyle in CmdSair is invalid.
+Line 65: The property name _Version in CmdExcluir is invalid.
+Line 66: The property name _ExtentX in CmdExcluir is invalid.
+Line 67: The property name _ExtentY in CmdExcluir is invalid.
+Line 68: The property name _StockProps in CmdExcluir is invalid.
+Line 69: The property name Caption in CmdExcluir is invalid.
+Line 71: The property name UseVisualStyle in CmdExcluir is invalid.
+Line 79: The property name _Version in CmdSalvar is invalid.
+Line 80: The property name _ExtentX in CmdSalvar is invalid.
+Line 81: The property name _ExtentY in CmdSalvar is invalid.
+Line 82: The property name _StockProps in CmdSalvar is invalid.
+Line 83: The property name Caption in CmdSalvar is invalid.
+Line 85: The property name UseVisualStyle in CmdSalvar is invalid.
+Line 93: The property name _Version in CmdNovo is invalid.
+Line 94: The property name _ExtentX in CmdNovo is invalid.
+Line 95: The property name _ExtentY in CmdNovo is invalid.
+Line 96: The property name _StockProps in CmdNovo is invalid.
+Line 97: The property name Caption in CmdNovo is invalid.
+Line 99: The property name UseVisualStyle in CmdNovo is invalid.
+Line 107: The property name _Version in ChkATIVO is invalid.
+Line 108: The property name _ExtentX in ChkATIVO is invalid.
+Line 109: The property name _ExtentY in ChkATIVO is invalid.
+Line 110: The property name _StockProps in ChkATIVO is invalid.
+Line 111: The property name Caption in ChkATIVO is invalid.
+Line 121: The property name UseVisualStyle in ChkATIVO is invalid.
+Line 122: The property name Value in ChkATIVO is invalid.
+Line 130: The property name _Version in Label1 is invalid.
+Line 131: The property name _ExtentX in Label1 is invalid.
+Line 132: The property name _ExtentY in Label1 is invalid.
+Line 133: The property name _StockProps in Label1 is invalid.
+Line 134: The property name Caption in Label1 is invalid.
+Line 142: The property name _Version in Label2 is invalid.
+Line 143: The property name _ExtentX in Label2 is invalid.
+Line 144: The property name _ExtentY in Label2 is invalid.
+Line 145: The property name _StockProps in Label2 is invalid.
+Line 146: The property name Caption in Label2 is invalid.

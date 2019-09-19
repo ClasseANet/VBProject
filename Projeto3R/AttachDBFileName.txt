@@ -1,0 +1,67 @@
+Log me in
+Open vpn
+
+=========================================================================
+http://www.vbweb.com.br/dicas_visual.asp?Codigo=1463&Classificacao=10
+=========================================================================
+http://www.vbweb.com.br/dicas_visual.asp?Codigo=147&Classificacao=10
+=========================================================================
+http://www.vbweb.com.br/dicas_visual.asp?Codigo=2116&Classificacao=10
+=========================================================================
+http://www.linhadecodigo.com.br/artigo/1260/Como-configurar-Conex%C3%A3o-Remota-no-SQL-Server-2005.aspx
+=========================================================================
+http://www.google.com.br/#q=como+acessar+sql+no+provedor&hl=pt-BR&biw=1020&bih=539&prmd=ivns&ei=aNAvTfLGI8z0gAeS8KCnCw&start=10&sa=N&fp=13a0370f0217fb5
+=========================================================================
+=========================================================================
+
+Provider=SQLNCLI; 
+AttachDBFileName= caminho completo do banco de dados .mdf;
+Data Source=(local)\SQLEXPRESS;
+integrated security=SSPI; persist security info=True;
+
+
+"Handler=MSDFMAP.Handler;" & _
+            "Provider=MS Remote;Data Source= MinhaConexao;" & _
+            "Remote Server=http://NomeDoServidor"
+
+O RDS já está saindo de moda, sendo substituido pelo SOAP. Ainda assim vale a pena analisarmos um pouco do que ele é capaz de fazer. 
+
+Junto ao ADO temos um provider chamado MS Remote. O MS Remote nos permite fazer acesso a providers remotos. Quer dizer, fazer com que a string de conexão que estamos utilizando não seja processada no nosso servidor, mas em um servidor remoto. 
+
+Para isso devemos montar a string de conexão normal, como se estivessemos trabalhando localmente no servidor. Substituimos o "Provider" por "Remote Provider", acrescentamos um "Provider" como sendo MS Remote e "Remote Server" para indicarmos o nome do servidor remoto. Desta forma podemos acessar um banco de dados em um servidor web, por exemplo. 
+
+Veja como fica a string : 
+
+Provider=MS Remote;Data Source=aluno02;Remote Provider=SQLOLEDB;Remote Server=http://aluno02;Initial Catalog=pubs;User ID=sa;Password= 
+
+Veja o código em Vb para fazer esse acesso : 
+
+Dim cn As New Connection 
+Dim rs As New Recordset 
+
+Private Sub Form_Load() 
+cn.Open "Provider=MS Remote;Data Source=aluno02;Remote Provider=SQLOLEDB;Remote Server=http://aluno02;Initial Catalog=pubs;User ID=sa;Password=" 
+rs.Open "Select * from authors", cn 
+MsgBox rs.RecordCount 
+End Sub 
+
+
+Mais simples que isso, impossível. Mas os mais atentos já devem ter notado que é necessário que exista algo no servidor (aluno02, neste exemplo), em sua porta 80, para receber a requisição que está sendo realizada. 
+
+Elementar, meu caro. Veja algumas características da configuração do servidor : 
+
+- O IIS tem que estar rodando na porta 80 
+- Precisa existir uma pasta virtual (diretório virtual sem aplicação) apontando para program files\commom\system\msadc 
+- A pasta virtual precisa ter permissão de script e execução 
+- A pasta program files\commom\system\msadc precisa dar permissão de leitura para o usuário do IIS. Pode-se utilizar Everyone:Read. Lembre-se que esse não é o default da pasta, você precisa corrigir essa permissão 
+- A pasta virtual não pode ter filtragem de IP's (ou pelo menos não pode filtrar o seu). Se ela foi criada pela instalação do RDS então ela TEM estes filtros e você precisa elimina-los. 
+
+Veja alguns endereços úteis : 
+
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ado270/htm/mdrefmsremote.asp 
+
+http://support.microsoft.com/default.aspx?scid=kb;EN-US;q249719 
+
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/oledb/htm/oledbprovusing_the_ole_db_remoting_provider__a_closer_look.asp 
+
+http://support.microsoft.com/default.aspx?scid=kb;EN-US;q251122 

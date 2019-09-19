@@ -1,0 +1,58 @@
+<OFC>
+  <DTD>2
+  <CPAGE>1252
+  <ACCTSTMT>
+    <ACCTFROM>
+      <BANKID>0237
+      <ACCTID>448/113361
+      <ACCTTYPE>0
+    </ACCTFROM>
+    <STMTRS>
+      <DTSTART>20120120
+      <DTEND>20120120
+      <LEDGER>0.00
+      <STMTTRN>
+        <TRNTYPE>0
+        <DTPOSTED>20120109
+        <TRNAMT>14.64
+        <FITID>0706274
+        <MEMO>Rendimentos 
+      </STMTTRN>
+      <STMTTRN>
+        <TRNTYPE>0
+        <DTPOSTED>20120110
+        <TRNAMT>2319.24
+        <FITID>0582825
+        <MEMO>Transf Autoriz Diogenes Santos Ramos
+      </STMTTRN>
+      <STMTTRN>
+        <TRNTYPE>0
+        <DTPOSTED>20120110
+        <TRNAMT>502.39
+        <FITID>1000448
+        <MEMO>Brad Vida Prev Resgate Total 01/2012
+      </STMTTRN>
+      <STMTTRN>
+        <TRNTYPE>0
+        <DTPOSTED>20120112
+        <TRNAMT>8.44
+        <FITID>1206393
+        <MEMO>Rendimentos 
+      </STMTTRN>
+      <STMTTRN>
+        <TRNTYPE>0
+        <DTPOSTED>20120116
+        <TRNAMT>1.91
+        <FITID>1406302
+        <MEMO>Rendimentos 
+      </STMTTRN>
+      <STMTTRN>
+        <TRNTYPE>1
+        <DTPOSTED>20120116
+        <TRNAMT>-22.40
+        <FITID>0020112
+        <MEMO>Tarifa Bancaria Cesta Completa
+      </STMTTRN>
+    </STMTRS>
+  </ACCTSTMT>
+</OFC>

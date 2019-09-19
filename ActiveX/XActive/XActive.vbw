@@ -1,0 +1,17 @@
+DsAdd = 66, 87, 638, 430, C
+DSRBAS = 88, 116, 660, 459, C
+FrmADD = 0, 0, 0, 0, C, 88, 116, 660, 459, C
+FrmItensRelacionados = 22, 29, 594, 372, C, 66, 87, 638, 430, CZ
+Titulo = 0, 0, 0, 0, C
+DSR = 0, 0, 572, 343, C
+DOS = 0, 0, 0, 0, C
+MENSAGEM = 110, 145, 714, 488, C
+DSControl = 22, 29, 594, 372, C
+Office = 0, 0, 0, 0, C
+API_BAS = 110, 145, 682, 488, C
+API = 44, 58, 616, 401, C
+dsTreeView = 66, 87, 670, 430, C
+DSACT = 88, 116, 692, 459, C
+MSGrid = 0, 0, 0, 0, C
+CProgBar32 = 0, 0, 0, 0, C
+DS_ItensRelacao2 = 44, 58, 616, 401, C

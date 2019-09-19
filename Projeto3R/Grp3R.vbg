@@ -1,0 +1,19 @@
+VBGROUP 5.0
+Project=..\..\ActiveX\XActive\XActive.vbp
+Project=..\..\_PROJETO A\Arquivos Comuns\Conexao\Conexao.vbp
+Project=..\..\_PROJETO A\Arquivos Comuns\ConsultaGbl\ConsultaGbl.vbp
+Project=Contato3R\Contato3R.vbp
+Project=Suprimento3R\Supri3R.vbp
+StartupProject=Projeto3R.vbp
+Project=..\..\_PROJETO A\Arquivos Comuns\Menu\Menu.vbp
+Project=Arquivos Comuns\Banco\Banco_3R.vbp
+Project=Arquivos Comuns\Cadastro3R\Cadastro3R.vbp
+Project=Diario3R\Diario3R.vbp
+Project=ShortBar3R\ShortBar3R.vbp
+Project=Tarefa3R\Tarefa3R.vbp
+Project=..\..\_PROJETO A\Arquivos Comuns\Setting\SysA.vbp
+Project=Calendario3R\Calendario3R.vbp
+Project=Utilitarios3R\UTILITARIO3R.vbp
+Project=Financeiro3R\Financ3R.vbp
+Project=Consulta3R\Consulta3R.vbp
+Project=..\..\ActiveX\SendMail\CAMail.vbp

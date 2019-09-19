@@ -1,0 +1,35 @@
+Instructions
+1 Right-click the SLN file you want to use to convert the Word content.
+  Click "Open With" and then double-click Visual Basic to open the software and load the code.
+  The SLN file contains all VB code files you create in the project.
+  When you save a project in VB6, an SLN file is automatically created 
+  to store all of your source code files.
+
+2 Click the file in the solution panel to open it in the editor. 
+  Start the code by opening the Word document. 
+  The following code shows you how to open the Word doc:
+
+  Dim app As Word.Application
+  Dim doc As Word.Document
+  Set app = New Word.Application
+  Set doc = app.Documents.Open("C:\doc.doc")
+
+  Replace the "doc.doc" file name and path with the name and path of your own Word document.
+
+3 Select the Word content and save the content to a VB6 string.
+  The following code shows you how to save the word content to a string:
+
+  Dim content As String
+  content = doc.Content
+
+4 Convert the content to an HTML string.
+  The following code creates an HTML page and uses the Word content as the body of the HTML format:
+
+  Dim html As String
+  html = "<html><head></head><body>" & content & "</body></html>"
+
+
+  Read more: How to Convert From Word to HTML Using VB6 
+  eHow.com http://www.ehow.com/how_8725940_convert-word-html-using-vb6.html#ixzz1x722Unbw
+
+http://www.vbweb.com.br/projetos.asp?Modulo=VB&Classificacao=6

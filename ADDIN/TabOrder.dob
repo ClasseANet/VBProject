@@ -1,0 +1,714 @@
+VERSION 5.00
+Begin VB.UserDocument docTabOrder 
+   ClientHeight    =   2790
+   ClientLeft      =   4110
+   ClientTop       =   3195
+   ClientWidth     =   2355
+   HScrollSmallChange=   225
+   KeyPreview      =   -1  'True
+   LockControls    =   -1  'True
+   ScaleHeight     =   2790
+   ScaleWidth      =   2355
+   Tag             =   "10"
+   VScrollSmallChange=   225
+   Begin VB.Timer TimerCtl 
+      Enabled         =   0   'False
+      Interval        =   1
+      Left            =   360
+      Top             =   720
+   End
+   Begin VB.CommandButton CmdShowClone 
+      Height          =   330
+      Left            =   15
+      Picture         =   "TabOrder.dox":0000
+      Style           =   1  'Graphical
+      TabIndex        =   7
+      Tag             =   "CLONE"
+      ToolTipText     =   "102"
+      Top             =   15
+      UseMaskColor    =   -1  'True
+      Width           =   330
+   End
+   Begin VB.CommandButton cmdRefresh 
+      Height          =   330
+      Left            =   1680
+      Picture         =   "TabOrder.dox":0172
+      Style           =   1  'Graphical
+      TabIndex        =   5
+      Top             =   15
+      UseMaskColor    =   -1  'True
+      Width           =   330
+   End
+   Begin VB.CommandButton cmdLeftToRight 
+      Height          =   330
+      Left            =   1340
+      Picture         =   "TabOrder.dox":0274
+      Style           =   1  'Graphical
+      TabIndex        =   4
+      ToolTipText     =   "102"
+      Top             =   15
+      UseMaskColor    =   -1  'True
+      Width           =   330
+   End
+   Begin VB.CommandButton cmdTopToBottom 
+      Height          =   330
+      Left            =   1010
+      Picture         =   "TabOrder.dox":0376
+      Style           =   1  'Graphical
+      TabIndex        =   3
+      ToolTipText     =   "102"
+      Top             =   15
+      UseMaskColor    =   -1  'True
+      Width           =   330
+   End
+   Begin VB.CommandButton cmdDown 
+      Height          =   330
+      Left            =   680
+      Picture         =   "TabOrder.dox":0478
+      Style           =   1  'Graphical
+      TabIndex        =   2
+      ToolTipText     =   "104"
+      Top             =   15
+      UseMaskColor    =   -1  'True
+      Width           =   330
+   End
+   Begin VB.CommandButton cmdUp 
+      Height          =   330
+      Left            =   350
+      Picture         =   "TabOrder.dox":057A
+      Style           =   1  'Graphical
+      TabIndex        =   1
+      ToolTipText     =   "102"
+      Top             =   15
+      UseMaskColor    =   -1  'True
+      Width           =   330
+   End
+   Begin VB.CommandButton cmdApply 
+      Height          =   330
+      Left            =   2010
+      Picture         =   "TabOrder.dox":067C
+      Style           =   1  'Graphical
+      TabIndex        =   6
+      Top             =   15
+      UseMaskColor    =   -1  'True
+      Width           =   330
+   End
+   Begin VB.ListBox LstTabIndex 
+      DragIcon        =   "TabOrder.dox":077E
+      Height          =   2325
+      IntegralHeight  =   0   'False
+      Left            =   15
+      TabIndex        =   0
+      Top             =   360
+      Width           =   2300
+   End
+End
+Attribute VB_Name = "docTabOrder"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Dim mcmpCurrentForm As VBComponent      'current form
+Dim mcolCtls        As VBControls       'form's controls
+
+'refresh types
+Const NEWFORM = 0
+Const TOPTOBOTTOM = 1
+Const LEFTTORIGHT = 2
+Const REFRESHCTLS = 3
+
+'================================================
+' this sub sets the new tab order for all
+' of the controls on te current form
+' based on their order in the listbox
+'================================================
+Private Sub cmdApply_Click()
+   On Error GoTo cmdApply_ClickErr
+   
+   Dim i As Integer
+   Dim sTmp As String
+   Dim nCtlArrIndex As Integer
+   
+   If InRunMode(VBInstance) Then Exit Sub
+   
+   Screen.MousePointer = vbHourglass
+   
+   If CmdShowClone.Tag = "FORM_CLONE_DEL" Then
+      Call CmdShowClone_Click
+   End If
+   
+   For i = 0 To LstTabIndex.ListCount - 1
+      GetNameAndIndex LstTabIndex.List(i), sTmp, nCtlArrIndex
+      If nCtlArrIndex >= 0 Then
+        'set the new tab index
+        mcmpCurrentForm.Designer.VBControls.Item(sTmp, nCtlArrIndex).Properties!TabIndex = i
+      Else
+        'set the new tab index
+        mcmpCurrentForm.Designer.VBControls.Item(sTmp).Properties!TabIndex = i
+      End If
+   Next
+   
+'   Call RemoveFormClone
+'   gWinTabOrder.Close
+   
+   Screen.MousePointer = vbDefault
+   Exit Sub
+   
+cmdApply_ClickErr:
+   If Err = 9 Then '* Subscript out of range
+      Resume Next
+   ElseIf MsgBox(Err.Description & vbCrLf & "Resume?", vbYesNo) = vbYes Then
+      Resume Next
+   End If
+   Screen.MousePointer = vbDefault
+End Sub
+
+Private Sub cmdLeftToRight_Click()
+   If CmdShowClone.Tag = "FORM_CLONE_DEL" Then
+      Call CmdShowClone_Click
+   End If
+   RefreshList LEFTTORIGHT
+End Sub
+
+Private Sub CmdShowClone_Click()
+   If CmdShowClone.Tag = "FORM_CLONE" Then
+      LstTabIndex.Clear
+      CmdShowClone.Picture = LoadResPicture("BMP_FORM_CLONE_DEL", vbResBitmap)
+      CmdShowClone.Tag = "FORM_CLONE_DEL"
+      TimerCtl.Enabled = True
+'      Call ShowFormClone
+   ElseIf CmdShowClone.Tag = "FORM_CLONE_DEL" Then
+      TimerCtl.Enabled = False
+      CmdShowClone.Picture = LoadResPicture("BMP_FORM_CLONE", vbResBitmap)
+      CmdShowClone.Tag = "FORM_CLONE"
+      If LstTabIndex.ListCount = 0 Then
+         RefreshList REFRESHCTLS
+      End If
+'      Call RemoveFormClone
+   End If
+End Sub
+
+Private Sub cmdTopToBottom_Click()
+   If CmdShowClone.Tag = "FORM_CLONE_DEL" Then
+      Call CmdShowClone_Click
+   End If
+   RefreshList TOPTOBOTTOM
+End Sub
+
+Private Sub cmdRefresh_Click()
+   If CmdShowClone.Tag = "FORM_CLONE_DEL" Then
+      Call CmdShowClone_Click
+   End If
+   RefreshList REFRESHCTLS
+End Sub
+Private Sub TimerCtl_Timer()
+   On Error Resume Next
+   Dim Ctl As Variant, StrAux$
+   Dim i%, Achou As Boolean
+   Dim MyCtl As VBControl
+   Dim MyForm As VBForm
+   
+   Set MyForm = VBInstance.SelectedVBComponent.Designer
+'   For Each Ctl In VBInstance.SelectedVBComponent.Designer.VBControls
+'      Set MyCtl = Ctl
+'      If MyCtl.InSelection Then
+'         Exit For
+'      End If
+'   Next
+   Set MyCtl = MyForm.SelectedVBControls(0)
+   StrAux$ = CStr(MyCtl.Properties!TabIndex)
+   If Err = 0 Then
+      StrAux$ = ControlName(MyCtl)
+      For i = 0 To LstTabIndex.ListCount - 1
+         Achou = (StrAux$ = LstTabIndex.List(i))
+         If Achou Then Exit For
+      Next
+      If Not Achou Then
+         LstTabIndex.AddItem StrAux$
+         LstTabIndex.Refresh
+      End If
+   End If
+End Sub
+
+Private Sub UserDocument_GotFocus()
+   Screen.MousePointer = vbDefault
+End Sub
+
+Private Sub UserDocument_Initialize()
+   CmdShowClone.Tag = "FORM_CLONE"
+   Screen.MousePointer = vbDefault
+End Sub
+
+Private Sub UserDocument_Show()
+  'load the strings from the resource file
+  cmdUp.ToolTipText = LoadResString(100)
+  cmdDown.ToolTipText = LoadResString(101)
+  cmdTopToBottom.ToolTipText = LoadResString(102)
+  cmdLeftToRight.ToolTipText = LoadResString(103)
+  cmdRefresh.ToolTipText = LoadResString(104)
+  cmdApply.ToolTipText = LoadResString(105)
+End Sub
+
+Private Sub UserDocument_Resize()
+  LstTabIndex.Width = ScaleWidth - (LstTabIndex.Left * 2)
+  LstTabIndex.Height = ScaleHeight - (cmdApply.Height + 100)
+End Sub
+
+'this sub moves the dragged item to a new location
+'based on the Y coordinate where it was dropped
+Private Sub lstTabIndex_DragDrop(Source As Control, x As Single, Y As Single)
+  Dim sTmp As String
+  Dim nListIndex As Integer
+  Dim nPos As Integer
+  Dim i As Integer
+
+  With LstTabIndex
+    nListIndex = .ListIndex
+    If Source = LstTabIndex Then
+      If nListIndex >= 0 Then
+        sTmp = .Text
+        nPos = (Y \ TextHeight(sTmp)) + .TopIndex
+        'check for the last item
+        If nPos > .ListCount Then
+          nPos = .ListCount
+        End If
+        .AddItem sTmp, nPos
+        If nListIndex > nPos Then
+          .RemoveItem nListIndex + 1
+        Else
+          .RemoveItem nListIndex
+        End If
+      End If
+    End If
+  End With
+
+End Sub
+Sub lstTabIndex_MouseMove(Button As Integer, Shift As Integer, x As Single, Y As Single)
+  If Button = vbLeftButton Then LstTabIndex.Drag
+End Sub
+Private Sub cmdUp_Click()
+   Dim nItem As Integer
+   
+'   If CmdShowClone.Tag = "FORM_CLONE_DEL" Then
+'      RefreshList REFRESHCTLS
+'      Call CmdShowClone_Click
+'   End If
+   With LstTabIndex
+      If .ListIndex < 0 Then Exit Sub
+      nItem = .ListIndex
+      If nItem = 0 Then Exit Sub  'can't move 1st item up
+      'move item up
+      .AddItem .Text, nItem - 1
+      'remove old item
+      .RemoveItem nItem + 1
+      'select the item that was just moved
+      .Selected(nItem - 1) = True
+   End With
+End Sub
+
+Private Sub cmdDown_Click()
+   On Error Resume Next
+   Dim nItem As Integer
+  
+'   If CmdShowClone.Tag = "FORM_CLONE_DEL" Then
+'      RefreshList REFRESHCTLS
+'      Call CmdShowClone_Click
+'   End If
+  
+   With LstTabIndex
+      If .ListIndex < 0 Then Exit Sub
+      nItem = .ListIndex
+      If nItem = .ListCount - 1 Then Exit Sub 'can't move last item down
+      'move item down
+      .AddItem .Text, nItem + 2
+      'remove old item
+      .RemoveItem nItem
+      'select the item that was just moved
+      .Selected(nItem + 1) = True
+   End With
+End Sub
+
+'======================================================
+'this function returns a value to put in the listbox
+'for a control. It appends the Caption property
+'if it exists and is not null. It also appends
+'the control array index if the control is a
+'member of a control array
+'======================================================
+Function ControlName(Ctl As VBIDE.VBControl) As String
+  Dim sTmp As String
+  Dim sCaption As String
+  Dim i As Integer
+  
+  On Error Resume Next
+  sTmp = Ctl.Properties!Name
+'  For i = 1 To Ctl.Properties.Count
+'     If Ctl.Properties(i).Name = "Caption" Then
+        sCaption = Ctl.Properties!Caption
+'        Exit For
+'     End If
+'  Next
+  'will be null if there isn't one
+  
+  i = Ctl.Properties!Index
+  If i >= 0 Then
+    sTmp = sTmp & "(" & i & ")"
+  End If
+  
+  If Len(sCaption) > 0 Then
+    ControlName = sTmp & " - '" & sCaption & "'"
+  Else
+    ControlName = sTmp
+  End If
+  
+  Err.Clear
+  
+End Function
+
+'======================================================
+'this sub rebuilds the list from the form's controls
+'======================================================
+Public Sub RefreshList(nType As Integer)
+  On Error GoTo RefreshListErr
+
+  Dim i As Integer
+  Dim Ctl As VBControl
+  Dim sTmp As String
+  Dim ti As Integer
+  Dim sCtlName As String
+  Dim nCtlArrIndex As Integer
+   
+  If InRunMode(VBInstance) Then Exit Sub
+  
+  'clear the list control
+  LstTabIndex.Clear
+  
+  If VBInstance.ActiveVBProject Is Nothing Then Exit Sub
+  If nType = NEWFORM Then
+    If mcmpCurrentForm Is VBInstance.SelectedVBComponent Then
+      'same one as we have now
+      Exit Sub
+    End If
+  End If
+  'load the component
+  Set mcmpCurrentForm = VBInstance.SelectedVBComponent
+  
+  'check to see if we have a valid component
+  If mcmpCurrentForm Is Nothing Then
+    Exit Sub
+  End If
+  
+  With VBInstance
+     .ActiveVBProject.VBComponents(.SelectedVBComponent.Name).Activate
+     .ActiveVBProject.VBComponents(.SelectedVBComponent.Name).DesignerWindow.SetFocus
+  End With
+
+
+  
+  'make sure the active component is a form, user control or property page
+  If (mcmpCurrentForm.Type <> vbext_ct_VBForm) And _
+     (mcmpCurrentForm.Type <> vbext_ct_UserControl) And _
+     (mcmpCurrentForm.Type <> vbext_ct_DocObject) And _
+     (mcmpCurrentForm.Type <> vbext_ct_PropPage) Then
+    Exit Sub
+  End If
+  
+  Set mcolCtls = mcmpCurrentForm.Designer.VBControls
+  
+'  hWindow.Caption = mcmpCurrentForm.Name & " - " & LoadResString(10)
+  
+  For Each Ctl In mcmpCurrentForm.Designer.VBControls
+    'try to get the tabindex
+    On Error Resume Next
+    ti = Ctl.Properties!TabIndex
+    If Err Then
+      'doesn't have a tabindex
+      Err.Clear
+      GoTo SkipIt
+    End If
+    On Error GoTo RefreshListErr
+    
+    sTmp = ControlName(Ctl)
+    
+    'find out where it goes in the list
+    Select Case nType
+      Case NEWFORM, REFRESHCTLS
+        For i = 0 To LstTabIndex.ListCount - 1
+          If ti < LstTabIndex.ItemData(i) Then
+            Exit For
+          End If
+        Next
+        
+      Case TOPTOBOTTOM
+        'rearrange from top to bottom
+        For i = LstTabIndex.ListCount To 1 Step -1
+          GetNameAndIndex LstTabIndex.List(i - 1), sCtlName, nCtlArrIndex
+          If nCtlArrIndex >= 0 Then
+            'control array member
+            If Ctl.Properties!Top > mcolCtls(sCtlName, nCtlArrIndex).Properties!Top Then
+              'it is above the current list item
+              Exit For
+            ElseIf Ctl.Properties!Top = mcolCtls(sCtlName, nCtlArrIndex).Properties!Top Then
+              'it is at the same top position so see if it is farther left
+              If Ctl.Properties!Left > mcolCtls(sCtlName, nCtlArrIndex).Properties!Left Then
+                Exit For
+              End If
+            End If
+          Else
+            If Ctl.Properties!Top > mcolCtls(sCtlName).Properties!Top Then
+              Exit For
+            ElseIf Ctl.Properties!Top = mcolCtls(sCtlName).Properties!Top Then
+              If Ctl.Properties!Left > mcolCtls(sCtlName).Properties!Left Then
+                Exit For
+              End If
+            End If
+          End If
+        Next
+      
+      Case LEFTTORIGHT
+        'rearrange from left to right
+        For i = LstTabIndex.ListCount To 1 Step -1
+          GetNameAndIndex LstTabIndex.List(i - 1), sCtlName, nCtlArrIndex
+          If nCtlArrIndex >= 0 Then
+            'control array member
+            If Ctl.Properties!Left > mcolCtls(sCtlName, nCtlArrIndex).Properties!Left Then
+              Exit For
+            ElseIf Ctl.Properties!Left = mcolCtls(sCtlName, nCtlArrIndex).Properties!Left Then
+              If Ctl.Properties!Top > mcolCtls(sCtlName, nCtlArrIndex).Properties!Top Then
+                Exit For
+              End If
+            End If
+          Else
+            If Ctl.Properties!Left > mcolCtls(sCtlName).Properties!Left Then
+              Exit For
+            ElseIf Ctl.Properties!Left = mcolCtls(sCtlName).Properties!Left Then
+              If Ctl.Properties!Top > mcolCtls(sCtlName).Properties!Top Then
+                Exit For
+              End If
+            End If
+          End If
+        Next
+      
+    End Select
+    
+    'add it to the list
+    LstTabIndex.AddItem sTmp, i
+    LstTabIndex.ItemData(LstTabIndex.NewIndex) = ti
+    LstTabIndex.Refresh
+
+SkipIt:
+  Next
+
+  Exit Sub
+RefreshListErr:
+  If Err.Number <> 91 Then
+     MsgBox CStr(Err.Number) & " - " & Err.Description
+  End If
+End Sub
+
+'======================================================
+'this sub is called when a control gets removed
+'======================================================
+Public Sub ControlRemoved(Ctl As VBControl)
+  Dim sTmp As String
+  Dim i As Integer
+  
+  sTmp = ControlName(Ctl)
+  For i = 0 To LstTabIndex.ListCount - 1
+    If LstTabIndex.List(i) = sTmp Then
+      'remove it from the list
+      LstTabIndex.RemoveItem i
+      Exit Sub
+    End If
+  Next
+  
+End Sub
+
+'======================================================
+'this sub is called when a control gets added
+'======================================================
+Public Sub ControlAdded(Ctl As VBControl)
+  Dim i As Integer
+  
+  'try to get the tabindex
+  On Error Resume Next
+  i = Ctl.Properties!TabIndex
+  If Err Then
+    Err.Clear
+    'doesn't have a tabindex
+    Exit Sub
+  End If
+  LstTabIndex.AddItem ControlName(Ctl)
+  
+End Sub
+
+
+'======================================================
+'this sub is called when a control gets renamed
+'======================================================
+Public Sub ControlRenamed(Ctl As VBControl, sOldName As String, lOldIndex As Long)
+  On Error Resume Next
+  Dim sTmp As String
+  Dim i As Integer
+  
+  If lOldIndex >= 0 Then
+    sOldName = sOldName & "(" & lOldIndex & ")"
+  End If
+  
+  sTmp = ControlName(Ctl)
+  For i = 0 To LstTabIndex.ListCount - 1
+    If LeftB(LstTabIndex.List(i), Len(sOldName)) = sOldName Then
+      'remove it from the list
+      LstTabIndex.RemoveItem i
+      'add it back with the new name
+      LstTabIndex.AddItem sTmp, i
+      Exit Sub
+    End If
+  Next
+  Err.Clear
+End Sub
+
+Private Sub UserDocument_KeyDown(KeyCode As Integer, Shift As Integer)
+  'pass the keystrokes onto the IDE
+  HandleKeyDown Me, KeyCode, Shift
+End Sub
+
+'======================================================
+'this sub extracts the control name and index
+'from the formatted list item
+'======================================================
+Sub GetNameAndIndex(sListItem As String, sName As String, nIndex As Integer)
+  Dim nPos As Integer
+  Dim nPos2 As Integer
+  Dim sTmp As String
+  
+  'strip off the caption if there is one
+  nPos = InStr(sListItem, " ")
+  If nPos > 0 Then
+    sTmp = Trim(Mid(sListItem, 1, nPos - 1))
+  Else
+    sTmp = sListItem
+  End If
+  
+  'now check for an index
+  nPos = InStr(sTmp, "(")
+  If nPos > 0 Then
+    'control has an index so we need to
+    'strip it off and save it
+    nPos2 = InStr(sTmp, ")")
+    nIndex = Val(Mid$(sTmp, nPos + 1, nPos2 - nPos))
+    sName = Trim(Mid(sTmp, 1, nPos - 1))
+  Else
+    nIndex = -1
+    sName = sTmp
+  End If
+
+End Sub
+Public Sub ShowFormClone()
+   On Error GoTo Trata_Erro
+   Dim StrArq1$, StrArq2$
+   Dim Textline$, PriLine$
+   Dim nFile1%, nFile2%
+   Dim NmComp$, FormCaption As Boolean
+   Dim NewComp As VBComponent
+   Dim ProjReadOnly As Boolean
+      
+   ProjReadOnly = GetAttr(VBInstance.ActiveVBProject.FileName) And vbReadOnly
+   
+   If VBInstance.SelectedVBComponent Is Nothing Then Exit Sub
+   StrArq1$ = VBInstance.SelectedVBComponent.FileNames(1)
+   StrArq2$ = Mid(StrArq1$, 1, Len(StrArq1$) - 4) & "X" & Right(StrArq1$, 4)
+   StrArq2$ = "C:\temp\FrmTabOrder.frm"
+   PriLine$ = VBInstance.SelectedVBComponent.CodeModule.Lines(1, 1)
+   'If False Then
+   '   Set NewComp = gVBInstance.ActiveVBProject.VBComponents.Add(vbext_ComponentType.vbext_ct_VBForm)
+   '   NewComp.InsertFile StrArq1$
+   '   With NewComp
+   '      .InsertFile StrArq1$
+   '      .Activate
+   '   End With
+   '   Exit Sub
+   'End If
+   
+   Call Del(StrArq2$)
+   nFile1 = FreeFile
+   Open StrArq1$ For Input As nFile1
+   nFile2 = FreeFile
+   Open StrArq2$ For Output As nFile2
+   Do While Not EOF(1)
+      Line Input #nFile1, Textline
+      If InStr(Textline, "Begin VB.Form ") <> 0 Then
+         NmComp$ = Trim(Mid(Textline, InStr(Textline, "Begin VB.Form ") + 14))
+         Textline = "Begin VB.Form " & "FrmTabOrder"
+      ElseIf InStr(Textline, "Attribute VB_Name ") <> 0 Then
+         Textline = "Attribute VB_Name = " & "FrmTabOrder"
+      ElseIf InStr(Textline, "LockControls ") <> 0 Then
+         Textline = "LockControls    = 0 "
+      ElseIf InStr(Textline, "Caption ") <> 0 And Not FormCaption Then
+         Textline = "Caption         = ""XXXXX Formulário TabOrder XXXXX"""
+         FormCaption = True
+      ElseIf Textline = PriLine$ Then
+         Exit Do
+      End If
+      Print #nFile2, Textline
+   Loop
+   Close #nFile2
+   Close #nFile1
+   Call Copy(VBInstance.SelectedVBComponent.FileNames(2), "C:\TEMP\" & GetNameFromPath(VBInstance.SelectedVBComponent.FileNames(2)))
+   
+   
+   If ProjReadOnly Then
+      Call SetAttr(VBInstance.ActiveVBProject.FileName, vbArchive + vbNormal)
+   End If
+   
+   
+   With VBInstance.ActiveVBProject
+      .VBComponents.Remove .VBComponents("FrmTabOrder")
+      Set NewComp = .VBComponents.AddFile(StrArq2$)
+      DoEvents
+      .VBComponents("FrmTabOrder").Reload
+      With .VBComponents("FrmTabOrder").DesignerWindow
+         .Height = VBInstance.ActiveVBProject.VBComponents(NmComp).DesignerWindow.Height
+         .Left = VBInstance.ActiveVBProject.VBComponents(NmComp).DesignerWindow.Left
+         .Top = VBInstance.ActiveVBProject.VBComponents(NmComp).DesignerWindow.Top
+         .Width = VBInstance.ActiveVBProject.VBComponents(NmComp).DesignerWindow.Width
+         .Visible = True
+      End With
+      .VBComponents("FrmTabOrder").Activate
+      .VBComponents("FrmTabOrder").DesignerWindow.SetFocus
+   End With
+   CmdShowClone.Picture = LoadResPicture("BMP_FORM_CLONE_DEL", vbResBitmap)
+   CmdShowClone.Tag = "FORM_CLONE_DEL"
+   If ProjReadOnly Then
+      Call SetAttr(VBInstance.ActiveVBProject.FileName, vbArchive + vbReadOnly)
+   End If
+   
+Trata_Erro:
+   If Err = 9 Then '* Subscript out of range
+      Resume Next
+   ElseIf Err = 91 Then
+      MsgBox "Selecione um 'Form'.", vbOKOnly, "TabOrder"
+   ElseIf Err <> 0 Then
+      MsgBox CStr(Err) & " - " & CStr(Error)
+   End If
+End Sub
+Public Sub RemoveFormClone()
+   Dim ProjReadOnly As Boolean
+   ProjReadOnly = GetAttr(VBInstance.ActiveVBProject.FileName) And vbReadOnly
+   If ProjReadOnly Then
+      Call SetAttr(VBInstance.ActiveVBProject.FileName, vbArchive + vbNormal)
+   End If
+   VBInstance.ActiveVBProject.VBComponents.Remove VBInstance.ActiveVBProject.VBComponents("FrmTabOrder")
+   CmdShowClone.Picture = LoadResPicture("BMP_FORM_CLONE", vbResBitmap)
+   CmdShowClone.Tag = "FORM_CLONE"
+   If ProjReadOnly Then
+      Call SetAttr(VBInstance.ActiveVBProject.FileName, vbArchive + vbReadOnly)
+   End If
+   
+Fim:
+  If Err = 50141 Then '* Project file is read-only
+    Resume
+ End If
+End Sub

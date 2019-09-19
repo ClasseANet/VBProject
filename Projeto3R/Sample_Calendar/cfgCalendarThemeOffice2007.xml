@@ -1,0 +1,1838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CalendarThemeOffice2007 CompactMode="1">
+	<XTPCalendarTheme>
+		<BaseColor Standard="C98C5D" Custom="-1"/>
+		<BaseFont>
+			<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+			<Custom FaceName=""/>
+		</BaseFont>
+		<BaseFontBold>
+			<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+			<Custom FaceName=""/>
+		</BaseFontBold>
+		<Header>
+			<Header>
+				<TextLeftRight>
+					<Normal>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Normal>
+					<Selected>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Selected>
+					<Today>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Today>
+					<TodaySelected>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</TodaySelected>
+				</TextLeftRight>
+				<TextCenter>
+					<Normal>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Normal>
+					<Selected>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Selected>
+					<Today>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Today>
+					<TodaySelected>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</TodaySelected>
+				</TextCenter>
+				<BaseColor Standard="C98C5D" Custom="0080FF"/>
+				<TodayBaseColor Standard="1193EE" Custom="-1"/>
+				<bkNormal>
+					<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-100" Custom="0"/>
+					<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+				</bkNormal>
+				<bkSelected>
+					<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-100" Custom="0"/>
+					<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+				</bkSelected>
+				<bkToday>
+					<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+					<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+				</bkToday>
+				<bkTodaySelected>
+					<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+					<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+				</bkTodaySelected>
+				<HeightFormula>
+					<Formula_MulDivC>
+						<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+						<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+						<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+					</Formula_MulDivC>
+				</HeightFormula>
+			</Header>
+		</Header>
+		<Event>
+			<Event>
+				<Normal>
+					<BorderColor Standard="000000" Custom="-1"/>
+					<Background>
+						<LightColor Standard="FFFFFF" Custom="-1"/>
+						<DarkColor Standard="FFFFFF" Custom="-1"/>
+					</Background>
+					<Subject>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Subject>
+					<Location>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Location>
+					<Body>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Body>
+					<StartEnd>
+						<Color Standard="-1" Custom="-1"/>
+						<Font>
+							<Standard FaceName=""/>
+							<Custom FaceName=""/>
+						</Font>
+					</StartEnd>
+				</Normal>
+				<Selected>
+					<BorderColor Standard="000000" Custom="-1"/>
+					<Background>
+						<LightColor Standard="FFFFFF" Custom="-1"/>
+						<DarkColor Standard="FFFFFF" Custom="-1"/>
+					</Background>
+					<Subject>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Subject>
+					<Location>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Location>
+					<Body>
+						<Color Standard="000000" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Body>
+					<StartEnd>
+						<Color Standard="-1" Custom="-1"/>
+						<Font>
+							<Standard FaceName=""/>
+							<Custom FaceName=""/>
+						</Font>
+					</StartEnd>
+				</Selected>
+				<GripperBorderColor Standard="000000" Custom="-1"/>
+				<GripperBackgroundColor Standard="FFFFFF" Custom="-1"/>
+			</Event>
+		</Event>
+		<DayView>
+			<Header>
+				<Header>
+					<TextLeftRight>
+						<Normal>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextLeftRight>
+					<TextCenter>
+						<Normal>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextCenter>
+					<BaseColor Standard="0080FF" Custom="C08000"/>
+					<TodayBaseColor Standard="1193EE" Custom="-1"/>
+					<bkNormal>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-100" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkNormal>
+					<bkSelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-100" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkSelected>
+					<bkToday>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkToday>
+					<bkTodaySelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkTodaySelected>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</Header>
+			</Header>
+			<Event>
+				<Event>
+					<Normal>
+						<BorderColor Standard="000000" Custom="-1"/>
+						<Background>
+							<LightColor Standard="FFFFFF" Custom="-1"/>
+							<DarkColor Standard="FFFFFF" Custom="-1"/>
+						</Background>
+						<Subject>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Subject>
+						<Location>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Location>
+						<Body>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Body>
+						<StartEnd>
+							<Color Standard="-1" Custom="-1"/>
+							<Font>
+								<Standard FaceName=""/>
+								<Custom FaceName=""/>
+							</Font>
+						</StartEnd>
+					</Normal>
+					<Selected>
+						<BorderColor Standard="000000" Custom="-1"/>
+						<Background>
+							<LightColor Standard="FFFFFF" Custom="-1"/>
+							<DarkColor Standard="FFFFFF" Custom="-1"/>
+						</Background>
+						<Subject>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Subject>
+						<Location>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Location>
+						<Body>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Body>
+						<StartEnd>
+							<Color Standard="-1" Custom="-1"/>
+							<Font>
+								<Standard FaceName=""/>
+								<Custom FaceName=""/>
+							</Font>
+						</StartEnd>
+					</Selected>
+					<GripperBorderColor Standard="000000" Custom="-1"/>
+					<GripperBackgroundColor Standard="FFFFFF" Custom="FA83EE"/>
+					<EventIconsToDraw>
+						<EventIconsToDraw>
+							<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+							<ShowException IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+							<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</EventIconsToDraw>
+					</EventIconsToDraw>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</Event>
+			</Event>
+			<TimeScale>
+				<DayViewTimeScale>
+					<BackgroundColor Standard="FFEFE3" Custom="-1"/>
+					<LineColor Standard="CF9365" Custom="-1"/>
+					<Caption>
+						<Color Standard="CF9365" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Caption>
+					<AMPM>
+						<Color Standard="CF9365" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</AMPM>
+					<Small>
+						<Color Standard="CF9365" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</Small>
+					<BigBase>
+						<Color Standard="CF9365" Custom="-1"/>
+						<Font>
+							<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+							<Custom FaceName=""/>
+						</Font>
+					</BigBase>
+					<NowLineBk>
+						<LightColor Standard="FFEFE3" Custom="-1"/>
+						<DarkColor Standard="5FCAF7" Custom="-1"/>
+					</NowLineBk>
+					<NowLineColor Standard="0355BB" Custom="-1"/>
+					<ShowMinutes IsStandardSet="1" IsCustomSet="1" Standard="1" Custom="1"/>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="18" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="13" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="5" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</DayViewTimeScale>
+			</TimeScale>
+			<Day>
+				<DayViewDay>
+					<BorderColor Standard="C98C5D" Custom="-1"/>
+					<TodayBorderColor Standard="4C4C4C" Custom="-1"/>
+					<Header>
+						<DayViewDayHeader>
+							<UseOffice2003HeaderFormat IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<Header>
+								<TextLeftRight>
+									<Normal>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Normal>
+									<Selected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Selected>
+									<Today>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Today>
+									<TodaySelected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</TodaySelected>
+								</TextLeftRight>
+								<TextCenter>
+									<Normal>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Normal>
+									<Selected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Selected>
+									<Today>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Today>
+									<TodaySelected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</TodaySelected>
+								</TextCenter>
+								<BaseColor Standard="C08000" Custom="004EE8"/>
+								<TodayBaseColor Standard="1193EE" Custom="000000"/>
+								<bkNormal>
+									<BitmapID IsStandardSet="1" IsCustomSet="1" Standard="-100" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkNormal>
+								<bkSelected>
+									<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-100" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkSelected>
+								<bkToday>
+									<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkToday>
+								<bkTodaySelected>
+									<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkTodaySelected>
+								<HeightFormula>
+									<Formula_MulDivC>
+										<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+										<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+										<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+									</Formula_MulDivC>
+								</HeightFormula>
+							</Header>
+						</DayViewDayHeader>
+					</Header>
+					<Group>
+						<DayViewDayGroup>
+							<BorderLeftColor Standard="C98C5D" Custom="-1"/>
+							<Header>
+								<Header>
+									<TextLeftRight>
+										<Normal>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Normal>
+										<Selected>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Selected>
+										<Today>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Today>
+										<TodaySelected>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</TodaySelected>
+									</TextLeftRight>
+									<TextCenter>
+										<Normal>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Normal>
+										<Selected>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Selected>
+										<Today>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Today>
+										<TodaySelected>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</TodaySelected>
+									</TextCenter>
+									<BaseColor Standard="004EE8" Custom="-1"/>
+									<TodayBaseColor Standard="000000" Custom="-1"/>
+									<bkNormal>
+										<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-102" Custom="0"/>
+										<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+									</bkNormal>
+									<bkSelected>
+										<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-102" Custom="0"/>
+										<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+									</bkSelected>
+									<bkToday>
+										<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-102" Custom="0"/>
+										<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+									</bkToday>
+									<bkTodaySelected>
+										<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-102" Custom="0"/>
+										<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+									</bkTodaySelected>
+									<HeightFormula>
+										<Formula_MulDivC>
+											<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+											<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+											<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+										</Formula_MulDivC>
+									</HeightFormula>
+								</Header>
+							</Header>
+							<AllDayEvents>
+								<DayViewDayGroupAllDayEvents>
+									<BackgroundColor Standard="E1BFA5" Custom="-1"/>
+									<BackgroundSelectedColor Standard="6F4D33" Custom="-1"/>
+									<BottomBorderColor Standard="C98C5D" Custom="-1"/>
+								</DayViewDayGroupAllDayEvents>
+							</AllDayEvents>
+							<Cell>
+								<DayViewDayGroupCell>
+									<WorkCell>
+										<BackgroundColor Standard="FFFFFF" Custom="-1"/>
+										<BorderBottomInHourColor Standard="F7EDE6" Custom="-1"/>
+										<BorderBottomHourColor Standard="E1BFA5" Custom="-1"/>
+										<SelectedColor Standard="6F4D33" Custom="-1"/>
+									</WorkCell>
+									<NonWorkCell>
+										<BackgroundColor Standard="F7EDE6" Custom="-1"/>
+										<BorderBottomInHourColor Standard="F1E1D5" Custom="-1"/>
+										<BorderBottomHourColor Standard="E1BFA5" Custom="-1"/>
+										<SelectedColor Standard="6F4D33" Custom="-1"/>
+									</NonWorkCell>
+								</DayViewDayGroupCell>
+							</Cell>
+							<MultiDayEvent>
+								<DayViewEvent_MultiDay>
+									<DateFormatFrom IsStandardSet="1" IsCustomSet="0" Standard="From: MMM d" Custom=""/>
+									<DateFormatTo IsStandardSet="1" IsCustomSet="0" Standard="To: MMM d" Custom=""/>
+									<Event>
+										<Normal>
+											<BorderColor Standard="C98C5D" Custom="-1"/>
+											<Background>
+												<LightColor Standard="FEFCFB" Custom="-1"/>
+												<DarkColor Standard="EBD5C3" Custom="-1"/>
+											</Background>
+											<Subject>
+												<Color Standard="000000" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</Subject>
+											<Location>
+												<Color Standard="000000" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</Location>
+											<Body>
+												<Color Standard="000000" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</Body>
+											<StartEnd>
+												<Color Standard="D19D75" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</StartEnd>
+										</Normal>
+										<Selected>
+											<BorderColor Standard="000000" Custom="-1"/>
+											<Background>
+												<LightColor Standard="FEFCFB" Custom="-1"/>
+												<DarkColor Standard="EBD5C3" Custom="-1"/>
+											</Background>
+											<Subject>
+												<Color Standard="000000" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</Subject>
+											<Location>
+												<Color Standard="000000" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</Location>
+											<Body>
+												<Color Standard="000000" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</Body>
+											<StartEnd>
+												<Color Standard="D19D75" Custom="-1"/>
+												<Font>
+													<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+													<Custom FaceName=""/>
+												</Font>
+											</StartEnd>
+										</Selected>
+										<GripperBorderColor Standard="000000" Custom="-1"/>
+										<GripperBackgroundColor Standard="FA83EE" Custom="-1"/>
+										<EventIconsToDraw>
+											<EventIconsToDraw>
+												<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+												<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+												<ShowException IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+												<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+												<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+											</EventIconsToDraw>
+										</EventIconsToDraw>
+										<HeightFormula>
+											<Formula_MulDivC>
+												<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+												<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+												<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+											</Formula_MulDivC>
+										</HeightFormula>
+									</Event>
+								</DayViewEvent_MultiDay>
+							</MultiDayEvent>
+							<SingleDayEvent>
+								<Event>
+									<Normal>
+										<BorderColor Standard="C98C5D" Custom="-1"/>
+										<Background>
+											<LightColor Standard="FFFFFF" Custom="-1"/>
+											<DarkColor Standard="EAD2BF" Custom="-1"/>
+										</Background>
+										<Subject>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Subject>
+										<Location>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Location>
+										<Body>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Body>
+										<StartEnd>
+											<Color Standard="-1" Custom="-1"/>
+											<Font>
+												<Standard FaceName=""/>
+												<Custom FaceName=""/>
+											</Font>
+										</StartEnd>
+									</Normal>
+									<Selected>
+										<BorderColor Standard="000000" Custom="-1"/>
+										<Background>
+											<LightColor Standard="FFFFFF" Custom="-1"/>
+											<DarkColor Standard="EAD2BF" Custom="-1"/>
+										</Background>
+										<Subject>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Subject>
+										<Location>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Location>
+										<Body>
+											<Color Standard="000000" Custom="-1"/>
+											<Font>
+												<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+												<Custom FaceName=""/>
+											</Font>
+										</Body>
+										<StartEnd>
+											<Color Standard="-1" Custom="-1"/>
+											<Font>
+												<Standard FaceName=""/>
+												<Custom FaceName=""/>
+											</Font>
+										</StartEnd>
+									</Selected>
+									<GripperBorderColor Standard="000000" Custom="-1"/>
+									<GripperBackgroundColor Standard="FA83EE" Custom="-1"/>
+									<EventIconsToDraw>
+										<EventIconsToDraw>
+											<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+											<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+											<ShowException IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+											<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+											<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+										</EventIconsToDraw>
+									</EventIconsToDraw>
+									<HeightFormula>
+										<Formula_MulDivC>
+											<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+											<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+											<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+										</Formula_MulDivC>
+									</HeightFormula>
+								</Event>
+							</SingleDayEvent>
+						</DayViewDayGroup>
+					</Group>
+				</DayViewDay>
+			</Day>
+		</DayView>
+		<MonthView>
+			<Header>
+				<Header>
+					<TextLeftRight>
+						<Normal>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextLeftRight>
+					<TextCenter>
+						<Normal>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextCenter>
+					<BaseColor Standard="C98C5D" Custom="-1"/>
+					<TodayBaseColor Standard="1193EE" Custom="-1"/>
+					<bkNormal>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-100" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkNormal>
+					<bkSelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-100" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkSelected>
+					<bkToday>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkToday>
+					<bkTodaySelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkTodaySelected>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</Header>
+			</Header>
+			<Event>
+				<Event>
+					<Normal>
+						<BorderColor Standard="000000" Custom="-1"/>
+						<Background>
+							<LightColor Standard="FFFFFF" Custom="-1"/>
+							<DarkColor Standard="FFFFFF" Custom="-1"/>
+						</Background>
+						<Subject>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Subject>
+						<Location>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Location>
+						<Body>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Body>
+						<StartEnd>
+							<Color Standard="-1" Custom="-1"/>
+							<Font>
+								<Standard FaceName=""/>
+								<Custom FaceName=""/>
+							</Font>
+						</StartEnd>
+					</Normal>
+					<Selected>
+						<BorderColor Standard="000000" Custom="-1"/>
+						<Background>
+							<LightColor Standard="FFFFFF" Custom="-1"/>
+							<DarkColor Standard="FFFFFF" Custom="-1"/>
+						</Background>
+						<Subject>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Subject>
+						<Location>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Location>
+						<Body>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Body>
+						<StartEnd>
+							<Color Standard="-1" Custom="-1"/>
+							<Font>
+								<Standard FaceName=""/>
+								<Custom FaceName=""/>
+							</Font>
+						</StartEnd>
+					</Selected>
+					<GripperBorderColor Standard="000000" Custom="-1"/>
+					<GripperBackgroundColor Standard="FFFFFF" Custom="-1"/>
+					<EventIconsToDraw>
+						<EventIconsToDraw>
+							<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowException IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+						</EventIconsToDraw>
+					</EventIconsToDraw>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</Event>
+			</Event>
+			<WeekDayHeader>
+				<Header>
+					<TextLeftRight>
+						<Normal>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextLeftRight>
+					<TextCenter>
+						<Normal>
+							<Color Standard="C99365" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextCenter>
+					<BaseColor Standard="FFEFE3" Custom="-1"/>
+					<TodayBaseColor Standard="1193EE" Custom="-1"/>
+					<bkNormal>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkNormal>
+					<bkSelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkSelected>
+					<bkToday>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkToday>
+					<bkTodaySelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkTodaySelected>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</Header>
+			</WeekDayHeader>
+			<WeekHeader>
+				<MonthViewWeekHeader>
+					<FreeSpaceBkColor Standard="FFEFE3" Custom="-1"/>
+				</MonthViewWeekHeader>
+				<Header>
+					<TextLeftRight>
+						<Normal>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextLeftRight>
+					<TextCenter>
+						<Normal>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Escapement="900" Orientation="900" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Normal>
+						<Selected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Selected>
+						<Today>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Today>
+						<TodaySelected>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</TodaySelected>
+					</TextCenter>
+					<BaseColor Standard="0080FF" Custom="-1"/>
+					<TodayBaseColor Standard="1193EE" Custom="-1"/>
+					<bkNormal>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-123" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkNormal>
+					<bkSelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-123" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkSelected>
+					<bkToday>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-123" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkToday>
+					<bkTodaySelected>
+						<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-123" Custom="0"/>
+						<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+					</bkTodaySelected>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</Header>
+			</WeekHeader>
+			<Day>
+				<MonthViewDay>
+					<BorderColor Standard="C98C5D" Custom="-1"/>
+					<TodayBorderColor Standard="58B3F3" Custom="-1"/>
+					<BackgroundLightColor Standard="FFFFFF" Custom="-1"/>
+					<BackgroundDarkColor Standard="E1BFA5" Custom="-1"/>
+					<BackgroundSelectedColor Standard="F7EDE6" Custom="-1"/>
+					<Header>
+						<Header>
+							<TextLeftRight>
+								<Normal>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Normal>
+								<Selected>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Selected>
+								<Today>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Today>
+								<TodaySelected>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</TodaySelected>
+							</TextLeftRight>
+							<TextCenter>
+								<Normal>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Normal>
+								<Selected>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Selected>
+								<Today>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Today>
+								<TodaySelected>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</TodaySelected>
+							</TextCenter>
+							<BaseColor Standard="C98C5D" Custom="-1"/>
+							<TodayBaseColor Standard="1193EE" Custom="-1"/>
+							<bkNormal>
+								<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-120" Custom="0"/>
+								<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+							</bkNormal>
+							<bkSelected>
+								<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-120" Custom="0"/>
+								<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+							</bkSelected>
+							<bkToday>
+								<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-121" Custom="0"/>
+								<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 2, 1"/>
+							</bkToday>
+							<bkTodaySelected>
+								<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-121" Custom="0"/>
+								<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 2, 1"/>
+							</bkTodaySelected>
+							<HeightFormula>
+								<Formula_MulDivC>
+									<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+									<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+									<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+								</Formula_MulDivC>
+							</HeightFormula>
+						</Header>
+					</Header>
+					<MultiDayEvent>
+						<Event>
+							<Normal>
+								<BorderColor Standard="C98C5D" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFCFB" Custom="-1"/>
+									<DarkColor Standard="EBD5C3" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="D19D75" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Normal>
+							<Selected>
+								<BorderColor Standard="000000" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFCFB" Custom="-1"/>
+									<DarkColor Standard="EBD5C3" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="D19D75" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Selected>
+							<GripperBorderColor Standard="000000" Custom="-1"/>
+							<GripperBackgroundColor Standard="FFFFFF" Custom="-1"/>
+							<EventIconsToDraw>
+								<EventIconsToDraw>
+									<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowException IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+								</EventIconsToDraw>
+							</EventIconsToDraw>
+							<HeightFormula>
+								<Formula_MulDivC>
+									<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+									<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+									<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+								</Formula_MulDivC>
+							</HeightFormula>
+						</Event>
+					</MultiDayEvent>
+					<SingleDayEvent>
+						<Event>
+							<Normal>
+								<BorderColor Standard="F7EEE7" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFDFC" Custom="-1"/>
+									<DarkColor Standard="EFDED0" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="6F4D33" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Normal>
+							<Selected>
+								<BorderColor Standard="000000" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFDFC" Custom="-1"/>
+									<DarkColor Standard="EFDED0" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="6F4D33" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Selected>
+							<GripperBorderColor Standard="000000" Custom="-1"/>
+							<GripperBackgroundColor Standard="FFFFFF" Custom="-1"/>
+							<EventIconsToDraw>
+								<EventIconsToDraw>
+									<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowException IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+								</EventIconsToDraw>
+							</EventIconsToDraw>
+							<HeightFormula>
+								<Formula_MulDivC>
+									<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+									<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+									<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+								</Formula_MulDivC>
+							</HeightFormula>
+						</Event>
+					</SingleDayEvent>
+				</MonthViewDay>
+			</Day>
+		</MonthView>
+		<WeekView>
+			<Event>
+				<Event>
+					<Normal>
+						<BorderColor Standard="000000" Custom="-1"/>
+						<Background>
+							<LightColor Standard="FFFFFF" Custom="-1"/>
+							<DarkColor Standard="FFFFFF" Custom="-1"/>
+						</Background>
+						<Subject>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Subject>
+						<Location>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Location>
+						<Body>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Body>
+						<StartEnd>
+							<Color Standard="-1" Custom="-1"/>
+							<Font>
+								<Standard FaceName=""/>
+								<Custom FaceName=""/>
+							</Font>
+						</StartEnd>
+					</Normal>
+					<Selected>
+						<BorderColor Standard="000000" Custom="-1"/>
+						<Background>
+							<LightColor Standard="FFFFFF" Custom="-1"/>
+							<DarkColor Standard="FFFFFF" Custom="-1"/>
+						</Background>
+						<Subject>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Subject>
+						<Location>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Location>
+						<Body>
+							<Color Standard="000000" Custom="-1"/>
+							<Font>
+								<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+								<Custom FaceName=""/>
+							</Font>
+						</Body>
+						<StartEnd>
+							<Color Standard="-1" Custom="-1"/>
+							<Font>
+								<Standard FaceName=""/>
+								<Custom FaceName=""/>
+							</Font>
+						</StartEnd>
+					</Selected>
+					<GripperBorderColor Standard="000000" Custom="-1"/>
+					<GripperBackgroundColor Standard="FFFFFF" Custom="-1"/>
+					<EventIconsToDraw>
+						<EventIconsToDraw>
+							<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowException IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+						</EventIconsToDraw>
+					</EventIconsToDraw>
+					<HeightFormula>
+						<Formula_MulDivC>
+							<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+							<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+							<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+						</Formula_MulDivC>
+					</HeightFormula>
+				</Event>
+			</Event>
+			<Day>
+				<WeekViewDay>
+					<BorderColor Standard="C98C5D" Custom="-1"/>
+					<TodayBorderColor Standard="58B3F3" Custom="-1"/>
+					<BackgroundLightColor Standard="FFFFFF" Custom="-1"/>
+					<BackgroundDarkColor Standard="E1BFA5" Custom="-1"/>
+					<BackgroundSelectedColor Standard="F7EDE6" Custom="-1"/>
+					<Header>
+						<WeekViewDayHeader>
+							<HeaderFormat IsStandardSet="1" IsCustomSet="0" Standard="dddd, dd MMMM" Custom=""/>
+							<UseOffice2003HeaderFormat IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+							<Header>
+								<TextLeftRight>
+									<Normal>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Normal>
+									<Selected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Selected>
+									<Today>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Today>
+									<TodaySelected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</TodaySelected>
+								</TextLeftRight>
+								<TextCenter>
+									<Normal>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Normal>
+									<Selected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Selected>
+									<Today>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</Today>
+									<TodaySelected>
+										<Color Standard="000000" Custom="-1"/>
+										<Font>
+											<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+											<Custom FaceName=""/>
+										</Font>
+									</TodaySelected>
+								</TextCenter>
+								<BaseColor Standard="0080FF" Custom="-1"/>
+								<TodayBaseColor Standard="1193EE" Custom="-1"/>
+								<bkNormal>
+									<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-130" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkNormal>
+								<bkSelected>
+									<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-130" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkSelected>
+								<bkToday>
+									<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkToday>
+								<bkTodaySelected>
+									<BitmapID IsStandardSet="1" IsCustomSet="0" Standard="-101" Custom="0"/>
+									<BitmapBorder IsStandardSet="1" IsCustomSet="0" Standard="1, 1, 1, 1"/>
+								</bkTodaySelected>
+								<HeightFormula>
+									<Formula_MulDivC>
+										<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+										<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+										<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+									</Formula_MulDivC>
+								</HeightFormula>
+							</Header>
+						</WeekViewDayHeader>
+					</Header>
+					<MultiDayEvent>
+						<Event>
+							<Normal>
+								<BorderColor Standard="C98C5D" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFCFB" Custom="-1"/>
+									<DarkColor Standard="EBD5C3" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="-1" Custom="-1"/>
+									<Font>
+										<Standard FaceName=""/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Normal>
+							<Selected>
+								<BorderColor Standard="000000" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFCFB" Custom="-1"/>
+									<DarkColor Standard="EBD5C3" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="700" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="-1" Custom="-1"/>
+									<Font>
+										<Standard FaceName=""/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Selected>
+							<GripperBorderColor Standard="000000" Custom="-1"/>
+							<GripperBackgroundColor Standard="FFFFFF" Custom="-1"/>
+							<EventIconsToDraw>
+								<EventIconsToDraw>
+									<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowException IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+								</EventIconsToDraw>
+							</EventIconsToDraw>
+							<HeightFormula>
+								<Formula_MulDivC>
+									<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+									<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+									<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+								</Formula_MulDivC>
+							</HeightFormula>
+						</Event>
+					</MultiDayEvent>
+					<SingleDayEvent>
+						<Event>
+							<Normal>
+								<BorderColor Standard="F7EEE7" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFDFC" Custom="-1"/>
+									<DarkColor Standard="EFDED0" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="6F4D33" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Normal>
+							<Selected>
+								<BorderColor Standard="000000" Custom="-1"/>
+								<Background>
+									<LightColor Standard="FEFDFC" Custom="-1"/>
+									<DarkColor Standard="EFDED0" Custom="-1"/>
+								</Background>
+								<Subject>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Subject>
+								<Location>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Location>
+								<Body>
+									<Color Standard="000000" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</Body>
+								<StartEnd>
+									<Color Standard="6F4D33" Custom="-1"/>
+									<Font>
+										<Standard Height="-11" Weight="400" CharSet="1" Quality="5" FaceName="Segoe UI"/>
+										<Custom FaceName=""/>
+									</Font>
+								</StartEnd>
+							</Selected>
+							<GripperBorderColor Standard="000000" Custom="-1"/>
+							<GripperBackgroundColor Standard="FFFFFF" Custom="-1"/>
+							<EventIconsToDraw>
+								<EventIconsToDraw>
+									<ShowReminder IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowOccurrence IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowException IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowMeeting IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+									<ShowPrivate IsStandardSet="1" IsCustomSet="0" Standard="0" Custom="0"/>
+								</EventIconsToDraw>
+							</EventIconsToDraw>
+							<HeightFormula>
+								<Formula_MulDivC>
+									<Multiplier IsStandardSet="1" IsCustomSet="0" Standard="14" Custom="0"/>
+									<Divisor IsStandardSet="1" IsCustomSet="0" Standard="10" Custom="0"/>
+									<Constant IsStandardSet="1" IsCustomSet="0" Standard="1" Custom="0"/>
+								</Formula_MulDivC>
+							</HeightFormula>
+						</Event>
+					</SingleDayEvent>
+				</WeekViewDay>
+			</Day>
+		</WeekView>
+	</XTPCalendarTheme>
+</CalendarThemeOffice2007>

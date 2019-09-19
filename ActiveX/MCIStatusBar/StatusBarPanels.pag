@@ -1,0 +1,269 @@
+VERSION 5.00
+Begin VB.PropertyPage StatusBarPanels 
+   Caption         =   "Panels"
+   ClientHeight    =   2025
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6135
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   135
+   ScaleMode       =   3  'Pixel
+   ScaleWidth      =   409
+   Begin VB.TextBox txt 
+      Height          =   285
+      Index           =   2
+      Left            =   1440
+      TabIndex        =   15
+      Top             =   1320
+      Width           =   3255
+   End
+   Begin VB.CheckBox chkEnabled 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Enabled"
+      Height          =   255
+      Left            =   240
+      TabIndex        =   13
+      Top             =   1680
+      Value           =   1  'Checked
+      Width           =   1410
+   End
+   Begin VB.CommandButton cmdDelete 
+      Caption         =   "Delete"
+      Height          =   285
+      Left            =   3765
+      TabIndex        =   12
+      Top             =   210
+      Width           =   945
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Panel Picture"
+      Height          =   1815
+      Left            =   4800
+      TabIndex        =   8
+      Top             =   120
+      Width           =   1260
+      Begin VB.CommandButton cmdDel 
+         Height          =   435
+         Left            =   600
+         Picture         =   "StatusBarPanels.pgx":0000
+         Style           =   1  'Graphical
+         TabIndex        =   11
+         Top             =   240
+         Width           =   435
+      End
+      Begin VB.PictureBox picPanel 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         Height          =   870
+         Left            =   135
+         ScaleHeight     =   810
+         ScaleWidth      =   870
+         TabIndex        =   10
+         Top             =   840
+         Width           =   930
+      End
+      Begin VB.CommandButton cmdOpenDlg 
+         Height          =   435
+         Left            =   120
+         Picture         =   "StatusBarPanels.pgx":014A
+         Style           =   1  'Graphical
+         TabIndex        =   9
+         Top             =   240
+         Width           =   435
+      End
+   End
+   Begin VB.TextBox txtIndex 
+      BackColor       =   &H80000000&
+      Height          =   285
+      Left            =   1440
+      Locked          =   -1  'True
+      TabIndex        =   6
+      Top             =   210
+      Width           =   735
+   End
+   Begin VB.HScrollBar hsb 
+      Height          =   285
+      Left            =   2205
+      Max             =   1
+      Min             =   1
+      TabIndex        =   5
+      Top             =   210
+      Value           =   1
+      Width           =   435
+   End
+   Begin VB.TextBox txt 
+      Height          =   285
+      Index           =   1
+      Left            =   1440
+      TabIndex        =   4
+      Top             =   930
+      Width           =   1095
+   End
+   Begin VB.TextBox txt 
+      Height          =   285
+      Index           =   0
+      Left            =   1440
+      TabIndex        =   2
+      Top             =   570
+      Width           =   3255
+   End
+   Begin VB.CommandButton cmdAddPanel 
+      Caption         =   "Add Panel"
+      Height          =   285
+      Left            =   2685
+      TabIndex        =   0
+      Top             =   210
+      Width           =   1035
+   End
+   Begin VB.Label lbl 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Tooltip Text :"
+      Height          =   255
+      Index           =   2
+      Left            =   240
+      TabIndex        =   14
+      Top             =   1320
+      Width           =   975
+   End
+   Begin VB.Label lbl 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Index :"
+      Height          =   255
+      Index           =   3
+      Left            =   240
+      TabIndex        =   7
+      Top             =   240
+      Width           =   975
+   End
+   Begin VB.Label lbl 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Panel Width :"
+      Height          =   255
+      Index           =   1
+      Left            =   255
+      TabIndex        =   3
+      Top             =   930
+      Width           =   975
+   End
+   Begin VB.Label lbl 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Panel Text :"
+      Height          =   255
+      Index           =   0
+      Left            =   255
+      TabIndex        =   1
+      Top             =   570
+      Width           =   975
+   End
+End
+Attribute VB_Name = "StatusBarPanels"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+Const sFilter  As String = "All Picture Files|*.bmp;*.ico;*.gif"
+
+Dim sb         As MCIStatusBar
+Dim iLastPanel As Long
+
+Private Sub chkEnabled_Click()
+    Changed = True
+End Sub
+
+Private Sub cmdAddPanel_Click()
+Dim i As Long
+    If Changed = True Then
+        PropertyPage_ApplyChanges
+    End If
+    With sb
+        i = .AddPanel
+        hsb.Max = i
+    End With
+    Changed = True
+    iLastPanel = i
+    picPanel.Picture = Nothing
+End Sub
+
+Private Sub cmdDel_Click()
+    picPanel.Picture = Nothing
+    Changed = True
+End Sub
+
+Private Sub cmdDelete_Click()
+    sb.DeletePanel
+    hsb.Max = sb.NumberOfPanels
+    Changed = True
+End Sub
+
+Private Sub cmdOpenDlg_Click()
+Dim sFile As String
+    sFile = ""
+    sFile = OpenCommonDialog("Load Picture", sFilter)
+    If sFile <> "" Then
+        Set picPanel.Picture = LoadPicture(sFile)
+        Changed = True
+    End If
+
+End Sub
+
+Private Sub hsb_Change()
+Dim i As Long
+    txtIndex.Text = hsb.Value
+    i = hsb.Value
+    If i <> iLastPanel And Changed = True Then
+        PropertyPage_ApplyChanges
+    End If
+    iLastPanel = i
+    txt(0).Text = sb.PanelCaption(i)
+    txt(1).Text = sb.PanelWidth(i)
+    txt(2).Text = sb.ToolTipText(i)
+    If sb.PanelEnabled(i) = True Then
+        chkEnabled.Value = 1
+    Else
+        chkEnabled.Value = 0
+    End If
+    Set picPanel.Picture = sb.PanelPicture(i)
+    If i = 0 Then
+        cmdDelete.Enabled = False
+    Else
+        cmdDelete.Enabled = True
+    End If
+End Sub
+
+Private Sub picPanel_Change()
+    Changed = True
+End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+Dim i As Long
+    With sb
+        i = iLastPanel
+        If txt(1).Text = "" Then
+            txt(1).Text = "100"
+        End If
+        .PanelCaption(i) = txt(0).Text
+        .PanelWidth(i) = txt(1).Text
+        .ToolTipText(i) = txt(2).Text
+        If chkEnabled = 1 Then
+            .PanelEnabled(i) = True
+        Else
+            .PanelEnabled(i) = False
+        End If
+        Set .PanelPicture(i) = picPanel.Picture
+    End With
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+    Set sb = SelectedControls(0)
+    If sb.NumberOfPanels <> 0 Then
+        hsb.Max = sb.NumberOfPanels
+        txtIndex.Text = 1
+        iLastPanel = 1
+        hsb_Change
+    End If
+End Sub
+
+Private Sub txt_Change(Index As Integer)
+    Changed = True
+End Sub

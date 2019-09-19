@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[VbEditorUtil5.VBP]
+SCC_Aux_Path = "\\Dsvmsrv\Ambiente\CLA"
+SCC_Project_Name = "$/SISTEMAS/Dsr/ADDIN", QIAAAAAA
+
+[VbEditorUtil6.VBP]
+SCC_Aux_Path =\\Dsvmsrv\Ambiente\CLA,
+SCC_Project_Name =this project is not under source code control

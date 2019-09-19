@@ -1,0 +1,160 @@
+[Setup Wizard Template]
+TemplateDate=20/10/1999 17:29:52
+
+[Select Project and Options]
+txtProjFile=C:\Tecaplus\UTILIT\Tktool.vbp
+chkProjRebuild=0
+optBldSetup=True
+chkIncludeDEP=0
+optInternet=False
+optDEPOnly=False
+
+[Distribution Method]
+optFloppyTarg=False
+optSingleDirTarg=True
+optMultDirTarg=False
+
+[Single Directory]
+cboFloppyDrives=0
+cboFloppyDriveSize=0
+txtDirTarget=C:\Tecaplus\UTILIT\SWSETUP\
+
+[Internet Package]
+optRemoteSite=True
+optLocalSite=False
+txtLocalSite=
+
+[Data Access]
+chkUseJet=0
+chkUseODBC=1
+Isam0=Text
+Isam1=Excel 5.0
+Isam2=Excel 8.0
+Isam3=HTML Export
+Isam4=Excel 3.0
+Isam5=Excel 4.0
+Isam6=Lotus WK1
+Isam7=Lotus WK3
+Isam8=Lotus WK4
+Isam9=HTML Import
+Isam10=dBase III
+Isam11=dBase IV
+Isam12=dBase 5.0
+Isam13=FoxPro 2.0
+Isam14=FoxPro 2.5
+Isam15=FoxPro 2.6
+Isam16=FoxPro 3.0
+Isam17=FoxPro DBC
+Isam18=Paradox 3.X
+Isam19=Paradox 4.X
+Isam20=Paradox 5.X
+Isam21=Jet 2.x
+Isam22=
+Text=False
+Excel 5.0=False
+Excel 8.0=False
+HTML Export=False
+Excel 3.0=False
+Excel 4.0=False
+Lotus WK1=False
+Lotus WK3=False
+Lotus WK4=False
+HTML Import=False
+dBase III=False
+dBase IV=False
+dBase 5.0=False
+FoxPro 2.0=False
+FoxPro 2.5=False
+FoxPro 2.6=False
+FoxPro 3.0=False
+FoxPro DBC=False
+Paradox 3.X=False
+Paradox 4.X=False
+Paradox 5.X=False
+Jet 2.x=False
+
+[ActiveX Server Components]
+File1="C:\Dsr\Commom\DSR100.dll",True,32763,True,False,,,0,False,False
+File2="C:\Dsr\Commom\XBANCO01.dll",True,32763,True,False,,,0,False,False
+File3="C:\Dsr\Commom\DSACTIVE.dll",True,32763,True,False,,,0,False,False
+File4=
+
+[Confirm Dependencies]
+File1="C:\WINDOWS\SYSTEM\COMDLG32.OCX",True,32764
+File2="C:\WINDOWS\SYSTEM\COMCTL32.OCX",True,32764
+File3="C:\WINDOWS\SYSTEM\CRYSTL32.OCX",True,32764
+File4="C:\WINDOWS\SYSTEM\MSFLXGRD.OCX",True,32764
+File5="C:\WINDOWS\SYSTEM\THREED32.OCX",True,32764
+File6="C:\WINDOWS\SYSTEM\TABCTL32.OCX",True,32764
+File7="C:\WINDOWS\SYSTEM\MSMASK32.OCX",True,32764
+File8="C:\ARQUIVOS DE PROGRAMAS\ARQUIVOS COMUNS\MICROSOFT SHARED\DAO\DAO350.DLL",True,32763
+File9="C:\WINDOWS\SYSTEM\MSRDC20.OCX",True,32764
+File10="C:\ARQUIVOS DE PROGRAMAS\COMMON FILES\DESIGNER\MSCONDES.DLL",True,32764
+File11="C:\WINDOWS\SYSTEM\ODBC32.DLL",True,32762
+File12=
+
+[Shared ActiveX Application]
+optDeployApplication=True
+optDeployShared=False
+optRemoteServer1=True
+optRemoteServer0=False
+
+[File Summary]
+File1="C:\WINDOWS\SYSTEM\MSVBVM50.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File2="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\StdOle2.tlb",False,"$(WinSysPathSysFile)",$(TLBRegister),False
+File3="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\OleAut32.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File4="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\OlePro32.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File5="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\AsycFilt.dll",False,"$(WinSysPathSysFile)",,False
+File6="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\Ctl3d32.dll",False,"$(WinSysPathSysFile)",,False
+File7="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\ComCat.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File8="C:\WINDOWS\SYSTEM\COMDLG32.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File9="C:\WINDOWS\SYSTEM\COMCTL32.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File10="C:\WINDOWS\SYSTEM\CRYSTL32.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File11="C:\WINDOWS\SYSTEM\CRPE32.DLL",False,"$(WinSysPath)",,True
+File12="C:\WINDOWS\SYSTEM\IMPLODE.DLL",False,"$(WinSysPath)",,True
+File13="C:\WINDOWS\SYSTEM\PG32.DLL",False,"$(WinSysPath)",,True
+File14="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\CO2C40EN.DLL",False,"$(WinSysPath)",,True
+File15="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\MSVCRT20.DLL",False,"$(WinSysPathSysFile)",,False
+File16="C:\WINDOWS\Crystal\CRXLAT32.DLL",False,"$(WinPath)\Crystal",,True
+File17="C:\WINDOWS\SYSTEM\P2BBND.DLL",False,"$(WinSysPath)",,True
+File18="C:\WINDOWS\SYSTEM\P2BDAO.DLL",False,"$(WinSysPath)",,True
+File19="C:\WINDOWS\SYSTEM\P2CTDAO.DLL",False,"$(WinSysPath)",,True
+File20="C:\WINDOWS\SYSTEM\P2IRDAO.DLL",False,"$(WinSysPath)",,True
+File21="C:\WINDOWS\SYSTEM\P2SODBC.DLL",False,"$(WinSysPath)",,True
+File22="C:\WINDOWS\Crystal\U2DDISK.DLL",False,"$(WinPath)\Crystal",,True
+File23="C:\WINDOWS\Crystal\U2DMAPI.DLL",False,"$(WinPath)\Crystal",,True
+File24="C:\WINDOWS\Crystal\U2FCR.DLL",False,"$(WinPath)\Crystal",,True
+File25="C:\WINDOWS\Crystal\U2FDIF.DLL",False,"$(WinPath)\Crystal",,True
+File26="C:\WINDOWS\Crystal\U2FHTML.DLL",False,"$(WinPath)\Crystal",,True
+File27="C:\WINDOWS\Crystal\U2FREC.DLL",False,"$(WinPath)\Crystal",,True
+File28="C:\WINDOWS\Crystal\U2FRTF.DLL",False,"$(WinPath)\Crystal",,True
+File29="C:\WINDOWS\Crystal\U2FSEPV.DLL",False,"$(WinPath)\Crystal",,True
+File30="C:\WINDOWS\Crystal\U2FTEXT.DLL",False,"$(WinPath)\Crystal",,True
+File31="C:\WINDOWS\Crystal\U2FWKS.DLL",False,"$(WinPath)\Crystal",,True
+File32="C:\WINDOWS\Crystal\U2FWORDW.DLL",False,"$(WinPath)\Crystal",,True
+File33="C:\WINDOWS\Crystal\U2FXLS.DLL",False,"$(WinPath)\Crystal",,True
+File34="C:\WINDOWS\SYSTEM\MSFLXGRD.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File35="C:\WINDOWS\SYSTEM\THREED32.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File36="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\MFC40.dll",False,"$(WinSysPathSysFile)",$(DLLSelfRegister),False
+File37="C:\Arquivos de programas\DevStudio\VB\SETUPKIT\KITFIL32\SYS32\MSVCRT40.dll",False,"$(WinSysPathSysFile)",,False
+File38="C:\WINDOWS\SYSTEM\TABCTL32.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File39="C:\WINDOWS\SYSTEM\MSMASK32.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File40="C:\ARQUIVOS DE PROGRAMAS\ARQUIVOS COMUNS\MICROSOFT SHARED\DAO\DAO350.DLL",False,"$(MSDAOPath)",$(DLLSelfRegister),True
+File41="C:\WINDOWS\SYSTEM\MSJtEr35.dll",False,"$(WinSysPathSysFile)",,False
+File42="C:\WINDOWS\SYSTEM\MSJInt35.dll",False,"$(WinSysPathSysFile)",,False
+File43="C:\WINDOWS\SYSTEM\MSRDC20.OCX",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File44="C:\WINDOWS\SYSTEM\MSRdo20.dll",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File45="C:\WINDOWS\SYSTEM\rdocurs.dll",False,"$(WinSysPath)",,True
+File46="C:\WINDOWS\SYSTEM\adme.dll",False,"$(WinSysPath)",,True
+File47="C:\WINDOWS\SYSTEM\dtccm.dll",False,"$(WinSysPath)",,True
+File48="C:\WINDOWS\SYSTEM\dtctrace.dll",False,"$(WinSysPath)",,True
+File49="C:\WINDOWS\SYSTEM\dtcutil.dll",False,"$(WinSysPath)",,True
+File50="C:\WINDOWS\SYSTEM\msdtcprx.dll",False,"$(WinSysPath)",,True
+File51="C:\WINDOWS\SYSTEM\xolehlp.dll",False,"$(WinSysPath)",,True
+File52="C:\ARQUIVOS DE PROGRAMAS\COMMON FILES\DESIGNER\MSCONDES.DLL",False,"$(WinSysPath)",$(DLLSelfRegister),True
+File53="C:\WINDOWS\SYSTEM\ODBC32.DLL",False,"$(WinSysPath)",,True
+File54="C:\Dsr\Commom\DSR100.dll",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File55="C:\Dsr\Commom\XBANCO01.dll",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File56="C:\Dsr\Commom\DSACTIVE.dll",True,"$(WinSysPath)",$(DLLSelfRegister),True
+File57="C:\Tecaplus\TKTOOL.exe",True,"$(AppPath)",,False
+File58="C:\Tecaplus\UTILIT\cad.rpt",True,"$(AppPath)",,False

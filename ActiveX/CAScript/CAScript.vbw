@@ -1,0 +1,6 @@
+BlScript = 44, 58, 700, 416, 
+ActiveLib = 66, 87, 722, 445, 
+ViewSqlScript = 0, 0, 0, 0, C, 66, 87, 700, 543, C
+SqlScript = 110, 145, 744, 601, 
+RunSqlScript = 154, 203, 788, 659, , 132, 174, 766, 630, C
+SqlCodigo = 154, 203, 788, 659, 

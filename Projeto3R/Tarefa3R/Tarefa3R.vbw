@@ -1,0 +1,11 @@
+FrmPaneTarefa = 0, 0, 0, 0, C, 75, 75, 977, 461, C
+BL_P3R = 0, 0, 0, 0, C
+Bl_Tarefa = 0, 0, 0, 0, C
+ActiveLib = 0, 0, 0, 0, C
+DSR = 0, 0, 0, 0, C
+NG_Tarefa = 0, 0, 0, 0, C
+TL_CadTarefa = 0, 0, 0, 0, C
+TL_Tarefas = 0, 0, 0, 0, C
+FrmTarefas = 0, 0, 0, 0, C, 100, 100, 1002, 486, C
+FrmCadTarefa = 0, 0, 0, 0, C, 125, 125, 1027, 511, C
+TL_PaneTarefa = 0, 0, 0, 0, C

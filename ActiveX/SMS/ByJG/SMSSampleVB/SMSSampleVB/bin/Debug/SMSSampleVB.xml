@@ -1,0 +1,115 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SMSSampleVB
+</name>
+</assembly>
+<members>
+<member name="M:SMSSampleVB.br.com.byjg.www.SMSService.#ctor">
+	<remarks/>
+</member><member name="E:SMSSampleVB.br.com.byjg.www.SMSService.obterVersaoCompleted">
+	<remarks/>
+</member><member name="E:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMSCompleted">
+	<remarks/>
+</member><member name="E:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMS2Completed">
+	<remarks/>
+</member><member name="E:SMSSampleVB.br.com.byjg.www.SMSService.enviarListaSMSCompleted">
+	<remarks/>
+</member><member name="E:SMSSampleVB.br.com.byjg.www.SMSService.recursosCompleted">
+	<remarks/>
+</member><member name="E:SMSSampleVB.br.com.byjg.www.SMSService.creditosCompleted">
+	<remarks/>
+</member><member name="E:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMSInternacionalCompleted">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.obterVersao">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.obterVersaoAsync">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.obterVersaoAsync(System.Object)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMS(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMSAsync(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMSAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMS2(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMS2Async(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMS2Async(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarListaSMS(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarListaSMSAsync(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarListaSMSAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.recursos(System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.recursosAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.recursosAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.creditos(System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.creditosAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.creditosAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMSInternacional(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMSInternacionalAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.enviarSMSInternacionalAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:SMSSampleVB.br.com.byjg.www.SMSService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.SMSService">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.obterVersaoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SMSSampleVB.br.com.byjg.www.obterVersaoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.obterVersaoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarSMSCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SMSSampleVB.br.com.byjg.www.enviarSMSCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarSMSCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarSMS2CompletedEventHandler">
+	<remarks/>
+</member><member name="P:SMSSampleVB.br.com.byjg.www.enviarSMS2CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarSMS2CompletedEventArgs">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarListaSMSCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SMSSampleVB.br.com.byjg.www.enviarListaSMSCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarListaSMSCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.recursosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SMSSampleVB.br.com.byjg.www.recursosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.recursosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.creditosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SMSSampleVB.br.com.byjg.www.creditosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.creditosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarSMSInternacionalCompletedEventHandler">
+	<remarks/>
+</member><member name="P:SMSSampleVB.br.com.byjg.www.enviarSMSInternacionalCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:SMSSampleVB.br.com.byjg.www.enviarSMSInternacionalCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

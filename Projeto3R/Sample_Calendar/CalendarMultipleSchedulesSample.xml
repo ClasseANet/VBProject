@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CalendarMultiResourcesConfiguration CompactMode="1">
+	<DataProviders>
+		<DataProvider ConnectionString="Provider=XML;Data Source=C:\\SISTEMAS\\Dsr\\Projeto3R\\Sample_Calendar\\CalendarMultipleSchedulesExt.xtp_cal"/>
+	</DataProviders>
+	<Resources>
+		<Resource Name="John" Enabled="1" GenerateName="1" ConnectionString="Provider=XML;Data Source=C:\\SISTEMAS\\Dsr\\Projeto3R\\Sample_Calendar\\CalendarMultipleSchedulesExt.xtp_cal" SchedulesCount="1">
+			<Schedules ScheduleID="1"/>
+		</Resource>
+		<Resource Name="Peter" Enabled="1" GenerateName="1" ConnectionString="Provider=XML;Data Source=C:\\SISTEMAS\\Dsr\\Projeto3R\\Sample_Calendar\\CalendarMultipleSchedulesExt.xtp_cal" SchedulesCount="1">
+			<Schedules ScheduleID="2"/>
+		</Resource>
+		<Resource Name="Rooms" Enabled="1" GenerateName="0" ConnectionString="Provider=XML;Data Source=C:\\SISTEMAS\\Dsr\\Projeto3R\\Sample_Calendar\\CalendarMultipleSchedulesExt.xtp_cal" SchedulesCount="2">
+			<Schedules ScheduleID="3"/>
+			<Schedules ScheduleID="4"/>
+		</Resource>
+	</Resources>
+</CalendarMultiResourcesConfiguration>

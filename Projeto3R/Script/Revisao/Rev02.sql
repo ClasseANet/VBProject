@@ -1,0 +1,49 @@
+/****************************************************************************
+****************************************************************************/
+USE G3R;
+if NOt Exists(Select * From VERSAOBD Where IDBD=1) INSERT INTO VERSAOBD(IDBD, DSCBD, VSBD, ATUBD, DTATU, ARQATU) VALUES (1, 'Banco Dpil', '1.0', '0', GetDate(), '');
+UPDATE VERSAOBD SET VSBD='1.0', DTATU=GetDate(), ATUBD='02', ARQATU='Rev02.sql';
+/****************************************************************************
+****************************************************************************/
+
+CREATE TABLE OTAREFAEVT
+(	IDTAREFA  integer  IDENTITY (1,1) ,
+	IDLOJA  int  NOT NULL ,
+	IDEVENTO  int  NULL ,
+	IDATENDIMENTO  int  NULL ,
+	DSCTAREFA  ntext  NULL ,
+	TITULO  varchar(50)  NULL ,
+	DTTAREFA  datetime  NULL ,
+	SITTAREFA  char(2)  NULL ,
+	ALTERSTAMP  integer  NULL ,
+	TIMESTAMP  datetime  NULL 
+)
+go
+
+ALTER TABLE OTAREFAEVT 
+   ADD CONSTRAINT PK_OTAREFAEVT PRIMARY KEY
+   NONCLUSTERED (IDTAREFA  ASC,IDLOJA  ASC)
+go
+
+exec sp_bindefault DF_1, 'OTAREFAEVT.ALTERSTAMP'
+go
+exec sp_bindefault DF_Now, 'OTAREFAEVT.TIMESTAMP'
+go
+ALTER TABLE OTAREFAEVT
+	ADD CONSTRAINT  FK_LOJA FOREIGN KEY (IDLOJA) REFERENCES OLOJA(IDLOJA)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+go
+
+ALTER TABLE OTAREFAEVT
+	ADD CONSTRAINT  FK_EVENTO FOREIGN KEY (IDLOJA,IDEVENTO) REFERENCES OEVENTOAGENDA(IDLOJA,IDEVENTO)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+go
+
+
+ALTER TABLE OTAREFAEVT
+	ADD CONSTRAINT  FK_ATENDIMENTO FOREIGN KEY (IDLOJA,IDATENDIMENTO) REFERENCES OATENDIMENTO(IDLOJA,IDATENDIMENTO)
+		ON DELETE NO ACTION
+		ON UPDATE NO ACTION
+go

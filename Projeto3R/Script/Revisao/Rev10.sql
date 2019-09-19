@@ -1,0 +1,266 @@
+/****************************************************************************
+****************************************************************************/
+USE G3R;
+if NOt Exists(Select * From VERSAOBD Where IDBD=1) INSERT INTO VERSAOBD(IDBD, DSCBD, VSBD, ATUBD, DTATU, ARQATU) VALUES (1, 'Banco Dpil', '1.0', '0', GetDate(), '');
+UPDATE VERSAOBD SET VSBD='1.0', DTATU=GetDate(), ATUBD='10', ARQATU='Rev10.sql';
+/****************************************************************************
+****************************************************************************/
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--SELECT * FROM SISTEMA WHERE CODSIS = 'P3R';
+--SELECT * FROM MODULO ORDER BY ID;
+--SELECT * FROM MODULO_SISTEMA;
+--SELECT * FROM GPESQUISA WHERE CODSIS='P3R';
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DELETE FROM MODULO_SISTEMA WHERE CODSIS='P3R';
+DELETE FROM GPESQUISA WHERE CODSIS='P3R';
+DELETE FROM GCAD WHERE CODSIS='P3R';
+DELETE FROM MODULO;
+DELETE FROM SISTEMA WHERE CODSIS = 'P3R';
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SET IDENTITY_INSERT MODULO on;
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (1 ,'ADM'             ,'Administração'           );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (2 ,'ADMADM'          ,'Administração do Sistema');
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (3 ,'ADMADMMODU'      ,'Módulos do Sistema'      );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (4 ,'ADMCALENDARIO'   ,'Módulo Loja'             );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (5 ,'CAD'             ,'Cadastro'                );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (6 ,'CADCLI'          ,'Cliente'                 );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (7 ,'OPE'             ,'Operações'               );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (8 ,'OPEATEND'        ,'Atendimento'             );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (9 ,'OPEVENDA'        ,'Venda'                   );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (10,'OPEDISPARO'      ,'Registro de Disparos'    );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (11,'REL'             ,'Relatórios'              );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (12,'CNSGERAL'        ,'Consulta Geral'          );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (13,'SEG'             ,'Segurança'               );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (14,'SEGPERFIL'       ,'Perfil'                  );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (15,'SEGUSU'          ,'Usuários'                );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (16,'UTIL'            ,'Utilitários'             );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (17,'BAK'             ,'Backup'                  );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (18,'CADCOLIGADA'     ,'Coligada'                );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (19,'CADOLOJA'        ,'Loja'                    );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (20,'CADOSALA'        ,'Sala'                    );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (21,'CADOMAQ'         ,'Máquina'                 );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (22,'CADEMPRESA'      ,'Estrutura/Empresa'       );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (23,'CADOCLASSE'      ,'Classe de Contatos'      );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (24,'CADOTPCONHEC'    ,'Tipo de Conhecimento'    );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (25,'CADSEST'         ,'Local de Estoque'        );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (26,'CADFDESP'        ,'Categoria da Despesa'    );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (27,'CADCCORRENTE'    ,'Conta Corrente'          );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (28,'CADOREACAOADV'   ,'Reação Adversa'          );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (29,'CADOAREA'        ,'Área de Aplicação'       );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (30,'CADODIRECAO'     ,'Direção de Aplicação'    );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (31,'CADOTPSERVICO'   ,'Tipo de Serviço'         );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (32,'CADOTPTRATAMENTO','Tipo de Tratamento'      );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (33,'CADOFOTOTIPO'    ,'Fototipo'                );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (34,'CADCCONDPGTO'    ,'Condição de Pagamento'   );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (35,'CADCFORMAPGTO'   ,'Forma de Pagamento'      );
+
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (36,'01.001'          ,'Agendamento'             );
+INSERT MODULO(ID,IDMODU,DSCMODU) VALUES (37,'01.002'          ,'Agendamento'             );
+SET IDENTITY_INSERT MODULO off;
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE MODULO SET DSCMODU='Administração'           , MODUPAI=''      , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='ADM';
+UPDATE MODULO SET DSCMODU='Administração do Sistema', MODUPAI='ADM'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='ADMADM';
+UPDATE MODULO SET DSCMODU='Módulos do Sistema'      , MODUPAI='ADMADM', SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='ADMADMMODU';
+UPDATE MODULO SET DSCMODU='Módulo Loja'             , MODUPAI='ADM'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='ADMCALENDARIO';
+UPDATE MODULO SET DSCMODU='Cadastro'                , MODUPAI='ADM'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CAD';
+UPDATE MODULO SET DSCMODU='Cliente'                 , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADCLI';
+UPDATE MODULO SET DSCMODU='Operações'               , MODUPAI=''      , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='OPE';
+UPDATE MODULO SET DSCMODU='Atendimento'             , MODUPAI='OPE'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='OPEATEND';
+UPDATE MODULO SET DSCMODU='Venda'                   , MODUPAI='OPE'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='OPEVENDA';
+UPDATE MODULO SET DSCMODU='Registro de Disparos'    , MODUPAI='OPE'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='OPEDISPARO';		--10
+UPDATE MODULO SET DSCMODU='Relatórios'              , MODUPAI=''      , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='REL';
+UPDATE MODULO SET DSCMODU='Consulta Geral'          , MODUPAI='REL'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CNSGERAL';
+UPDATE MODULO SET DSCMODU='Segurança'               , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='SEG';
+UPDATE MODULO SET DSCMODU='Perfil'                  , MODUPAI='SEG'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='SEGPERFIL';
+UPDATE MODULO SET DSCMODU='Usuários'                , MODUPAI='SEG'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='SEGUSU';
+UPDATE MODULO SET DSCMODU='Utilitários'             , MODUPAI=''      , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='UTIL';
+UPDATE MODULO SET DSCMODU='Backup'                  , MODUPAI='ADMADM', SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='BAK';
+UPDATE MODULO SET DSCMODU='Coligada'                , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADCOLIGADA';
+UPDATE MODULO SET DSCMODU='Loja'                    , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOLOJA';
+UPDATE MODULO SET DSCMODU='Sala'                    , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOSALA';		--20
+UPDATE MODULO SET DSCMODU='Máquina'                 , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOMAQ';
+UPDATE MODULO SET DSCMODU='Estrutura/Empresa'       , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADEMPRESA';
+UPDATE MODULO SET DSCMODU='Classe de Contatos'      , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOCLASSE';
+UPDATE MODULO SET DSCMODU='Tipo de Conhecimento'    , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOTPCONHEC';
+UPDATE MODULO SET DSCMODU='Local de Estoque'        , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADSEST';
+UPDATE MODULO SET DSCMODU='Categoria da Despesa'    , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADFDESP';
+UPDATE MODULO SET DSCMODU='Conta Corrente'          , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADCCORRENTE';
+UPDATE MODULO SET DSCMODU='Reação Adversa'          , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOREACAOADV';
+UPDATE MODULO SET DSCMODU='Área de Aplicação'       , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOAREA';
+UPDATE MODULO SET DSCMODU='Direção de Aplicação'    , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADODIRECAO';	--30
+UPDATE MODULO SET DSCMODU='Tipo de Serviço'         , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOTPSERVICO';
+UPDATE MODULO SET DSCMODU='Tipo de Tratamento'      , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOTPTRATAMENTO';
+UPDATE MODULO SET DSCMODU='Fototipo'                , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADOFOTOTIPO';
+UPDATE MODULO SET DSCMODU='Condição de Pagamento'   , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADCCONDPGTO';
+UPDATE MODULO SET DSCMODU='Forma de Pagamento'      , MODUPAI='CAD'   , SITMODU='S', MENUDEFAULT='S' WHERE IDMODU='CADCFORMAPGTO';
+
+UPDATE MODULO SET DSCMODU='Agendamento'             , MODUPAI='CNSGERAL'   , SITMODU='S', MENUDEFAULT='N' WHERE IDMODU='01.001';
+UPDATE MODULO SET DSCMODU='Em Teste'                , MODUPAI='CNSGERAL'   , SITMODU='S', MENUDEFAULT='N' WHERE IDMODU='01.002';
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE MODULO SET IDPAI=(SELECT	M2.ID FROM MODULO M2 WHERE M2.IDMODU=MODULO.MODUPAI)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE MODULO SET VBSCRIPT=''                              WHERE IDMODU='ADM';
+UPDATE MODULO SET VBSCRIPT=''                              WHERE IDMODU='ADMADM';
+UPDATE MODULO SET VBSCRIPT='"ACADASTRO.TL_CADMOD"'         WHERE IDMODU='ADMADMMODU';
+UPDATE MODULO SET VBSCRIPT='SUB ITEM_MENU (SYS)
+	EXISTE = SYS.EXISTEOBJETO("SHORTBAR")
+	IF EXISTE THEN
+		SET MYOBJ=SYS.OBJETOS("SHORTBAR")
+	ELSE
+		SET MYOBJ = CREATEOBJECT("SHORTBAR3R.TL_SHORTBAR")
+		SYS.OBJETOS.ADD MYOBJ, "SHORTBAR"
+		SET MYOBJ.SYS = SYS
+	END IF
+	MYOBJ.SHOW
+END SUB' 
+WHERE IDMODU='ADMCALENDARIO';
+UPDATE MODULO SET VBSCRIPT='"CONTATO3R.TL_CADCONTATO"'     WHERE IDMODU='CADCLI';
+UPDATE MODULO SET VBSCRIPT='"CALENDARIO3R.TL_ATENDIMENTO"' WHERE IDMODU='OPEATEND';
+UPDATE MODULO SET VBSCRIPT='"CALENDARIO3R.TL_VENDA"'       WHERE IDMODU='OPEVENDA';
+UPDATE MODULO SET VBSCRIPT='"CALENDARIO3R.TL_DISPARO"'     WHERE IDMODU='OPEDISPARO';
+UPDATE MODULO SET VBSCRIPT='"CONSULTAGBL.TL_ConsGerais"'   WHERE IDMODU='CNSGERAL';
+UPDATE MODULO SET VBSCRIPT='"ACADASTRO.TL_SEGURANCA"'      WHERE IDMODU='SEGPERFIL';
+UPDATE MODULO SET VBSCRIPT='"ACADASTRO.TL_CADUSUARIO"'     WHERE IDMODU='SEGUSU';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_EMPRESA"'       WHERE IDMODU='CADEMPRESA';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_OCLASSE"'       WHERE IDMODU='CADOCLASSE';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_OTPCONHEC"'     WHERE IDMODU='CADOTPCONHEC';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_SEST"'          WHERE IDMODU='CADSEST';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_FDESP"'         WHERE IDMODU='CADFDESP';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_CCORRENTE"'     WHERE IDMODU='CADCCORRENTE';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_OREACAOADV"'    WHERE IDMODU='CADOREACAOADV';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_OAREA"'         WHERE IDMODU='CADOAREA';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_ODIRECAO"'      WHERE IDMODU='CADODIRECAO';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_OTPSERVICO"'    WHERE IDMODU='CADOTPSERVICO';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_OTPTRATAMENTO"' WHERE IDMODU='CADOTPTRATAMENTO';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_OFOTOTIPO"'     WHERE IDMODU='CADOFOTOTIPO';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_CCONDPGTO"'     WHERE IDMODU='CADCCONDPGTO';
+UPDATE MODULO SET VBSCRIPT='"CADASTRO3R.TL_CFORMAPGTO"'    WHERE IDMODU='CADCFORMAPGTO';
+
+UPDATE MODULO SET VBSCRIPT='SUB DB_BACKUP()
+   SET NG = CREATEOBJECT("CALENDARIO3R.NG_CALENDARIO")
+   WITH NG
+      SET .SYS=SYS
+      .BACKUP
+   END WITH
+END SUB'
+WHERE IDMODU='BAK';
+
+UPDATE MODULO SET VBSCRIPT='SUB ITEM_MENU(SYS)
+   EXISTE = SYS.EXISTEOBJETO("CADASTRO")
+   IF EXISTE THEN
+      SET MYOBJ=SYS.OBJETOS("CADASTRO")
+   ELSE
+      SET MYOBJ = CREATEOBJECT("CADASTRO3R.TL_SHORTBAR")
+      SYS.OBJETOS.ADD MYOBJ, "CADASTRO"
+      SET MYOBJ.SYS = SYS
+   END IF
+   MYOBJ.SHOW
+END SUB'
+WHERE IDMODU='CADFDESP';
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT SISTEMA(CODSIS,DSCSIS,SISPAI,CODVERSAOSIS,ATIVO,IDMODUDEFAULT) VALUES('P3R','Grupo 3R','','','0','4');
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('ADM'             ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('OPE'             ,'P3R',1,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('REL'             ,'P3R',2,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('UTIL'            ,'P3R',3,'S',0);
+
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('ADMADM'          ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('ADMADMMODU'      ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('ADMCALENDARIO'   ,'P3R',0,'S',1);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CAD'             ,'P3R',0,'S',1);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADCLI'          ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('OPEATEND'        ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('OPEVENDA'        ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('OPEDISPARO'      ,'P3R',1,'S',1);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CNSGERAL'        ,'P3R',0,'S',1);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('SEG'             ,'P3R',0,'S',1);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('SEGPERFIL'       ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('SEGUSU'          ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('BAK'             ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADCOLIGADA'     ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOLOJA'        ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOSALA'        ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOMAQ'         ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADEMPRESA'      ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOCLASSE'      ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOTPCONHEC'    ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADSEST'         ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADFDESP'        ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADCCORRENTE'    ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOREACAOADV'   ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOAREA'        ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADODIRECAO'     ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOTPSERVICO'   ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOTPTRATAMENTO','P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADOFOTOTIPO'    ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADCCONDPGTO'    ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('CADCFORMAPGTO'   ,'P3R',0,'S',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('01.001'          ,'P3R',0,'N',0);
+INSERT MODULO_SISTEMA(IDMODU,CODSIS,INDICE,MENU,GRUPOMENU) VALUES('01.002'          ,'P3R',0,'N',0);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE MODULO_SISTEMA SET ID   =(SELECT M2.ID FROM MODULO M2 WHERE M2.IDMODU=MODULO_SISTEMA.IDMODU);
+UPDATE MODULO_SISTEMA SET MODUPAI=(SELECT M2.MODUPAI FROM MODULO M2 WHERE M2.ID=MODULO_SISTEMA.ID);
+UPDATE MODULO_SISTEMA SET IDPAI=(SELECT M2.ID FROM MODULO M2 WHERE M2.IDMODU=MODULO_SISTEMA.MODUPAI);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DELETE FROM GCAD WHERE CODSIS='P3R'
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) SELECT ID, 'P3R', NULL FROM MODULO WHERE IDMODU='CADEMPRESA';
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADEMPRESA', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADOCLASSE', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADOTPCONHEC', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADFDESP', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADCCORRENTE', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADOREACAOADV', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADODIRECAO', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADOTPSERVICO', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADOTPTRATAMENTO', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADCCONDPGTO', 'P3R', NULL);
+INSERT INTO GCAD (IDMODU, CODSIS, GRUPO) VALUES ('CADCFORMAPGTO', 'P3R', NULL);
+
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADEMPRESA';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADEMPRESA';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='OCLASSE', TAGCAMPOS='' WHERE IDMODU ='CADOCLASSE';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='OTPCONHEC', TAGCAMPOS='' WHERE IDMODU ='CADOTPCONHEC';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADSEST';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='Select IDLOJA, IDDESP , IDDESP [Id.] , CODDESP [Código], DSCDESP [Despesa] From FDESPESA', TAGCAMPOS='' WHERE IDMODU ='CADFDESP';
+UPDATE GCAD SET TL_CAD='CONTATO3R.TL_CADCONTATO', CONSULTA='Select IDLOJA, IDCONTA, IDCONTA [Id.], DSCCONTA [Conta], NUMBANCO [Banco], NUMAGENCIA [Agência], NUMCONTA+' + Char(39)+'-'+Char(39)+'DVCONTA [Conta], TPCONTA [Tipo] From FCCORRENTE', TAGCAMPOS='' WHERE IDMODU ='CADCCORRENTE';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='OREACAOADV', TAGCAMPOS='' WHERE IDMODU ='CADOREACAOADV';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADOAREA';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADODIRECAO';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADOTPSERVICO';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADOTPTRATAMENTO';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADOFOTOTIPO';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADCCONDPGTO';
+UPDATE GCAD SET TL_CAD=''                       , CONSULTA='', TAGCAMPOS='' WHERE IDMODU ='CADCFORMAPGTO';
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UPDATE GCAD SET ID=(SELECT M2.ID FROM MODULO M2 WHERE M2.IDMODU=GCAD.IDMODU);
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SET IDENTITY_INSERT GPESQUISA ON;
+INSERT INTO GPESQUISA(IDPESQUISA,CODSIS,IDMODU,IDUSU) VALUES (1, 'P3R', '01.001', 'DIO')
+INSERT INTO GPESQUISA(IDPESQUISA,CODSIS,IDMODU,IDUSU) VALUES (2, 'P3R', '01.002', 'DIO')
+SET IDENTITY_INSERT GPESQUISA OFF;
+
+UPDATE GPESQUISA SET 
+TIPOPESQUISA=''
+, PESQDEFAULT=0
+, IDCONEXAO= Null
+, ESCOPO=2
+, NOMEPESQUISA = 'Agendamento'
+, DSCPESQUISA='Lista de Clientes Agendados'
+, PESQSQL= 'Select a.idcliente, c.nome, max(a.dtatend) [DTATEND], max(a.idatendimento) [IDATENDIMENTO], (select max(e.StartDateTime)    from oeventoagenda e    where e.idcliente=a.idcliente    group by e.idcliente) as [AGENDA]  from osessao s   join oatendimento a on a.idatendimento=s.idatendimento  join ocliente c on a.idcliente=c.idcliente  where s.idtpservico<>1  and c.idcliente not in (2, 113, 116, 117)  group by a.idcliente, c.nome    having   (select max(e.StartDateTime) from oeventoagenda e where e.idcliente=a.idcliente group by e.idcliente)  >=Getdate()-1  --month(max(a.dtatend))<=10  --and month(max(a.dtatend))>7  and max(a.dtatend)<(select max(e.StartDateTime) from oeventoagenda e where e.idcliente=a.idcliente group by e.idcliente)    order by [DTATEND]'
+, TAGCAMPOS = '|CAMPO=IDCLIENTE|GRUPO=0|VISIBLE=N;|CAMPO=NOME|GRUPO=0|VISIBLE=S;|CAMPO=DTATEND|GRUPO=0|VISIBLE=N;|CAMPO=IDATENDIMENTO|GRUPO=0|VISIBLE=N;|CAMPO=AGENDA|GRUPO=0|VISIBLE=S;'
+WHERE IDPESQUISA=1;
+
+UPDATE GPESQUISA SET 
+TIPOPESQUISA=''
+, PESQDEFAULT=0
+, IDCONEXAO= Null
+, ESCOPO=2
+, NOMEPESQUISA = 'Em Teste'
+, DSCPESQUISA='Lista de clientes que apenas fizeram teste'
+, PESQSQL= 'Select Distinct C.IDCLIENTE [Id.], C.NOME [Cliente], A.DTATEND [Data Teste]  , Right('+ Char(39)+'00'+ Char(39)+'+Cast(Month(A.DTATEND) as Varchar),2)+'+ Char(39)+'-'+ Char(39)+'+DateName(Month,A.DTATEND) [Mês]  From OCLIENTE C   Join OATENDIMENTO A On A.IDCLIENTE=C.IDCLIENTE  Join OSESSAO S On A.IDATENDIMENTO=S.IDATENDIMENTO And S.IDTPSERVICO=1  Where C.IDCLIENTE Not In (Select Distinct A2.IDCLIENTE       From oatendimento a2       Join OSESSAO S2 On A2.IDATENDIMENTO=S2.IDATENDIMENTO          and S2.IDTPSERVICO<>1)  Order By  Right('+ Char(39)+'00'+ Char(39)+'+Cast(Month(A.DTATEND) as Varchar),2)+'+ Char(39)+'-'+ Char(39)+'+DateName(Month,A.DTATEND), A.DTATEND'
+, TAGCAMPOS = '|CAMPO=ID.|GRUPO=0|VISIBLE=N;|CAMPO=CLIENTE|GRUPO=0|VISIBLE=S;|CAMPO=DATA TESTE|GRUPO=0|VISIBLE=S;|CAMPO=MÊS|GRUPO=1|VISIBLE=N;'
+WHERE IDPESQUISA=2;
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

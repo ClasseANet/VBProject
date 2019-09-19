@@ -1,0 +1,11 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\bin\Debug\SMSSampleVB.exe.config
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\bin\Debug\SMSSampleVB.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\bin\Debug\SMSSampleVB.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\bin\Debug\SMSSampleVB.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\obj\Debug\SMSSampleVB.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\obj\Debug\SMSSampleVB.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\obj\Debug\SMSSampleVB.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\obj\Debug\SMSSampleVB.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\obj\Debug\SMSSampleVB.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SMSSampleVB\SMSSampleVB\obj\Debug\SMSSampleVB.pdb

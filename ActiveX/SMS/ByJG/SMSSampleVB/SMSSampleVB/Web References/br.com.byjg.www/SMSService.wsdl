@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:typens="urn:SMSService" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" name="SMSService" targetNamespace="urn:SMSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:SMSService" />
+  </wsdl:types>
+  <wsdl:message name="obterVersao" />
+  <wsdl:message name="obterVersaoResponse">
+    <wsdl:part name="obterVersaoResponse" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarSMS">
+    <wsdl:part name="ddd" type="xsd:string" />
+    <wsdl:part name="celular" type="xsd:string" />
+    <wsdl:part name="mensagem" type="xsd:string" />
+    <wsdl:part name="usuario" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarSMSResponse">
+    <wsdl:part name="enviarSMSResponse" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarSMS2">
+    <wsdl:part name="ddd" type="xsd:string" />
+    <wsdl:part name="celular" type="xsd:string" />
+    <wsdl:part name="mensagem" type="xsd:string" />
+    <wsdl:part name="usuario" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="senderid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarSMS2Response">
+    <wsdl:part name="enviarSMS2Response" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarListaSMS">
+    <wsdl:part name="lista" type="xsd:string" />
+    <wsdl:part name="mensagem" type="xsd:string" />
+    <wsdl:part name="usuario" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+    <wsdl:part name="senderid" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarListaSMSResponse">
+    <wsdl:part name="enviarListaSMSResponse" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="recursos">
+    <wsdl:part name="usuario" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="recursosResponse">
+    <wsdl:part name="recursosResponse" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="creditos">
+    <wsdl:part name="usuario" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="creditosResponse">
+    <wsdl:part name="creditosResponse" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarSMSInternacional">
+    <wsdl:part name="codpais" type="xsd:string" />
+    <wsdl:part name="ddd" type="xsd:string" />
+    <wsdl:part name="celular" type="xsd:string" />
+    <wsdl:part name="mensagem" type="xsd:string" />
+    <wsdl:part name="usuario" type="xsd:string" />
+    <wsdl:part name="senha" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="enviarSMSInternacionalResponse">
+    <wsdl:part name="enviarSMSInternacionalResponse" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="SMSServicePort">
+    <wsdl:operation name="obterVersao">
+      <documentation>Retorna a versao do WebService</documentation>
+      <wsdl:input message="typens:obterVersao" />
+      <wsdl:output message="typens:obterVersaoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="enviarSMS">
+      <documentation>Envia SMS para números do Brasil</documentation>
+      <wsdl:input message="typens:enviarSMS" />
+      <wsdl:output message="typens:enviarSMSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="enviarSMS2">
+      <documentation>Envia SMS para números do Brasil. Método que muda o SenderID.</documentation>
+      <wsdl:input message="typens:enviarSMS2" />
+      <wsdl:output message="typens:enviarSMS2Response" />
+    </wsdl:operation>
+    <wsdl:operation name="enviarListaSMS">
+      <documentation>Envia SMS para um lista. Os números da lista deve ter o seguinte formato: DDPPPPNNNN|DDPPPPNNNN|DDPPPPNNNN,.... Onde DD é o DDD, PPPPNNNN é o número do celular.</documentation>
+      <wsdl:input message="typens:enviarListaSMS" />
+      <wsdl:output message="typens:enviarListaSMSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="recursos">
+      <documentation>Obter os recursos disponíveis para envio de SMS</documentation>
+      <wsdl:input message="typens:recursos" />
+      <wsdl:output message="typens:recursosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="creditos">
+      <documentation>Obter a quantidade de créditos disponíveis para envio de SMS</documentation>
+      <wsdl:input message="typens:creditos" />
+      <wsdl:output message="typens:creditosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="enviarSMSInternacional">
+      <documentation>Enter description here...</documentation>
+      <wsdl:input message="typens:enviarSMSInternacional" />
+      <wsdl:output message="typens:enviarSMSInternacionalResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SMSServiceBinding" type="typens:SMSServicePort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="obterVersao">
+      <soap:operation soapAction="urn:SMSServiceAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarSMS">
+      <soap:operation soapAction="urn:SMSServiceAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarSMS2">
+      <soap:operation soapAction="urn:SMSServiceAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarListaSMS">
+      <soap:operation soapAction="urn:SMSServiceAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recursos">
+      <soap:operation soapAction="urn:SMSServiceAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="creditos">
+      <soap:operation soapAction="urn:SMSServiceAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarSMSInternacional">
+      <soap:operation soapAction="urn:SMSServiceAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:http://www.byjg.com.br" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SMSService">
+    <wsdl:port name="SMSServicePort" binding="typens:SMSServiceBinding">
+      <soap:address location="http://www.byjg.com.br/site/webservice.php/ws/sms" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

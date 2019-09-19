@@ -1,0 +1,161 @@
+Imports System
+Imports System.Net
+Imports System.IO
+Imports System.Text
+Imports System.Web
+
+Public Class smsHuman
+
+    Structure smsStructure
+
+        Dim account As String
+        Dim code As String
+        Dim msg As String
+        Dim from As String
+        Dim mobile As String
+        Dim schedule As String
+        Dim id As String
+
+    End Structure
+
+    Shared Function EnviaSMS(ByVal sms As smsStructure) As String
+
+        Dim sMessageReturn As String = ""
+        Dim [return] As String = ""
+        Dim returnCode As String = ""
+
+        [return] = GetPage("http://system.human.com.br/GatewayIntegration/msgSms.do", _
+            "dispatch=send" & _
+            "&account=" & sms.account & _
+            "&code=" & sms.code & _
+            "&msg=" & sms.msg & _
+            "&from=" & sms.from & _
+            "&to=" & sms.mobile & _
+            "&id=" & sms.id & _
+            "&schedule=" & sms.schedule)
+
+        returnCode = [return].Substring(0, 3)
+
+        Select Case returnCode
+
+            Case "000"
+                sMessageReturn = "Mensagem Salva com Sucesso"
+
+            Case "990"
+                sMessageReturn = "Erro de Autenticação"
+
+            Case Else 'Aqui podem ser adicionados outros casos conforme descritos na Documentação de Integração
+
+                sMessageReturn = "Mensagem não foi Salva: " + [return]
+
+        End Select
+
+        Return sMessageReturn
+
+    End Function
+
+    Private Shared Function GetPage(ByVal url As String, ByVal query As String) As String
+
+
+        '/ Declarações necessárias 
+        Dim requestStream As Stream = Nothing
+        Dim response As WebResponse = Nothing
+        Dim reader As StreamReader = Nothing
+
+        Try
+            Dim request As WebRequest = WebRequest.Create(url)
+            request.Method = WebRequestMethods.Http.Post
+
+            ' Neste ponto, você está setando a propriedade ContentType da página 
+            ' para urlencoded para que o comando POST seja enviado corretamente 
+            request.ContentType = "application/x-www-form-urlencoded"
+
+            Dim urlEncoded As StringBuilder = New StringBuilder()
+
+            ' Separando cada parâmetro 
+            Dim reserved As Char() = {"?", "=", "&"}
+
+            ' alocando o bytebuffer 
+            Dim byteBuffer As Byte() = Nothing
+
+            ' caso a URL seja preenchida 
+            If query <> Nothing Then
+
+                Dim i As Integer = 0
+                Dim j As Integer = 0
+
+                ' percorre cada caractere da url atraz das palavras reservadas para separação 
+                ' dos parâmetros 
+                Do While i < query.Length
+
+                    j = query.IndexOfAny(reserved, i)
+                    If j = -1 Then
+
+                        urlEncoded.Append(query.Substring(i, query.Length - i))
+                        Exit Do
+
+                    End If
+
+                    urlEncoded.Append(query.Substring(i, j - i))
+                    urlEncoded.Append(query.Substring(j, 1))
+                    i = j + 1
+
+                Loop
+
+                ' codificando em UTF8 (evita que sejam mostrados códigos malucos em caracteres especiais 
+                byteBuffer = System.Text.Encoding.UTF8.GetBytes(urlEncoded.ToString())
+
+                request.ContentLength = byteBuffer.Length
+                requestStream = request.GetRequestStream()
+                requestStream.Write(byteBuffer, 0, byteBuffer.Length)
+                requestStream.Close()
+
+            Else
+
+                request.ContentLength = 0
+
+            End If
+
+
+            ' Dados recebidos 
+            response = request.GetResponse()
+            Dim responseStream As Stream = response.GetResponseStream()
+
+            ' Codifica os caracteres especiais para que possam ser exibidos corretamente 
+            Dim encoding As System.Text.Encoding = System.Text.Encoding.Default
+
+            ' Preenche o reader 
+            reader = New StreamReader(responseStream, encoding)
+
+            Dim charBuffer As Char()
+            ReDim Preserve charBuffer(256)
+
+            Dim count As Integer = reader.Read(charBuffer, 0, charBuffer.Length)
+
+            Dim Dados As String = ""
+
+            ' Lê cada byte para preencher meu string
+            Do While (count > 0)
+                Dados += New String(charBuffer, 0, count)
+                count = reader.Read(charBuffer, 0, charBuffer.Length)
+            Loop
+
+            Return Dados
+
+        Catch ex As Exception
+
+            ' Ocorreu algum erro 
+            MsgBox("Erro: " + ex.Message)
+
+        Finally
+
+            ' Fecha tudo 
+            If Not IsNothing(requestStream) Then requestStream.Close()
+            If Not IsNothing(response) Then response.Close()
+            If Not IsNothing(reader) Then reader.Close()
+
+        End Try
+
+    End Function
+
+End Class

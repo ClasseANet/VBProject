@@ -1,0 +1,5 @@
+ActiveLib = 0, 0, 0, 0, C
+DSR = 0, 0, 0, 0, C
+Bl_ShortCutBar = 0, 0, 0, 0, C
+TL_ShortBar = 88, 116, 741, 462, C
+FrmShortBar = 44, 58, 855, 404, C, 22, 29, 648, 381, C

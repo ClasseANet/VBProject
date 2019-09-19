@@ -1,0 +1,14 @@
+FrmCADSESTOQUE = 0, 0, 0, 0, C, 150, 150, 1052, 536, C
+TL_CADSESTOQUE = 0, 0, 0, 0, C
+BL_P3R = 0, 0, 0, 0, C
+NG_Suprimento = 0, 0, 0, 0, C
+DSR = 0, 0, 0, 0, C
+ActiveLib = 0, 0, 0, 0, C
+TL_PaneSupri = 0, 0, 0, 0, C
+FrmPaneSupri = 0, 0, 0, 0, C, 175, 175, 1077, 561, C
+FrmMovEst = 0, 0, 0, 0, C, 0, 0, 902, 386, C
+FrmInventario = 0, 0, 0, 0, C, 25, 25, 927, 411, C
+FrmProdutos = 0, 0, 0, 0, C, 50, 50, 952, 436, C
+TL_MovEst = 0, 0, 0, 0, C
+TL_Inventario = 0, 0, 0, 0, C
+TL_Produtos = 0, 0, 0, 0, C

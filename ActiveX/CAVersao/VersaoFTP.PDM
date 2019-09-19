@@ -1,0 +1,76 @@
+[Root]
+Most Recent Package=Dep File 1
+
+
+[Package|Dep File 1|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=C:\WINDOWS\system32\ClasseA
+
+[Package|Dep File 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Dep File 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Dep File 1|Files Found]
+
+[Package|Dep File 1|Files Released]
+
+[Package|Dep File 1|Missing Dependency Information]
+C:\Arquivos de programas\Codejock Software\ActiveX\Xtreme SuitePro ActiveX v11.2.2\Bin\Codejock.Controls.v11.2.2.ocx=
+C:\WINDOWS\system32\ClasseA\DSACTIVE.DLL=
+C:\WINDOWS\system32\ClasseA\XBANCO01.DLL=
+
+[Package|Dep File 1|Out-of-Date Dependency Information]
+
+[Package|Dep File 1|Files Added]
+
+[Package|Dep File 1|Files Removed]
+
+[Package|Dep File 1|Files In Project]
+C:\WINDOWS\system32\ClasseA\VersaoFTP.dll=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\ClasseA\XBANCO01.DLL=Yes
+C:\WINDOWS\system32\ClasseA\DSACTIVE.DLL=Yes
+C:\WINDOWS\system32\MSINET.OCX=Yes
+C:\Arquivos de programas\Codejock Software\ActiveX\Xtreme SuitePro ActiveX v11.2.2\Bin\Codejock.Controls.v11.2.2.ocx=Yes
+
+[Package|Dep File 1|Configure Registry Files]
+Applicable=
+
+[Package|Dep File 1|Configure Remote Servers]
+Applicable=
+
+[Package|Dep File 1|Install Locations]
+C:\WINDOWS\system32\ClasseA\VersaoFTP.dll=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Arquivos de programas\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\ClasseA\XBANCO01.DLL=$(WinSysPath)
+C:\WINDOWS\system32\ClasseA\DSACTIVE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+C:\Arquivos de programas\Codejock Software\ActiveX\Xtreme SuitePro ActiveX v11.2.2\Bin\Codejock.Controls.v11.2.2.ocx=$(WinSysPath)
+
+[Package|Dep File 1|Configure Shared Files]
+Applicable=
+
+[Package|Dep File 1|DepFile]
+DepCabFile=VersaoFTP.CAB
+DepCabRun=VersaoFTP.INF
+
+[Package|Dep File 1|Package]
+PackageFolder=C:\WINDOWS\system32\ClasseA
+ProjectFolder=C:\Sistemas\ActiveX\CAVersao
+ServerSideCab=
+File1=C:\WINDOWS\system32\ClasseA\VersaoFTP.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

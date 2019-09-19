@@ -1,0 +1,5 @@
+VBGROUP 5.0
+StartupProject=Projeto3R.vbp
+Project=..\..\_PROJETO A\Arquivos Comuns\Menu\Menu.vbp
+Project=..\..\_PROJETO A\Arquivos Comuns\Setting\SysA.vbp
+Project=ShortBar3R\ShortBar3R.vbp

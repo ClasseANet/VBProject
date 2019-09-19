@@ -1,0 +1,4 @@
+VBGROUP 5.0
+StartupProject=P3RA.vbp
+Project=..\..\..\..\ActiveX\XLib\XLib.vbp
+Project=..\..\..\..\ActiveX\AutoInstall\pAutoInstall.vbp
